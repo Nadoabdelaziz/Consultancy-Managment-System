@@ -21,21 +21,21 @@ use App\Http\Controllers\HomeController;
 
 Route::group(['prefix' => '{locale}'],function (){
     Route::get('/', 'App\Http\Controllers\HomeController@index')->middleware('setLocale');
-});
+    Route::get('/blog-post',function(){
+        return view('blog-post');
+    })->middleware('setLocale');
 
-Route::get('/blog-post',function(){
-    return view('blog-post');
-});
-
-
-
-
+    
 Route::get('/logout', function(Request $request) {
     Auth::logout();
-    return redirect('/');
-  });
+    return redirect('en/admin');
+  })->middleware('setLocale');
+
+});
 
 
-Route::group(['prefix' => 'admin'], function () {
+
+
+Route::group(['prefix' => 'en/admin'], function () {
     Voyager::routes();
 });

@@ -5,12 +5,13 @@
   <!-- service content -->
   <div class="art-service-ib-content">
     <!-- title -->
-    <h5 class="mb-15">{{$service->header}}</h5>
+    <h5 class="mb-15">{{__($service->header)}}</h5>
     <!-- text -->
-    <div class="mb-15">{{$service->description}}.</div>
+    <div class="mb-15">{{__($service->description)}}.</div>
     <!-- button -->
-    <div class="art-buttons-frame"><a href="blog-post?var={{$service->video}}&var2={{$service->vid_cover}}&var3={{$service->header}}" 
-    class="art-link art-color-link art-w-chevron">Order now</a></div>
+    <!-- <h1></h1> -->
+    <div class="art-buttons-frame"><a href="/{{app()->getLocale()}}/blog-post?var={{$service->video}}&var2={{$service->vid_cover}}&var3={{$service->header}}" 
+    class="art-link art-color-link art-w-chevron">{{__('Order now')}}</a></div>
   </div>
   <!-- service content end -->
 </div>
