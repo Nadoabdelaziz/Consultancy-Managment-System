@@ -12,12 +12,12 @@ background-size: full;
 font-family: sans-serif;
 }
 header {
-background-color: black;
-position: fixed;
+background-color: #606060;
+/* position: fixed;
 left: 0;
 right: 0;
-top: 5px;
-height: 30px;
+top: 5px; */
+/* height: 30px; */
 display: flex;
 align-items: center;
 box-shadow: 0 0 25px 0 black;
@@ -35,25 +35,36 @@ text-decoration: none;
 </style> 
 </Head>
 <Body> 
-<header>
-<nav>
-<ul>
-<li>
-<a href="#"> Home </a>
+<header style="
+">
+    <ul style="float: right;width: -webkit-fill-available;margin-right: 25px;">
+        
+<li style="
+">
+    
+
+<br>
+<h4 class="row" style="float:right;">{{auth()->user() ? auth()->user()->email : __('Sign In')}}</h4> 
+
 </li>
-<li>
-<a href="#"> About </a>
-</li>
-<li>
-<a href="#"> Contact </a>
-</li>
-<li> <a href="#"> Terms of use </a>
-</li>
-<li>
-<a href="#"> Join Us </a>
-</li>
-</ul>
-</nav>
+    </ul>
 </header>
-You are at JavaTpoint Site.....
+<br>
+
+
+<header style="
+    MARGIN-TOP: 19px;
+">
+    <ul style="margin-top: 12px;">
+        
+<li style="">
+    <h4>استشاري أسماء الكيانات</h4>
+
+<br>
+ 
+
+</li>
+    </ul>
+</header>
+<!-- You are at JavaTpoint Site..... -->
 </Body> 

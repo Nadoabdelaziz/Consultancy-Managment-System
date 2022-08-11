@@ -30,11 +30,15 @@ Route::group(['prefix' => '{locale}'],function (){
     
 Route::get('/logout', function(Request $request) {
     Auth::logout();
-    return redirect('en/admin');
+    return redirect('/');
   })->middleware('setLocale');
 
 Route::post('upload','App\Http\Controllers\UploadController@index')->middleware('setLocale');  
 
+});
+
+Route::get('/', function(){
+    return redirect('/ar');
 });
 
 
@@ -42,6 +46,10 @@ Route::post('upload','App\Http\Controllers\UploadController@index')->middleware(
 
 
 
+
 Route::group(['prefix' => 'en/admin'], function () {
+    Voyager::routes();
+});
+Route::group(['prefix' => 'ar/admin'], function () {
     Voyager::routes();
 });

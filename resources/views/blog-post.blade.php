@@ -16,6 +16,7 @@ $serice_head3=$_GET['var3'];
   <!-- app -->
   <div class="art-app">
 
+  
     <!-- mobile top bar -->
     <div class="art-mobile-top-bar"></div>
 
@@ -24,6 +25,7 @@ $serice_head3=$_GET['var3'];
 
       <!-- app container end -->
       <div class="art-app-container">
+        
 
         <!-- info bar -->
         @include('partials.sidebar')
@@ -52,6 +54,8 @@ $serice_head3=$_GET['var3'];
 
               <!-- container -->
               <div class="container-fluid">
+              @include('partials.Nav')
+<br><br><br><br><br>
 
                 <!-- row -->
                 <div class="row p-30-0">

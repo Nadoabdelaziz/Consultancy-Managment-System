@@ -26,48 +26,97 @@
       <!-- menu list -->
       <ul class="main-menu">
         <!-- menu item -->
-        <li class="menu-item current-menu-item"><a href="/home.html">Home</a></li>
+        <li class="menu-item current-menu-item"><a href="/">{{__('Home')}}</a></li>
+        
+        <!-- menu item -->
+        <li class="menu-item"><a href="/history.html">{{__('Account Management')}}</a></li>
+
         <!-- menu item -->
         <li class="menu-item menu-item-has-children">
-          <a href="#.">Portfolio</a>
+          <a href="#.">{{__('Sentence Calculator')}}</a>
           <!-- sub menu -->
           <ul class="sub-menu">
             <!-- lvl 2 nav link -->
-            <li class="menu-item"><a href="/portfolio-2-col.html">2 column</a></li>
+            <li class="menu-item"><a href="/portfolio-2-col.html">{{__('Sentence Calculator')}}</a></li>
             <!-- lvl 2 nav link -->
-            <li class="menu-item"><a href="/portfolio-3-col.html">3 column</a></li>
+            <li class="menu-item"><a href="/portfolio-3-col.html">{{__('Design Your Calculator')}}</a></li>
             <!-- lvl 2 nav link -->
-            <li class="menu-item"><a href="/portfolio-2-col-masonry.html">2 column masonry</a></li>
-            <!-- lvl 2 nav link -->
-            <li class="menu-item"><a href="/portfolio-3-col-masonry.html">3 column masonry</a></li>
-            <!-- lvl 2 nav link -->
-            <li class="menu-item"><a href="/portfolio-single.html">Single project</a></li>
-            <!-- lvl 2 nav link -->
-            <li class="menu-item"><a href="/portfolio-single-2.html">Single project 2</a></li>
+            <li class="menu-item"><a href="/portfolio-2-col-masonry.html">{{__('Golden Barcode Calculator')}}</a></li>
           </ul>
           <!-- sub menu end -->
         </li>
-        <!-- menu item -->
-        <li class="menu-item"><a href="/history.html">History</a></li>
-        <!-- menu item -->
-        <li class="menu-item"><a href="/contact.html">Contact</a></li>
+
         <!-- menu item -->
         <li class="menu-item menu-item-has-children">
-          <a href="#.">Blog</a>
+          <a href="#.">{{__('Services')}}</a>
           <!-- sub menu -->
           <ul class="sub-menu">
             <!-- lvl 2 nav link -->
-            <li class="menu-item"><a href="/blog-2-col.html">2 column</a></li>
+            <li class="menu-item"><a href="/portfolio-2-col.html">{{__('Places Consultant')}}</a></li>
             <!-- lvl 2 nav link -->
-            <li class="menu-item"><a href="/blog-3-col.html">3 column</a></li>
+            <li class="menu-item"><a href="/portfolio-2-col.html">{{__('Product Name Consultant')}}</a></li>
             <!-- lvl 2 nav link -->
-            <li class="menu-item"><a href="/blog-post.html">Publication</a></li>
+            <li class="menu-item"><a href="/portfolio-2-col.html">{{__('NewBorn Names Consultant')}}</a></li>
+            <!-- lvl 2 nav link -->
+            <li class="menu-item"><a href="/portfolio-2-col.html">{{__('Other Consultants')}}</a></li>
+            <!-- lvl 2 nav link -->            
+            <li class="menu-item menu-item-has-children">
+              <a href="#.">{{__('special Higher Consultants')}}</a>
+              <!-- sub menu -->
+              <ul class="sub-menu">
+                <!-- lvl 2 nav link -->
+                <li class="menu-item"><a href="/portfolio-2-col.html">{{__('Phai Consultant')}}</a></li>
+                <!-- lvl 2 nav link -->
+                <li class="menu-item"><a href="/portfolio-2-col.html">{{__('Goals Consultant')}}</a></li>
+                <!-- lvl 2 nav link -->
+                <li class="menu-item"><a href="/portfolio-2-col.html">{{__('Strong Consultant')}}</a></li>
+              </ul>
+               <!-- sub menu end -->
+            </li>
           </ul>
           <!-- sub menu end -->
         </li>
+        
+       
+        <li class="menu-item menu-item-has-children">
+          <a href="#.">{{__('Invoices')}}</a>
+          <!-- sub menu -->
+          <ul class="sub-menu">
+            <li class="menu-item"><a href="/portfolio-2-col.html">{{__('Provision of services')}}</a></li>
+            <li class="menu-item"><a href="/portfolio-2-col.html">{{__('Show Prices')}}</a></li>
+            <li class="menu-item"><a href="/portfolio-2-col.html">{{__('Draft')}}</a></li>
+            <li class="menu-item"><a href="/portfolio-2-col.html">{{__('Payment Methods')}}</a></li>
+            <li class="menu-item"><a href="/portfolio-2-col.html">{{__('Add Balance')}}</a></li>
+          </ul>
+          <!-- sub menu end -->
+        </li>    
+
+        <li class="menu-item menu-item-has-children">
+          <a href="#.">{{__('Tickets & Support')}}</a>
+          <!-- sub menu -->
+          <ul class="sub-menu">
+            <li class="menu-item"><a href="/portfolio-2-col.html">{{__('Tickets')}}</a></li>
+            <li class="menu-item"><a href="/portfolio-2-col.html">{{__('News & Ads')}}</a></li>
+            <li class="menu-item"><a href="/portfolio-2-col.html">{{__('Open Tickets')}}</a></li>
+          </ul>
+        </li> 
+
+
+        
         <!-- menu item -->
-        <li class="menu-item"><a href="onepage.html" target="_blank">Onepage</a></li>
-      </ul>
+        <li class="menu-item"><a href="/contact.html">{{__('Videos')}}</a></li>
+
+        <!-- menu item -->
+        <li class="menu-item"><a href="/contact.html">{{__('Join Us')}}</a></li>
+
+        <!-- menu item -->
+        <li class="menu-item"><a href="/contact.html">{{__('Referral Points System')}}</a></li>
+
+<br>
+        
+            <!-- menu item -->
+            <li class="menu-item current-menu-item"><a class="btn-danger" href="{{app()->getLocale()}}/logout">{{__('Logout')}}</a></li>
+
       <!-- menu list end -->
     </nav>
     <!-- menu end -->

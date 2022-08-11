@@ -6,14 +6,13 @@
     margin-right: 85px;
     height: 270px;
 ">
-<div class="row" style="
-    float: left;
-    height: 150px;
-    width: min-content;
-"><label for="frame1">4</label><br><h4 style="
-    flex: auto;
-">{{__('Execution')}}</h4></div>     
-    <div class="row" style="
+  <div class="row" style="float: left;height: 150px;width: min-content;">
+    <label checked for="frame1">4</label>
+    <br>
+    <h4 style="flex: auto;">{{__('Execution')}}</h4>
+  </div>     
+    
+  <div class="row" style="
     float: left;
     height: 150px;
     width: min-content;
@@ -40,10 +39,10 @@
     
         </div>
         <br><br>
-        <input type="radio" name="frame" id="frame1" checked="">
+        <input type="radio" name="frame" id="frame1" >
         <input type="radio" name="frame" id="frame2">
         <input type="radio" name="frame" id="frame3">
-        <input type="radio" name="frame" id="frame4">
+        <input type="radio" name="frame" id="frame4" checked="">
         <div id="slides">
             <div id="overflow">
                 <div class="inner">
@@ -83,7 +82,7 @@
 
                               <form style="float:none; margin-top: 154px;/* float: right; */background-color: transparent;/* margin-right: 220px; */flex: auto;/* width: fit-content; *//* margin-right: 160px; *//* right: 250px; */">
                               
-                                <label for="frame3" style="
+                                <label for="frame1" style="
                                     height: 45px;
                                     width: 220px;
                                     /* margin-top: 45px; */
@@ -118,7 +117,7 @@
 
                               <form style="float:none; margin-top: 154px;/* float: right; */background-color: transparent;/* margin-right: 220px; */flex: auto;/* width: fit-content; *//* margin-right: 160px; *//* right: 250px; */">
                               
-                                <label for="frame3" style="
+                                <label for="frame2" style="
                                     height: 45px;
                                     width: 220px;
                                     /* margin-top: 45px; */
@@ -361,6 +360,7 @@ form{
 #controls label:hover {
     opacity: 1;
 }
+
   
 #frame1:checked~#controls label:nth-child(2),
 #frame2:checked~#controls label:nth-child(3),
@@ -404,6 +404,9 @@ url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
 
 #bullets label:hover{
   background-color:blue;
+}
+#bullets input:checked{
+  background-color:red;
 }
   
 #frame1:checked~#bullets label:nth-child(1),

@@ -44,6 +44,7 @@
             @include('partials.Nav')
 
 
+
               <!-- Header-container -->
                 @include('partials.header')
 
