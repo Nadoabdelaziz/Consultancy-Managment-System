@@ -26,7 +26,7 @@
     float: left;
     height: 150px;
     width: min-content;
-"><label for="frame2">3</label><br><h4 style="
+"><label for="frame3">2</label><br><h4 style="
     flex: auto;
 ">{{__('Show Price')}}</h4></div>
 
@@ -48,117 +48,185 @@
             <div id="overflow">
                 <div class="inner">
                     <div class="frame frame_1">
-                        <div class="frame-content">
-                        <h2>Slide 4</h2>
+                    <div class="frame-content">
+                          <br><br>
+
+                                <form action="upload" method="post" enctype="multipart/form-data" style="float:none;/* margin-top: 154px; */background-color: transparent;flex: auto;">
+                                  <input type="hidden" name="_token" value="jPHPtP1OO5zfkoOXzHbjVoGsM5FtcmE3YGW248sF">                                  
+                                  <input type="file" name="file" style="line-height: normal;">
+                                  <button style="height: 45px;width: 220px;/* padding-top: 20px; */font-size: x-large;background-color: red;border-radius: 12px;" class="primary" type="submit">Execute</button>
+                                </form> 
+                                <!-- User ID : <input type = "text" name = "user_id" /> -->
+                                <br>
+   
                         </div>
                     </div>
                     <div class="frame frame_2">
-                        <div class="frame-content">
-                            <h2>Slide 2</h2>
+                      <div class="frame-content">
+                              <br><br>
+
+                              <form style="float:none">
+                                <h2>List</h2>
+                                <div class="container mt-5" style="margin-bottom: 165px;">
+                                  <br><br>
+                                  <h3 for="text" style="float: LEFt;" class="">IBAN: 123456789</h3><h3 for="text" style="float: right;" class="">Acc Number: 12345</h3>
+                                      <br>
+                                      <h3 for="text" style="
+                                        float: left;" class="mt-5">Bank: Aed Bank</h3>
+                                        <br>
+                                        <h3 for="text" style="float: right;" class="mt-5">IBAN: 123456789</h3>
+                                </div>
+                                <!-- User ID : <input type = "text" name = "user_id" /> -->
+                                <br>
+
+                              </form>
+
+                              <form style="float:none; margin-top: 154px;/* float: right; */background-color: transparent;/* margin-right: 220px; */flex: auto;/* width: fit-content; *//* margin-right: 160px; *//* right: 250px; */">
+                              
+                                <label for="frame3" style="
+                                    height: 45px;
+                                    width: 220px;
+                                    /* margin-top: 45px; */
+                                    padding-top: 20px;
+                                    /* margin-bottom: 20px; */
+                                    font-size: x-large;
+                                    background-color: red;
+                                    border-radius: 12px;
+                                ">continue</label>
+
+                              </form> 
                         </div>
                     </div>
+
                     <div class="frame frame_3">
                         <div class="frame-content">
-                            <h2>Slide 3</h2>
+                          <br><br>
+
+                              <form style="float:none">
+                                <h2>List</h2>
+                                <div class="container mt-5" style="">
+                                  <h1 for="text" style="
+                                        /* font-size: xx-large; */
+                                        margin-bottom: 25px;
+                                    ">10$
+                                    </h1>
+                                </div>
+                                <!-- User ID : <input type = "text" name = "user_id" /> -->
+                                <br>
+
+                              </form>
+
+                              <form style="float:none; margin-top: 154px;/* float: right; */background-color: transparent;/* margin-right: 220px; */flex: auto;/* width: fit-content; *//* margin-right: 160px; *//* right: 250px; */">
+                              
+                                <label for="frame3" style="
+                                    height: 45px;
+                                    width: 220px;
+                                    /* margin-top: 45px; */
+                                    padding-top: 20px;
+                                    /* margin-bottom: 20px; */
+                                    font-size: x-large;
+                                    background-color: red;
+                                    border-radius: 12px;
+                                ">continue</label>
+
+                              </form>    
                         </div>
                     </div>
                     <div class="frame frame_4">
-                        <div class="frame-content">
-                            <div class="frame-content">
-                          <form>
-                            <h2>List</h2>
-                            <div class="row" style="padding-bottom:10px">
-                              <input type="text" placeholder="enter name here">
-                            </div>
-                              <br>
-                            <div class="row" style="padding-bottom:10px">
-                              <input type="text">
-                            </div>
-                            
-                            <div class="row" style="padding-bottom:10px">
-                              <input type="text">
-                            </div>
-                            <div class="row" style="padding-bottom:10px">
-                              <input type="text">
-                            </div>
-                            <div class="row" style="padding-bottom:10px">
-                              <input type="text">
-                            </div>
-                            <div class="row" style="padding-bottom:10px">
-                              <input type="text">
-                            </div>
-                            <div class="row" style="padding-bottom:10px">
-                              <input type="text">
-                            </div>
-                            <div class="row" style="padding-bottom:10px">
-                              <input type="text">
-                            </div>
-                            <div class="row" style="padding-bottom:10px">
-                              <input type="text">
-                            </div>
-                            <!-- User ID : <input type = "text" name = "user_id" /> -->
-                            <br>
-                            <!-- Password: <input type = "password" name = "password" /> -->
-                          </form>
-                          <form style="float:left;height: fit-content;">
-                              <h3>استشاري أسماء الكيانات</h3>
+                    <div class="frame-content">
+                              <form>
+                                <h2>قائمة الأسماء المطلوب دراستها</h2>
+                                <div class="row" style="padding-bottom:10px;display: flow-root;">
+                                  <input type="text" placeholder="enter name here">
+                                </div>
+                                  <br>
+                                <div class="row" style="padding-bottom:10px;/* display: inline-block; */display: flow-root;">
+                                  <input type="text">
+                                </div>
+                                
+                                <div class="row" style="padding-bottom:10px;display: flow-root;">
+                                  <input type="text">
+                                </div>
+                                <div class="row" style="padding-bottom:10px;display: flow-root;">
+                                  <input type="text">
+                                </div>
+                                <div class="row" style="padding-bottom:10px;display: flow-root;">
+                                  <input type="text">
+                                </div>
+                                <div class="row" style="padding-bottom:10px;display: flow-root;">
+                                  <input type="text">
+                                </div>
+                                <div class="row" style="padding-bottom:10px;display: flow-root;">
+                                  <input type="text">
+                                </div>
+                                <div class="row" style="padding-bottom:10px;display: flow-root;">
+                                  <input type="text">
+                                </div>
+                                <div class="row" style="padding-bottom:10px;display: flow-root;">
+                                  <input type="text">
+                                </div>
+                                <!-- User ID : <input type = "text" name = "user_id" /> -->
+                                <br>
+                                <!-- Password: <input type = "password" name = "password" /> -->
+                              </form>
+                              <form style="float:left;height: fit-content;">
+                                  <h3>استشاري أسماء الكيانات</h3>
+                                  <br><br>
+                                <div class="row" style="padding-bottom:50px;justify-content: space-around;">
+                                  <input type="text" placeholder="أدخل هنا اسم مؤسس أو مؤسسي المنشأة">
+                                </div>
+                                  <br>
+                                  <div class="row" style="padding-bottom:50px;justify-content: space-around;">
+                                  <input type="text" placeholder="أدخل هنا نشاط المؤسسة">
+                                </div>
+                                
+                                <div class="row" style="padding-bottom:50px;justify-content: space-around;">
+                                  <input type="text" placeholder="أدخل هنا البلد ومدينة المنشأة">
+                                </div>
+              
+                                <!-- User ID : <input type = "text" name = "user_id" /> -->
+                                <br>
+                                <!-- Password: <input type = "password" name = "password" /> -->
+                              </form>
+
                               <br><br>
-                            <div class="row" style="padding-bottom:50px;justify-content: space-around;">
-                              <input type="text" placeholder="Inventor Name">
-                            </div>
-                              <br>
-                              <div class="row" style="padding-bottom:50px;justify-content: space-around;">
-                              <input type="text" placeholder="Enter Activity">
-                            </div>
+
+                              <form style="margin-top: 250px;float: left;">
+                                <h2>ملاحظة</h2>
+                                <textarea name="asd" id="" cols="20" rows="20" style="margin-bottom: 42px;height: 200px;width: 550px;">enter here</textarea>
+                                <!-- User ID : <input type = "text" name = "user_id" /> -->
+                                <br>
+                                <!-- Password: <input type = "password" name = "password" /> -->                           
+                                <!-- <label for="frame3" style="
+                                    height: 45px;
+                                    width: 220px;
+                                    /* margin-top: 45px; */
+                                    padding-top: 20px;
+                                    margin-bottom: 20px;
+                                    font-size: x-large;
+                                    background-color: red;
+                                    border-radius: 12px;
+                                ">continue</label> -->
+
+                              </form>
+
+                              <form style="margin-top: 154px;float: right;background-color: transparent;/* margin-right: 165px; */width: fit-content;margin-right: 160px;/* right: 250px; */">
+                              
+                                <label for="frame3" style="
+                                    height: 45px;
+                                    width: 220px;
+                                    /* margin-top: 45px; */
+                                    padding-top: 20px;
+                                    /* margin-bottom: 20px; */
+                                    font-size: x-large;
+                                    background-color: red;
+                                    border-radius: 12px;
+                                ">continue</label>
+
+                              </form> 
+
                             
-                            <div class="row" style="padding-bottom:50px;justify-content: space-around;">
-                              <input type="text" placeholder="enter country">
-                            </div>
-          
-                            <!-- User ID : <input type = "text" name = "user_id" /> -->
-                            <br>
-                            <!-- Password: <input type = "password" name = "password" /> -->
-                          </form>
-
-                          <br><br>
-
-                          <form style="margin-top: 250px;">
-                            <h2>List</h2>
-                            <textarea name="asd" id="" cols="20" rows="20" style="margin-bottom: 42px;height: 200px;width: 550px;">enter here</textarea>
-                            <!-- User ID : <input type = "text" name = "user_id" /> -->
-                            <br>
-                            <!-- Password: <input type = "password" name = "password" /> -->                           
-                            <!-- <label for="frame3" style="
-                                height: 45px;
-                                width: 220px;
-                                /* margin-top: 45px; */
-                                padding-top: 20px;
-                                margin-bottom: 20px;
-                                font-size: x-large;
-                                background-color: red;
-                                border-radius: 12px;
-                            ">continue</label> -->
-
-                          </form>
-
-                          <form style="margin-top: 154px;float: right;background-color: transparent;/* margin-right: 165px; */width: fit-content;margin-right: 160px;/* right: 250px; */">
-                          
-                            <label for="frame3" style="
-                                height: 45px;
-                                width: 220px;
-                                /* margin-top: 45px; */
-                                padding-top: 20px;
-                                /* margin-bottom: 20px; */
-                                font-size: x-large;
-                                background-color: red;
-                                border-radius: 12px;
-                            ">continue</label>
-
-                          </form> 
-
-                        
-                        </div>
-                        </div>
+                          </div>
                     </div>
                 </div>
             </div>
@@ -191,8 +259,8 @@ input{
 
 form{
   float:right;
-  padding-right:55px;
-  padding-left: 50px;
+  padding-right:25px;
+  padding-left: 25px;
   background:#504C4C;
 }
   
@@ -263,11 +331,11 @@ form{
 }
   
 #slides .frame_2 {
-    background: #F90;
+  height: fit-content;
 }
   
 #slides .frame_3 {
-    background: #606;
+  height: fit-content;
 }
   
 #slides .frame_4 {

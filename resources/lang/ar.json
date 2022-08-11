@@ -4,5 +4,10 @@
     "Execution":"تنفيذ",
     "Payment":"سداد",
     "Show Price":"عرض السعر",
-    "Fill Model":"تعبئة النموذج"
+    "Fill Model":"تعبئة النموذج",
+    "List Of Names":"قائمة الأسماء المطلوب دراستها",
+    "Inventor Name":"أدخل هنا اسم مؤسس أو مؤسسي المنشأة",
+    "Enter Activity":"أدخل هنا نشاط المؤسسة",
+    "enter country":"أدخل هنا البلد ومدينة المنشأة",
+    "Comment":"ملاحظة"
 }

@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UploadController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -31,7 +33,11 @@ Route::get('/logout', function(Request $request) {
     return redirect('en/admin');
   })->middleware('setLocale');
 
+Route::post('upload','App\Http\Controllers\UploadController@index')->middleware('setLocale');  
+
 });
+
+
 
 
 
