@@ -8,4 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Place extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'names',
+        'creator_name',
+        'activity' ,
+        'country' ,
+        'comment' ,
+        'status',
+        'user_email'
+    ]; 
 }

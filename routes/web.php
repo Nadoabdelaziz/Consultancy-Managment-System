@@ -35,6 +35,8 @@ Route::get('/logout', function(Request $request) {
 
 Route::post('upload','App\Http\Controllers\UploadController@index')->middleware('setLocale');  
 
+Route::post('PlacesCons','App\Http\Controllers\HomeController@PlacesConsultancy')->middleware('setLocale');  
+
 });
 
 Route::get('/', function(){

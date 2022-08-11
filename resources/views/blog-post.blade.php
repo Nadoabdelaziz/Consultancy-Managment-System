@@ -2,9 +2,9 @@
 
 
 <?php
-$serice_head=$_GET['var'];
-$serice_head2=$_GET['var2'];
-$serice_head3=$_GET['var3'];
+// $serice_head=$_GET['var'];
+// $serice_head2=$_GET['var2'];
+// $serice_head3=$_GET['var3'];
 
 
 ?>
@@ -57,52 +57,23 @@ $serice_head3=$_GET['var3'];
               @include('partials.Nav')
 <br><br><br><br><br>
 
-                <!-- row -->
                 <div class="row p-30-0">
 
-                  <!-- col -->
                   <div class="col-lg-12">
 
-                    <!-- section title -->
                     <div class="art-section-title">
-                      <!-- title frame -->
                       <div class="art-title-frame">
-                        <!-- title -->
-                        <h4>{{__($serice_head3)}}</h4>
+                        <h4>{{__('Places Consultant')}}</h4>
                       </div>
-                      <!-- title frame end -->
-                      <!-- right frame -->
+
                       <div class="art-right-frame">
                         <div class="art-project-category">Ui Design, Graphic</div>
                       </div>
-                      <!-- right frame end -->
-                    </div>
-                    <!-- section title end -->
-
-                  </div>
-                  <!-- col end -->
-
-                  <!-- col -->
-                  <div class="col-lg-5">
-
-                    <!-- project cover -->
-                    <div class="art-a art-project-cover">
-                      <!-- item frame -->
-                      <a data-fancybox="gallery" href="{{$serice_head}}" class="art-portfolio-item-frame art-horizontal">
-                        <!-- img -->
-                        <img src="storage\{{$serice_head2}}" alt="item">
-                        <!-- zoom icon -->
-                        <span class="art-item-hover"><i class="fas fa-expand"></i></span>
-                      </a>
-                      <!-- item end -->
-                      <h4>Video Desription</h4>
-
                     </div>
 
-                    <!-- project cover nd -->
-
                   </div>
-                  <!-- col end -->
+
+                 
 
                   <!-- col -->
                   @include('partials.Blogs.post')

@@ -45,6 +45,7 @@
         <input type="radio" name="frame" id="frame4" checked="">
         <div id="slides">
             <div id="overflow">
+            <form action="PlacesCons" method="post" enctype="multipart/form-data" style="background-color: transparent">
                 <div class="inner">
                     <div class="frame frame_1">
                     <div class="frame-content">
@@ -64,7 +65,7 @@
                       <div class="frame-content">
                               <br><br>
 
-                              <form style="float:none">
+                              <div style="float:none">
                                 <h2>List</h2>
                                 <div class="container mt-5" style="margin-bottom: 165px;">
                                   <br><br>
@@ -78,9 +79,9 @@
                                 <!-- User ID : <input type = "text" name = "user_id" /> -->
                                 <br>
 
-                              </form>
+</div>
 
-                              <form style="float:none; margin-top: 154px;/* float: right; */background-color: transparent;/* margin-right: 220px; */flex: auto;/* width: fit-content; *//* margin-right: 160px; *//* right: 250px; */">
+                              <div style="float:none; margin-top: 154px;/* float: right; */background-color: transparent;/* margin-right: 220px; */flex: auto;/* width: fit-content; *//* margin-right: 160px; *//* right: 250px; */">
                               
                                 <label for="frame1" style="
                                     height: 45px;
@@ -93,7 +94,7 @@
                                     border-radius: 12px;
                                 ">continue</label>
 
-                              </form> 
+</div> 
                         </div>
                     </div>
 
@@ -101,7 +102,7 @@
                         <div class="frame-content">
                           <br><br>
 
-                              <form style="float:none">
+                              <div style="float:none">
                                 <h2>List</h2>
                                 <div class="container mt-5" style="">
                                   <h1 for="text" style="
@@ -113,9 +114,9 @@
                                 <!-- User ID : <input type = "text" name = "user_id" /> -->
                                 <br>
 
-                              </form>
+</div>
 
-                              <form style="float:none; margin-top: 154px;/* float: right; */background-color: transparent;/* margin-right: 220px; */flex: auto;/* width: fit-content; *//* margin-right: 160px; *//* right: 250px; */">
+                              <div style="float:none; margin-top: 154px;/* float: right; */background-color: transparent;/* margin-right: 220px; */flex: auto;/* width: fit-content; *//* margin-right: 160px; *//* right: 250px; */">
                               
                                 <label for="frame2" style="
                                     height: 45px;
@@ -128,71 +129,75 @@
                                     border-radius: 12px;
                                 ">continue</label>
 
-                              </form>    
+</div>    
                         </div>
                     </div>
                     <div class="frame frame_4">
-                    <div class="frame-content">
-                              <form>
+                      <div class="frame-content">
+
+                        <form action="PlacesCons" method="post" enctype="multipart/form-data" style="background-color: transparent">
+                          @csrf
+                          <div style="float: right;background-color: gray;">
                                 <h2>قائمة الأسماء المطلوب دراستها</h2>
+                                <input type="text" name="user" value="{{auth()->user()->email}}" style="display:none">
                                 <div class="row" style="padding-bottom:10px;display: flow-root;">
-                                  <input type="text" placeholder="enter name here">
+                                  <input type="text" placeholder="enter name here" name="first">
                                 </div>
                                   <br>
                                 <div class="row" style="padding-bottom:10px;/* display: inline-block; */display: flow-root;">
-                                  <input type="text">
+                                  <input type="text" placeholder="enter name here" name="Sec">
                                 </div>
                                 
                                 <div class="row" style="padding-bottom:10px;display: flow-root;">
-                                  <input type="text">
+                                  <input type="text"placeholder="enter name here" name="th">
                                 </div>
                                 <div class="row" style="padding-bottom:10px;display: flow-root;">
-                                  <input type="text">
+                                  <input type="text"placeholder="enter name here" name="foor">
                                 </div>
                                 <div class="row" style="padding-bottom:10px;display: flow-root;">
-                                  <input type="text">
+                                  <input type="text"placeholder="enter name here" name="fif">
                                 </div>
                                 <div class="row" style="padding-bottom:10px;display: flow-root;">
-                                  <input type="text">
+                                  <input type="text"placeholder="enter name here" name="sth">
                                 </div>
                                 <div class="row" style="padding-bottom:10px;display: flow-root;">
-                                  <input type="text">
+                                  <input type="text"placeholder="enter name here" name="sev">
                                 </div>
                                 <div class="row" style="padding-bottom:10px;display: flow-root;">
-                                  <input type="text">
+                                  <input type="text"placeholder="enter name here" name="eit">
                                 </div>
                                 <div class="row" style="padding-bottom:10px;display: flow-root;">
-                                  <input type="text">
+                                  <input type="text"placeholder="enter name here" name="nin">
                                 </div>
                                 <!-- User ID : <input type = "text" name = "user_id" /> -->
                                 <br>
                                 <!-- Password: <input type = "password" name = "password" /> -->
-                              </form>
-                              <form style="float:left;height: fit-content;">
-                                  <h3>استشاري أسماء الكيانات</h3>
+                              </div>
+                              <div style="float:left;height: fit-content;background-color: grey;">
+                                  <h3>{{__('Places Consultant')}}</h3>
                                   <br><br>
                                 <div class="row" style="padding-bottom:50px;justify-content: space-around;">
-                                  <input type="text" placeholder="أدخل هنا اسم مؤسس أو مؤسسي المنشأة">
+                                  <input type="text" name="inventor" placeholder="{{__('Inventor Name')}}">
                                 </div>
                                   <br>
                                   <div class="row" style="padding-bottom:50px;justify-content: space-around;">
-                                  <input type="text" placeholder="أدخل هنا نشاط المؤسسة">
+                                  <input type="text" name="activity" placeholder="{{__('Enter Activity')}}">
                                 </div>
                                 
                                 <div class="row" style="padding-bottom:50px;justify-content: space-around;">
-                                  <input type="text" placeholder="أدخل هنا البلد ومدينة المنشأة">
+                                  <input type="text" name="country" placeholder="{{__('enter country')}}">
                                 </div>
               
                                 <!-- User ID : <input type = "text" name = "user_id" /> -->
                                 <br>
                                 <!-- Password: <input type = "password" name = "password" /> -->
-                              </form>
+                              </div>
 
                               <br><br>
 
-                              <form style="margin-top: 250px;float: left;">
-                                <h2>ملاحظة</h2>
-                                <textarea name="asd" id="" cols="20" rows="20" style="margin-bottom: 42px;height: 200px;width: 550px;">enter here</textarea>
+                              <div style="margin-top: 250px;float: right;background-color: slategrey;">
+                                <h2>{{__('Comment')}}</h2>
+                                <textarea name="Comment" id="" cols="20" rows="20" style="margin-bottom: 42px;height: 200px;width: 550px;">enter here</textarea>
                                 <!-- User ID : <input type = "text" name = "user_id" /> -->
                                 <br>
                                 <!-- Password: <input type = "password" name = "password" /> -->                           
@@ -207,10 +212,16 @@
                                     border-radius: 12px;
                                 ">continue</label> -->
 
-                              </form>
+                              </div>
 
-                              <form style="margin-top: 154px;float: right;background-color: transparent;/* margin-right: 165px; */width: fit-content;margin-right: 160px;/* right: 250px; */">
+
+                              <!-- <button style="height: 45px;width: 220px;/* padding-top: 20px; */font-size: x-large;background-color: red;border-radius: 12px;" class="primary" type="submit">Execute</button> -->
+
                               
+                              <div style="margin-top: 154px;float: right;background-color: transparent;/* margin-right: 165px; */width: fit-content;margin-right: 240px;/* right: 250px; */">
+                              
+                              <button style="height: 45px;width: 220px;/* padding-top: 20px; */font-size: x-large;background-color: red;border-radius: 12px;" class="primary" type="submit">Execute</button>
+
                                 <label for="frame3" style="
                                     height: 45px;
                                     width: 220px;
@@ -222,12 +233,12 @@
                                     border-radius: 12px;
                                 ">continue</label>
 
-                              </form> 
-
-                            
-                          </div>
+                              </div> 
+                        </form>
+                      </div>
                     </div>
                 </div>
+                <!-- </form> -->
             </div>
         </div>
         <!-- <div id="controls">
