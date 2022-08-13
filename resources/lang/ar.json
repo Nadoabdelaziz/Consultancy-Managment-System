@@ -44,7 +44,16 @@
     "Bank Payment Info":"معلومات الدفع البنكية",
     "enter name here":"أدخل الاسم هنا",
     "Please Pay Attention":"يرجى الملاحظة",
-    "We Can add any data in this box please!":"يمكننا إضافة أي بيانات في هذا المربع من فضلك!"
+    "We Can add any data in this box please!":"يمكننا إضافة أي بيانات في هذا المربع من فضلك!",
+    "invoice payment upload":" تحميل فاتورة الدفع",
+    "Bank Account Transactional Number":"رقم معاملات الحساب البنكي",
+    "Transactional Bank Name":"اسم البنك المخصص للمعاملات",
+    "Bank Account (IBAN) Number":"رقم الحساب المصرفي (IBAN)",
+    "Total Price": "السعر الإجمالي",
+    "Go To Payment":"انتقل إلى السداد",
+    "Go to Execution":"انتقل إلى التنفيذ",
+    "Execute the process":"تنفيذ العملية",
+    "Registration Done Successfully":"تم حجز الاستشارة بنجاح"
 
 
 }

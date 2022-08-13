@@ -27,23 +27,39 @@
         <input type="radio" name="frame" id="frame1" >
         <input type="radio" name="frame" id="frame2">
         <input type="radio" name="frame" id="frame3">
-        <input type="radio" name="frame" id="frame4" checked="">
+        <input type="radio" name="frame" id="frame4" checked>
         <div id="slides">
             <div id="overflow">
                 <div class="inner">
                     <div class="frame frame_1">
-                      <div class="frame-content">
+                      <div class="frame-content" style="flex: none;">
                           <br><br>                            
-                          <form action="upload" method="POST" enctype="multipart/form-data">
+                          <form action="upload" method="POST" enctype="multipart/form-data" style="background-color: transparent">
                             @csrf
-                            <div class="row">
-                              <div class="col-md-6">
-                                  <input type="file" name="file" class="form-control"/>
-                                  <input type="hidden" name="id" value="{{isset($info) ? $info->id : ''}}" class="form-control"/>
+                            <div class="row" style="/* float: right; */display: inline-table;background-color: #606060;border-radius: 20px;">
+                              <h2 style="margin: 25px; background-color: crimson; padding: 10px; border-radius: 20px; font-size: x-large;"> {{__('invoice payment upload')}}
+                             </h2>
+                                
+                                <div class="col-md-6" style="
+                                    margin: 20px;
+                                    overflow-y: 20px;
+                                    /* overflow-y: scroll; */
+                                    /* overflow: scroll; */
+                                    /* height: 50px; */
+                                    /* width: fit-content; */
+                                    /* display: inline; */
+                                    background-color: #404040;
+                                    padding: 10px;
+                                    display: inline-grid;
+                                    /* display: contents; */
+                                    border-radius: 20px;
+                                ">
+                                  <input type="file" name="file" class="form-control" style="border-radius: 6px;width: -webkit-fill-available;font-size: 17px;font-weight: 900;text-align: center;margin: 5px;">
+                                  <input style="border-radius: 6px;width: -webkit-fill-available;font-size: 17px;font-weight: 900;text-align: center;margin: 5px;" type="hidden" name="id" value="{{isset($info) ? $info->id : '' }}" class="form-control">
 
                               </div>
-                              <div class="col-md-6">
-                                  <button type="submit" class="btn btn-success">Upload File...</button>
+                              <div class="col-md-6" style="background-color: transparent;width: fit-content;display: contents;">
+                                  <button class="btn btn-primary" type="submit" style="/* height: 45px; */width: 220px;font-size: x-large;margin: 20px;">{{__('Execution')}}</button>
                               </div>
                             </div>
                           </form>
@@ -52,54 +68,41 @@
                       </div>
                     </div>
                     <div class="frame frame_2">
-                      <div class="frame-content">
+                    <div class="frame-content">
                               <br><br>
 
-                              <div style="float:none;background-color: darkgray;border-radius: 50px;/* border-block: 50px; *//* border-block-color: red; */">
-                                <h2 style="padding-top: 20px;">{{__('Bank Payment Info')}}</h2><br>
-                                <hr style="background-color: black;padding-bottom: 2px;margin-bottom: 50px;" class="">
-                                <div class="container mt-3" style="margin-bottom: 165px;background-color: steelblue;width: max-content;border: dashed;border-radius: 35px;">
+                              <div style="/* float: right; */background-color: #606060;border-radius: 20px;margin: 20px;">
+                                <h2 style="padding: 20px;background-color: #404040;/* width: 100%; */border-radius: 20px;display: inline-flex;/* margin-bottom: 20px; */margin: 10px;">{{__('Bank Payment Info')}}</h2><br>
+                                  <!-- <hr style="padding: 20px;background-color: #404040;/* width: 100%; */border-radius: 20px;display: inline-flex;/* margin-bottom: 20px; */margin: 10px;" class=""> -->
+                                <div class="container mt-3" style="
+                                    /* margin: 10px; */
+                                    width: max-content;
+                                    padding: 20px;
+                                    overflow-y: 20px;
+                                    /* overflow-y: scroll; */
+                                    /* overflow: scroll; */
+                                    /* height: 50px; */
+                                    /* width: fit-content; */
+                                    /* display: inline; */
+                                    background-color: #404040;
+                                    /* padding: 10px; */
+                                    border-radius: 20px;
+                                    ">
                                   <br>
-                                   <h3 for="text" style="font-family: ui-rounded;background-color: steelblue;justify-content: center;border-radius: 50px;margin: auto;" class="row mt-5">Bank Account Transactional Number: 12345</h3>
+                                   <h3 for="text" style="padding: 20px;background-color: #404040;/* width: 100%; */border-radius: 20px;display: inline-flex;/* margin-bottom: 20px; */margin: 10px;" class="row mt-5"> 12345 : {{__('Bank Account Transactional Number')}}</h3>
                                       <br>
-                                      <h3 for="text" style="
-                                        /* float: left; */
-                                        font-family: ui-rounded;
-                                        background-color: steelblue;
-                                        justify-content: center;
-                                        border-radius: 50px;
-                                        " class="mt-5 row">Transactional Bank Name: Aed Bank</h3>
+                                      <h3 for="text" style="padding: 20px;background-color: #404040;/* width: 100%; */border-radius: 20px;display: inline-flex;/* margin-bottom: 20px; */margin: 10px;" class="mt-5 row">Aed Bank : {{__('Transactional Bank Name')}}</h3>
                                         <br>
-                                        <h3 for="text" style="
-                                        /* float: left; */
-                                        font-family: ui-rounded;
-                                        justify-content: center;
-                                        background-color: steelblue;
-                                        border-radius: 50px;" class="mt-5 row">Bank Account (IBAN) Number: 123456789</h3>
+                                        <h3 for="text" style="padding: 20px;background-color: #404040;/* width: 100%; */border-radius: 20px;display: inline-flex;/* margin-bottom: 20px; */margin: 10px;" class="mt-5 row">123456789 : {{__('Bank Account (IBAN) Number')}}</h3>
                                         <br>
-                                        <h3 for="text" style="
-                                        /* float: left; */
-                                        font-family: ui-monospace;
-                                        justify-content: center;
-                                        background-color: steelblue;
-                                        border-radius: 50px;
-                                        margin-bottom: 12px;
-                                        " class="mt-5 row">Bank Account (IBAN) Number: 123456789</h3>
+                                        <h3 for="text" style="padding: 20px;background-color: #404040;/* width: 100%; */border-radius: 20px;display: inline-flex;/* margin-bottom: 20px; */margin: 10px;
+                                        " class="mt-5 row"> 123456789 : {{__('Bank Account (IBAN) Number')}}</h3>
                                 </div>
                                 <!-- User ID : <input type = "text" name = "user_id" /> -->
                                 <br>
-                                <div style="/* float:none; *//* margin-top: 154px; *//* float: right; */background-color: steelblue;/* margin-right: 220px; *//* padding-top: 20px; *//* flex: auto; */display: contents;/* width: fit-content; *//* width: fit-content; *//* margin-right: 160px; *//* right: 250px; */">
+                                <div style="background-color: transparent;width: fit-content;display: contents;">
                               
-                                <label for="frame1" style="
-                                    height: 45px;
-                                    width: 220px;
-                                    /* margin-top: 45px; */
-                                    padding-top: 20px;
-                                    /* margin-bottom: 20px; */
-                                    font-size: x-large;
-                                    background-color: steelblue;
-                                    border-radius: 12px;
-                                ">continue</label>
+                                <label for="frame1" class="btn btn-primary" style="height: 45px;width: 220px;font-size: x-large;margin: 20px;padding: 2px;">{{__('Go to Execution')}}</label>
 
                               </div>
 
@@ -110,14 +113,14 @@
                     </div>
 
                     <div class="frame frame_3">
-                    <div class="frame-content">
+                    <div class="frame-content" style="{{isset($info) ? 'background-color: dimgrey;border-radius: 20px;width: max-content;display: inline-block;' : ''}}">
                           <br><br>
 
-                          <div style="/* float:left; *//* height: fit-content; *//* width: fit-content; */display: inline-block;background-color: lightcoral;border-radius: 20px;">
-                                  <h3 style="padding-top: 20px;">Price</h3>
+                          <div style="/* float: right; */background-color: #606060;border-radius: 20px;display: inline-flex;">
+                                  <h3 style="padding: 20px;background-color: #404040;/* width: 100%; */border-radius: 20px;display: inline-flex;/* margin-bottom: 20px; */margin: 10px">{{__('Total Price')}}</h3>
                                   <br>
-                                <div class="row" style="/* padding-bottom: 25px; */display: inline-table;margin-top: 100px;/* padding-top: 40px; *//* padding-bottom: 20px; */padding: 50px;border-radius: 20px;/* width: max-content; */background-color: darkgrey;">
-                                  <div style="font-size: xxx-large;font-family: ui-monospace;">50$</div>
+                                <div class="row" style="/* padding-bottom:10px; */padding: 35px;/* border-radius: 20px; */margin: 10px;/* display: flow-root; */background-color: #606060;">
+                                  <div style="/* border-radius: 6px; *//* width: -webkit-fill-available; */font-size: xxx-large;font-weight: 900;/* text-align: center; */margin: 5px;">50$</div>
                                 </div>
                                 <!-- User ID : <input type = "text" name = "user_id" /> -->
                                 <br>
@@ -126,20 +129,17 @@
                           </div>
                                 <!-- User ID : <input type = "text" name = "user_id" /> -->
                                 <br>
-                           <label for="frame2" style="
-                                    margin-top: 150px;
-                                    height: 45px;
-                                    width: 255px;
-                                    /* margin-top: 45px; */
-                                    padding-top: 20px;
-                                    /* margin-bottom: 20px; */
-                                    font-size: x-large;
-                                    background-color: lightcoral;
-                                    border-radius: 12px;
-                                ">Go To Show Price</label>
-
+                        <div style="margin-top: 50px;font-size: large;">
+                            <br>
+                            <label for="frame2" style="height: 45px;width: 220px;margin-top: 45px;padding-top: 20px;/* margin-bottom: 20px; */font-size: x-large;background-color: dodgerblue;border-radius: 12px;">{{__('Go To Payment')}}</label>
+                          </div>
                         </div>
                     </div>
+
+
+
+                    <!-- Frame 4 -->
+
                     <div class="frame frame_4">
                       <div class="frame-content">
 
@@ -164,7 +164,7 @@
                                 ">                                  
                                 
                                 <div class="row" style="/* padding-bottom:10px; */padding: 5px;/* border-radius: 20px; */margin: 10px;display: flow-root;background-color: #606060;">
-                                    <input style="border-radius: 6px;width: -webkit-fill-available;font-size: 17px;font-weight: 900;text-align: center;margin: 5px;" type="text" placeholder="{{isset($info) ? $info->names : __('List')}}" name="first">
+                                    <input style="border-radius: 6px;width: -webkit-fill-available;font-size: 17px;font-weight: 900;text-align: center;margin: 5px;" type="text" placeholder="{{isset($info) ? $info->names : __('enter name here')}}" name="first">
                                   </div>
                                     <br>
                                     <div class="row" style="/* padding-bottom:10px; */padding: 5px;/* border-radius: 20px; */margin: 10px;display: flow-root;background-color: #606060;">
@@ -269,21 +269,21 @@
 
                         @else
 
-                          <div style="margin-top: 50px;font-size: large;">Registeraion Done Succesffully
-                            <br>
-                            <label for="frame3" style="
-                                                          height: 45px;
-                                                          width: 220px;
-                                                          margin-top: 45px;
-                                                          padding-top: 20px;
-                                                          /* margin-bottom: 20px; */
-                                                          font-size: x-large;
-                                                          background-color: red;
-                                                          border-radius: 12px;
-                                                      ">{{__('Go To Show Price')}}
-                                                      
-                                                    </label>
+                        <div class="frame-content" style="
+    background-color: dimgrey;
+    border-radius: 20px;
+">
+
+                        
+                                                                                      <div class="row" style="/* padding-bottom:10px; *//* padding: 5px; *//* border-radius: 20px; *//* margin: 10px; */display: unset;/* float: right; */background-color: #606060;"><br>
+    <h4 style="padding: 20px;background-color: #404040;/* width: 100%; */border-radius: 20px;/* display: inline-flex; *//* margin-bottom: 20px; */margin: 10px;">
+      {{__('Registration Done Successfully')}}
+                            </h4>
+                            <label for="frame3" style="width: max-content;margin-top: 16px;/* padding-top: 20px; *//* margin-bottom: 20px; *//* display: revert; */padding: 20px;font-weight: 800;font-size: x-large;background-color: dodgerblue;border-radius: 12px;">انتقل إلى عرض السعر</label>
                           </div>
+                          
+
+                      </div>
                         @endif  
 
                       </div>
@@ -504,6 +504,9 @@
           margin: 0 auto;
       }
   }
+
+
+  
 
 </style>
 

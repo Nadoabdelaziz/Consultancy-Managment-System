@@ -73,10 +73,10 @@
 
                   </div>
 
-
+<!-- 
                 @if(isset($last_place_added))  
                   <h1>{{$last_place_added}}</h1>
-                @endif  
+                @endif   -->
 
                 @if(isset($last_place_added))  
                   @foreach($last_place_added as $info)
