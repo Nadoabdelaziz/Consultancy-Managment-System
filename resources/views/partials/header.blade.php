@@ -23,11 +23,14 @@
           <!-- title -->
           <h1 class="mb-15">{{__('Discover my Amazing Art Space!')}}</h1>
           <!-- suptitle -->
+          @if(app()->getLocale() == 'en')
           <div class="art-lg-text art-code mb-25">&lt;<i>code</i>&gt; I build <span class="txt-rotate" data-period="2000"
-              data-rotate='[ "web interfaces.", "ios and android applications.", "design mocups.", "automation tools." ]'></span>&lt;/<i>code</i>&gt;</div>
+              data-rotate='[ "web interfaces.", "ios and android applications.", "design mocups.", "automation tools." ]'></span>&lt;/<i>code</i>&gt;
+            </div>
+          @endif  
           <div class="art-buttons-frame">
             <!-- button -->
-            <a href="/portfolio-3-col-masonry.html" class="art-btn art-btn-md"><span>Explore now</span></a>
+            <a href="/portfolio-3-col-masonry.html" class="art-btn art-btn-md"><span>{{__('Explore now')}}</span></a>
           </div>
         </div>
         <!-- main title end -->

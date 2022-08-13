@@ -83,7 +83,7 @@
           <!-- sub menu -->
           <ul class="sub-menu">
             <li class="menu-item"><a href="/portfolio-2-col.html">{{__('Provision of services')}}</a></li>
-            <li class="menu-item"><a href="/portfolio-2-col.html">{{__('Show Prices')}}</a></li>
+            <li class="menu-item"><a href="/portfolio-2-col.html">{{__('Show Price')}}</a></li>
             <li class="menu-item"><a href="/portfolio-2-col.html">{{__('Draft')}}</a></li>
             <li class="menu-item"><a href="/portfolio-2-col.html">{{__('Payment Methods')}}</a></li>
             <li class="menu-item"><a href="/portfolio-2-col.html">{{__('Add Balance')}}</a></li>

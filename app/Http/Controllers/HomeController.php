@@ -19,6 +19,10 @@ class HomeController extends Controller
     }
 
     public function PlacesConsultancy(Request $request){
+        if($request == ""){
+            return view('blog-post');
+        }
+        
         $user_email=$request->user;
         $names=$request->first . "-". $request->Sec . "-" . $request->th;
         $creator= $request->inventor;
@@ -34,11 +38,20 @@ class HomeController extends Controller
             'activity' => $activty,
             'country' => $place,
             'comment' => $comment,
-            'status' => 1,
+            'status' => '1',
             'user_email' =>$user_email
         ]);
 
-        return redirect('{{app()->getLocale()}}/blog-post');
+        $placess=Place::get();
+        if($placess->count() > 0){
+            $last_place_added=Place::latest()->take(1)->get();
+        }
+        else{
+            $last_place_added = "";
+        }
+
+
+        return view('blog-post', compact('last_place_added'));
 
     }
 }

@@ -73,12 +73,25 @@
 
                   </div>
 
-                 
 
-                  <!-- col -->
-                  @include('partials.Blogs.post')
-                  <!-- col end -->
+                @if(isset($last_place_added))  
+                  <h1>{{$last_place_added}}</h1>
+                @endif  
 
+                @if(isset($last_place_added))  
+                  @foreach($last_place_added as $info)
+                    <!-- col -->
+                    @include('partials.Blogs.post')
+                    <!-- col end -->
+                  @endforeach
+                
+                @else  
+                    <!-- col -->
+                      @include('partials.Blogs.post')
+                    <!-- col end -->
+                @endif
+                
+                
                 </div>
                 <!-- row end -->
 

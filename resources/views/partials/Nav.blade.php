@@ -58,7 +58,7 @@ text-decoration: none;
     <ul style="margin-top: 12px;">
         
 <li style="">
-    <h4>استشاري أسماء الكيانات</h4>
+    <h4>{{__('Home')}}</h4>
 
 <br>
  

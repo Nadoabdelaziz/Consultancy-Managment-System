@@ -41,6 +41,7 @@
             <!-- scroll frame -->
             <div id="scrollbar" class="art-scroll-frame">
 
+            
             @include('partials.Nav')
 
 
