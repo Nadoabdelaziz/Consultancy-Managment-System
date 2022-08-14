@@ -10,7 +10,7 @@
     <div class="mb-15">{{__($service->description)}}.</div>
     <!-- button -->
     <!-- <h1></h1> -->
-    <div class="art-buttons-frame"><a href="{{app()->getLocale()}}/blog-post" 
+    <div class="art-buttons-frame"><a href="{{app()->getLocale()}}/{{$service->slug}}" 
     class="art-link art-color-link art-w-chevron">{{__('Order now')}}</a></div>
   </div>
   <!-- service content end -->

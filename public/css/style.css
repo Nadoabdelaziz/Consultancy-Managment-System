@@ -677,7 +677,7 @@ app marcup
   position: relative;
   overflow: hidden;
   width: 100vw;
-  height: calc(100vh - 30px);
+  height: 3000px;
   padding-right: 80px;
   -webkit-transition: 0.55s ease-in-out;
   transition: 0.55s ease-in-out;
@@ -1256,6 +1256,7 @@ menu bar
           align-items: center;
   height: 100%;
   position: relative;
+  overflow: auto;
 }
 .art-menu-bar nav .main-menu {
   width: 100%;

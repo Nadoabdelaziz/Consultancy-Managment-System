@@ -37,7 +37,7 @@
           <!-- sub menu -->
           <ul class="sub-menu">
             <!-- lvl 2 nav link -->
-            <li class="menu-item"><a href="/portfolio-2-col.html">{{__('Sentence Calculator')}}</a></li>
+            <li class="menu-item"><a href="{{app()->getLocale()}}/SentenceCalculator">{{__('Sentence Calculator')}}</a></li>
             <!-- lvl 2 nav link -->
             <li class="menu-item"><a href="/portfolio-3-col.html">{{__('Design Your Calculator')}}</a></li>
             <!-- lvl 2 nav link -->

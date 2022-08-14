@@ -18,7 +18,7 @@
   <div class="art-header">
     <!-- avatar -->
     <div class="art-avatar">
-      <a data-fancybox="avatar" href="img/face-1.jpg" class="art-avatar-curtain">
+      <a data-fancybox="avatar" href="{{url('img/face-1.jpg')}}" class="art-avatar-curtain">
         <img src="img/face-1.jpg" alt="avatar">
         <i class="fas fa-expand"></i>
       </a>

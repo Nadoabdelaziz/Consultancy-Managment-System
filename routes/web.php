@@ -27,6 +27,15 @@ Route::group(['prefix' => '{locale}'],function (){
         return view('blog-post');
     })->middleware('setLocale');
 
+    Route::get('/blog-product-post',function(){
+        return view('blog-product-post');
+    })->middleware('setLocale');
+
+
+    Route::get('/SentenceCalculator',function(){
+        return view('SentenceCalculator');
+    })->middleware('setLocale');
+
     
 Route::get('/logout', function(Request $request) {
     Auth::logout();
