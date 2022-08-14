@@ -32,7 +32,7 @@
         <!-- info bar end -->
 
         <!-- content -->
-        <div class="art-content">
+        <div class="art-content" >
 
           <!-- curtain -->
           <div class="art-curtain"></div>

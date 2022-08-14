@@ -21,7 +21,7 @@
           <!-- info bar end -->
 
         <!-- content -->
-        <div class="art-content">
+        <div class="art-content" style="height:calc(100vh - 30px)">
 
         
           <!-- curtain -->
