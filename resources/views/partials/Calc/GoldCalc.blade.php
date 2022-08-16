@@ -1,13 +1,15 @@
 <div class="col-lg-9" style="height:fit-content;">
-    <div class="art-a art-card art-fluid-card" style="font-family: cursive;border-style: double;border-color: gray;border-width: thick;border-radius: 20px;height: fit-content;">
+    <div class="art-a art-card art-fluid-card" style="font-family: cursive;color:white;font-weight: 600;border-style: double;border-color: gray;border-width: thick;border-radius: 20px;height: fit-content;">
+        
+    
         <div class="row" style="justify-content: center;margin-bottom: 46px;"> 
             <textarea disabled style="font-size: large;text-align: right;width: -webkit-fill-available;padding: 18px;/* margin-bottom: 30px; */margin: 24px;/* height: inherit; */background-color: darkgray;/* border-radius: 20px; */"></textarea>
         </div>
 
         <!-- Sc Calc -->
         <div class="row" style="justify-content: center;margin-bottom: 68px;"> 
-            <textarea onkeyup="myfunction()" id="texbox" placeholder="enter here" style="border-radius: 15px;padding: 33px;width: 50%;background-color: darkgray;"></textarea>
-            <label style="margin: 20px;font-size: large;font-weight: 700;">SC Calculator</label> 
+            <textarea onkeyup="myfunction()" id="texbox" placeholder="{{__('enter name here')}}" style="text-align: end; border-radius: 15px;padding: 33px;width: 50%;background-color: darkgray;"></textarea>
+            <label style="margin: 20px;font-size: large;font-weight: 700;">{{__('Sentence Names Calculator')}}</label> 
         </div>
 
         
@@ -19,8 +21,9 @@
             </h4>
         </div>       
 
-        <button onclick="result()" class="btn-primary">click</button>
-
+        <div class="row" style="justify-content: center;margin: 40px;">
+            <button onclick="result()" class="btn-lg btn-primary" style="">{{__('Continue')}}</button>
+        </div>
 
         <!-- <div class="row" style="justify-content: center;margin-bottom: 55px;"> 
             <input type="text" placeholder="enter here" style="border-radius: 9px;height: fit-content;padding: 3px;background-color: darkgray;">
@@ -29,24 +32,28 @@
 
         <div class="row" style="justify-content: center;display: inline-grid;margin-bottom: 53px;width: -webkit-fill-available;"> 
             <input type="text" id="proper" placeholder="000" style="font-size: large;font-weight: bold;text-align: center;border-radius: 9px;height: fit-content;width: 350px;margin-bottom: 9px;padding: 2px;background-color: darkgray;">
+            <h2 class="row" style="justify-content: end;margin-right: -50px;">-</h2>
             <input type="text" id="3aks" placeholder="000" style="font-size: large;font-weight: bold;text-align: center;border-radius: 9px;height: fit-content;width: 350px;margin-bottom: 9px;padding: 2px;background-color: darkgray;">
         </div>
     
         <div class="row" style="justify-content: center;margin-bottom: 52px;"> 
-            <input id="frst_result" type="text" placeholder="enter here" style="border-radius: 9px;height: fit-content;padding: 32px;background-color: darkgray;">
+            <input id="frst_result" type="text" placeholder="0" style="border-radius: 9px;height: fit-content;font-size: x-large;text-align: center;padding: 32px;background-color: darkgray;">
             <label style="margin-left: 35px;font-size: -webkit-xxx-large;font-weight: 700;">=</label>  
         </div>
 
+        <hr style="background-color: aliceblue;margin-bottom: 70px;">
+
         <div class="row" style="justify-content: center;display: inline-grid;margin-bottom: 53px;width: -webkit-fill-available;"> 
-            <input type="text" id="proper2" placeholder="enter here" style="font-size: large;font-weight: bold;text-align: center;border-radius: 9px;height: fit-content;width: 350px;margin-bottom: 9px;padding: 2px;background-color: darkgray;">
-            <input type="text" id="3aks2" placeholder="enter here" style="font-size: large;font-weight: bold;text-align: center;border-radius: 9px;height: fit-content;width: 350px;margin-bottom: 9px;padding: 2px;background-color: darkgray;">
+            <input type="text" id="proper2" placeholder="0" style="font-size: large;font-weight: bold;text-align: center;border-radius: 9px;height: fit-content;width: 350px;margin-bottom: 9px;padding: 2px;background-color: darkgray;">
+            <h2 class="row" id="sign" style="justify-content: end;margin-right: -50px;"></h2>
+            <input type="text" id="3aks2" placeholder="0" style="font-size: large;font-weight: bold;text-align: center;border-radius: 9px;height: fit-content;width: 350px;margin-bottom: 9px;padding: 2px;background-color: darkgray;">
         </div>
 
         <div class="row" style="justify-content: center;margin-bottom: 52px;"> 
-            <input id="Last_result" type="text" placeholder="enter here" style="border-radius: 9px;height: 133px;width: 64%;padding: 32px;background-color: darkgray;">
-            <label style="margin-left: 35px;font-size: -webkit-xxx-large;font-weight: 700;padding: 33px;">=</label>  
+            <input id="Last_result" type="text" placeholder="0" style="border-radius: 9px;height: 133px;width: 64%;font-size: xx-large;padding: 32px;text-align: center;background-color: darkgray;">
+            <label style="font-size: -webkit-xxx-large;font-weight: 700;padding: 33px;">=</label>  
         </div>
-
+<!-- 
         <div class="row" style="justify-content: center;">
             <button class="btn btn-primary"> Execute </button>
         </div>
@@ -55,7 +62,7 @@
             <h4 style="padding: 2px;">
                 <p id="sum" style="float: left;display: contents;"></p> : حاسبة الجمل
             </h4>
-        </div>       
+        </div>        -->
 
     </div>
 </div>
@@ -70,6 +77,8 @@
         var res3 = document.getElementById("proper2");
         var res4 = document.getElementById("3aks2");
         var the_result = document.getElementById("Last_result");
+        var the_sign = document.getElementById("sign");
+
 
 
 
@@ -233,6 +242,11 @@
 
         the_res.value= Number(res1.value)- Number(res2.value);
 
+        // sign + or -
+
+        the_sign.textContent=the_res.value.charAt(0) == '-' ? '-' :'+'; 
+
+
         res3.value= the_res.value;
 
         const sub = res3.value.charAt(0);
@@ -254,6 +268,7 @@
         // alert(res3.value);
         // alert(res4.value);
         the_result.value = Number(res3.value) + Number(res4.value);
+
 
 
     }
