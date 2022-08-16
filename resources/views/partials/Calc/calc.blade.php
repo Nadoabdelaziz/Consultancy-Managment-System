@@ -1,9 +1,13 @@
-<div class="col-lg-12" style="height: 300px;">
-        <div class="art-a art-card art-fluid-card" style="border-style: double;border-color: gray;border-width: thick;border-radius: 20px;/* margin: 20px; *//* height: 150%; */">
-            <textarea onkeyup="myfunction()" id="texbox" style="width: -webkit-fill-available;padding: 18px;/* margin: -17px; */height: inherit;background-color: darkgray;border-radius: 20px;"> asd </textarea>
+<div class="col-lg-12" style="height:fit-content;">
+        <div class="art-a art-card art-fluid-card" style="border-style: double;border-color: gray;border-width: thick;border-radius: 20px; height: fit-content;">
+        <!-- <textarea onkeyup="myfunction()" id="texbox" style="font-size: large; text-align: right; width: -webkit-fill-available;padding: 18px;/* margin: -17px; */height: inherit;background-color: darkgray;border-radius: 20px;"></textarea> -->
+    
+        <textarea onkeyup="myfunction()" id="texbox" style="font-size: large; text-align: right; width: -webkit-fill-available;padding: 18px;/* margin: -17px; */height: 200px;background-color: darkgray;border-radius: 20px;"></textarea>
             <div class="row" style="background-color: gray;border-radius: 20px;margin-top: 18px;justify-content: space-evenly;">
-                <h4 id="sum">asd</h4>
-            </div>        
+              <h4 style="padding: 2px;">
+                <p id="sum" style="float: left;display: contents;"></p> : حاسبة الجمل
+              </h4>
+            </div>       
         </div>
 </div>
 
@@ -41,11 +45,11 @@
                 result=result+4;
                 x.textContent = result;
                 break;     
-            case "ة	":    
+            case "ة":    
                 result=result+5;
                 x.textContent = result;
                 break;  
-            case "و	":    
+            case "و":    
                 result=result+6;
                 x.textContent = result;
                 break;    
@@ -53,11 +57,11 @@
                 result=result+7;
                 x.textContent = result;
                 break; 
-            case "ح	":    
+            case "ح":    
                 result=result+8;
                 x.textContent = result;
                 break;  
-            case "ط		":    
+            case "ط":    
                 result=result+9;
                 x.textContent = result;
                 break; 
@@ -67,7 +71,7 @@
                 result=result+10;
                 x.textContent = result;
                 break;  
-            case "ك	":    
+            case "ك":    
                 result=result+20;
                 x.textContent = result;
                 break;    
@@ -140,9 +144,13 @@
                 x.textContent = result;
                 break;                                                   
             default : 
-                x.textContent= 123;    
+                // x.textContent= 123;    
+        }
+        
         }
 
+        if(y.value == ""){
+            x.textContent="";
         }
         
 

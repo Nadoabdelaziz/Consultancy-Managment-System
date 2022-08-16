@@ -10,10 +10,7 @@
           <!-- photo -->
           
           <!-- name -->
-          <h5 style="
-    text-align: center;
-    font-size: large;
-">{{__('Sentence Calculator')}}</h5>
+          <h5 style="margin-bottom: 27px;text-align: center;font-size: x-large;background-color: gray;/* border-radius: 20px; */padding: 5px;">{{__('Sentence Calculator Definition')}}</h5>
           <div class="art-el-suptitle mb-15"></div>
           <!-- text -->
           <div class="mb-15" style="

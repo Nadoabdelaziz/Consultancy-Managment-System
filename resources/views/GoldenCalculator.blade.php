@@ -32,7 +32,7 @@
         <!-- info bar end -->
 
         <!-- content -->
-        <div class="art-content">
+        <div class="art-content" style="height: fit-content;">
 
           <!-- curtain -->
           <div class="art-curtain"></div>
@@ -54,43 +54,26 @@
 
               <!-- container -->
               <div class="container-fluid">
-              @include('partials.Nav')
-<br><br><br><br><br>
-
+                  <!-- Nav -->
                 <div class="row p-30-0">
 
                   <div class="col-lg-12">
 
                     <div class="art-section-title">
                       <div class="art-title-frame">
-                        <h4>{{__('Places Consultant')}}</h4>
+                        <h4></h4>
                       </div>
 
                       <div class="art-right-frame">
-                        <div class="art-project-category">Ui Design, Graphic</div>
+                        <div class="art-project-category"></div>
                       </div>
                     </div>
 
                   </div>
 
-<!-- 
-                @if(isset($last_place_added))  
-                  <h1>{{$last_place_added}}</h1>
-                @endif   -->
-
-                @if(isset($last_place_added))  
-                  @foreach($last_place_added as $info)
                     <!-- col -->
-                    @include('partials.Blogs.post')
-                    <!-- col end -->
-                  @endforeach
-                
-                @else  
-                    <!-- col -->
-                      @include('partials.Calculator.post')
-                    <!-- col end -->
-                @endif
-                
+                      @include('partials.Calc.goldpost')
+                    <!-- col end -->                
                 
                 </div>
                 <!-- row end -->

@@ -36,6 +36,10 @@ Route::group(['prefix' => '{locale}'],function (){
         return view('SentenceCalculator');
     })->middleware('setLocale');
 
+    Route::get('/GoldenCalculator',function(){
+        return view('GoldenCalculator');
+    })->middleware('setLocale');
+
     
 Route::get('/logout', function(Request $request) {
     Auth::logout();
@@ -53,7 +57,9 @@ Route::get('/', function(){
 });
 
 
-
+// Route::get('ar/onepage', function(){
+//     return view('onepage');
+// });
 
 
 

@@ -61,11 +61,11 @@
 
                     <div class="art-section-title">
                       <div class="art-title-frame">
-                        <h4>{{__('Places Consultant')}}</h4>
+                        <h4></h4>
                       </div>
 
                       <div class="art-right-frame">
-                        <div class="art-project-category">Ui Design, Graphic</div>
+                        <div class="art-project-category"></div>
                       </div>
                     </div>
 

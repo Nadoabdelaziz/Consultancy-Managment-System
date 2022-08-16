@@ -1,4 +1,4 @@
-<div class="art-content">
+<div class="art-content" >
 
 <!-- curtain -->
 <div class="art-curtain"></div>
@@ -26,7 +26,7 @@
     <div class="container-fluid">
 
       <!-- row -->
-      <div class="row p-30-0">
+      <div class="row p-30-0" style="justify-content: center;">
 
         <!-- col -->
         <div class="col-lg-12">
@@ -36,7 +36,7 @@
             <!-- title frame -->
             <div class="art-title-frame">
               <!-- title -->
-              <h4>{{__('Sentence Calculator')}}</h4>
+              <h4>{{__('Golden Barcode Calculator')}}</h4>
             </div>
             <!-- title frame end -->
           </div>
@@ -48,7 +48,7 @@
 
 
         <!-- col -->
-          @include('partials.Calc.calc')
+          @include('partials.Calc.GoldCalc')
         <!-- col end -->
 
       </div>
@@ -58,42 +58,6 @@
     </div>
     <!-- container end -->
 
-    <!-- container -->
-    <div class="container-fluid">
-
-      <!-- row -->
-      <div class="row">
-
-        <!-- col -->
-        <div class="col-lg-12">
-
-          <!-- section title -->
-          <div class="art-section-title" style="justify-content: center;">
-            <!-- title frame -->
-            <div class="art-title-frame">
-              <!-- title -->
-              <h4></h4>
-            </div>
-            <!-- title frame end -->
-          </div>
-          <!-- section title end -->
-
-        </div>
-        <!-- col end -->
-
-        <!-- col -->
-        <div class="col-lg-12">
-          @include('partials.Calc.info')
-        </div>        
-<!-- col end -->
-
-
-
-      </div>
-      <!-- row end -->
-
-    </div>
-    <!-- container end -->
 
     <!-- container -->
 
