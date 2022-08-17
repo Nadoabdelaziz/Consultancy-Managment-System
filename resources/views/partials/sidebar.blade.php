@@ -16,7 +16,7 @@
 
   <!-- info bar header -->
   <div class="art-header">
-  <a href="/{{app()->getLocale()}}/">{{__('Home')}}</a>
+  <!-- <a href="/{{app()->getLocale()}}/">{{__('Home')}}</a> -->
 
     <!-- avatar -->
     <div class="art-avatar">
@@ -32,9 +32,9 @@
     </div>
     <!-- avatar end -->
     <!-- name -->
-    <h5 class="art-name mb-10"><a href="/home.html">{{$consultant->name}}</a></h5>
+    <h5 class="art-name mb-10"><a href="/home.html">{{__($consultant->name)}}</a></h5>
     <!-- post -->
-    <div class="art-sm-text">{{$consultant->job}} </div>
+    <div class="art-sm-text">{{__($consultant->job)}} </div>
   </div>
   <!-- info bar header end -->
 
@@ -47,15 +47,32 @@
       <ul>
         <!-- country -->
         <li>
-          <h6>Residence:</h6><span>{{$consultant->residence}}</span>
+          @if(app()->getLocale() == 'ar')
+          <span>{{__($consultant->residence)}}</span>
+          <h6>: {{__('Residence')}}</h6>
+          @else
+          <h6>{{__('Residence')}}:</h6>
+          <span>{{__($consultant->residence)}}</span>
+          @endif
         </li>
         <!-- city -->
         <li>
-          <h6>City:</h6><span>{{$consultant->city}}</span>
+        @if(app()->getLocale() == 'en')
+          <h6>{{__('City')}}:</h6><span>{{__($consultant->city)}}</span>
+        @else  
+        <span>{{__($consultant->city)}}</span>
+        <h6>: {{__('City')}}</h6>
+        @endif
         </li>
         <!-- age -->
         <li>
-          <h6>Age:</h6><span>{{$consultant->age}}</span>
+        @if(app()->getLocale() == 'en')
+          <h6>{{__('Age')}}:</h6><span>{{__($consultant->age)}}</span>
+        @else  
+          <span>{{__($consultant->age)}}</span>  
+          <h6>: {{__('Age')}}</h6>
+        @endif
+
         </li>
       </ul>
     </div>
@@ -71,7 +88,7 @@
       <div class="art-lang-skills-item">
         <div id="circleprog1" class="art-cirkle-progress"></div>
         <!-- title -->
-        <h6>{{$consultant->lang1}}</h6>
+        <h6>{{__($consultant->lang1)}}</h6>
       </div>
       <!-- skill end -->
 
@@ -79,7 +96,7 @@
       <div class="art-lang-skills-item">
         <div id="circleprog2" class="art-cirkle-progress"></div>
         <!-- title -->
-        <h6>{{$consultant->lang2}}</h6>
+        <h6>{{__($consultant->lang2)}}</h6>
       </div>
       <!-- skill end -->
 
@@ -87,7 +104,7 @@
       <div class="art-lang-skills-item">
         <div id="circleprog3" class="art-cirkle-progress"></div>
         <!-- title -->
-        <h6>{{$consultant->lang3}}</h6>
+        <h6>{{__($consultant->lang3)}}</h6>
       </div>
       <!-- skill end -->
 
@@ -104,7 +121,7 @@
       <div class="art-hard-skills-item">
         <div class="art-skill-heading">
           <!-- title -->
-          <h6>{{$consultant->sk1}}</h6>
+          <h6>{{__($consultant->sk1)}}</h6>
         </div>
         <!-- progressbar frame -->
         <div class="art-line-progress">
@@ -119,7 +136,7 @@
       <div class="art-hard-skills-item">
         <div class="art-skill-heading">
           <!-- title -->
-          <h6>{{$consultant->sk2}}</h6>
+          <h6>{{__($consultant->sk2)}}</h6>
         </div>
         <!-- progressbar frame -->
         <div class="art-line-progress">
@@ -134,7 +151,7 @@
       <div class="art-hard-skills-item">
         <div class="art-skill-heading">
           <!-- title -->
-          <h6>{{$consultant->sk3}}</h6>
+          <h6>{{__($consultant->sk3)}}</h6>
         </div>
         <!-- progressbar frame -->
         <div class="art-line-progress">
@@ -149,7 +166,7 @@
       <div class="art-hard-skills-item">
         <div class="art-skill-heading">
           <!-- title -->
-          <h6>{{$consultant->sk4}}</h6>
+          <h6>{{__($consultant->sk4)}}</h6>
         </div>
         <!-- progressbar frame -->
         <div class="art-line-progress">
@@ -164,7 +181,7 @@
       <div class="art-hard-skills-item">
         <div class="art-skill-heading">
           <!-- title -->
-          <h6>{{$consultant->sk5}}</h6>
+          <h6>{{__($consultant->sk5)}}</h6>
         </div>
         <!-- progressbar frame -->
         <div class="art-line-progress">
@@ -184,13 +201,13 @@
     <!-- knowledge list -->
     <ul class="art-knowledge-list p-15-0">
       <!-- list item -->
-      <li>{{$consultant->extr1}}</li>
+      <li>{{__($consultant->extr1)}}</li>
       <!-- list item -->
-      <li>{{$consultant->extr2}}</li>
+      <li>{{__($consultant->extr2)}}</li>
       <!-- list item -->
-      <li>{{$consultant->extr3}}</li>
+      <li>{{__($consultant->extr3)}}</li>
       <!-- list item -->
-      <li>{{$consultant->extr4}}</li>
+      <li>{{__($consultant->extr4)}}</li>
     </ul>
     <!-- knowledge list end -->
 
