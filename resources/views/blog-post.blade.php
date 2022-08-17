@@ -28,7 +28,9 @@
         
 
         <!-- info bar -->
-        @include('partials.sidebar')
+        @foreach($consultants as $consultant) 
+          @include('partials.sidebar')
+        @endforeach          
         <!-- info bar end -->
 
         <!-- content -->

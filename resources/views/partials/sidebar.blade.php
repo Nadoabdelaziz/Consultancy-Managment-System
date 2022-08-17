@@ -16,10 +16,12 @@
 
   <!-- info bar header -->
   <div class="art-header">
+  <a href="/{{app()->getLocale()}}/">{{__('Home')}}</a>
+
     <!-- avatar -->
     <div class="art-avatar">
       <a data-fancybox="avatar" href="{{url('img/face-1.jpg')}}" class="art-avatar-curtain">
-        <img src="img/face-1.jpg" alt="avatar">
+        <img src="storage/{{$consultant->img}}" alt="avatar">
         <i class="fas fa-expand"></i>
       </a>
       <!-- available -->
@@ -30,9 +32,9 @@
     </div>
     <!-- avatar end -->
     <!-- name -->
-    <h5 class="art-name mb-10"><a href="/home.html">Artur Carter</a></h5>
+    <h5 class="art-name mb-10"><a href="/home.html">{{$consultant->name}}</a></h5>
     <!-- post -->
-    <div class="art-sm-text">Front-end Deweloper <br>Ui/UX Designer, </div>
+    <div class="art-sm-text">{{$consultant->job}} </div>
   </div>
   <!-- info bar header end -->
 
@@ -45,15 +47,15 @@
       <ul>
         <!-- country -->
         <li>
-          <h6>Residence:</h6><span>Canada</span>
+          <h6>Residence:</h6><span>{{$consultant->residence}}</span>
         </li>
         <!-- city -->
         <li>
-          <h6>City:</h6><span>Toronto</span>
+          <h6>City:</h6><span>{{$consultant->city}}</span>
         </li>
         <!-- age -->
         <li>
-          <h6>Age:</h6><span>26</span>
+          <h6>Age:</h6><span>{{$consultant->age}}</span>
         </li>
       </ul>
     </div>
@@ -69,7 +71,7 @@
       <div class="art-lang-skills-item">
         <div id="circleprog1" class="art-cirkle-progress"></div>
         <!-- title -->
-        <h6>French</h6>
+        <h6>{{$consultant->lang1}}</h6>
       </div>
       <!-- skill end -->
 
@@ -77,7 +79,7 @@
       <div class="art-lang-skills-item">
         <div id="circleprog2" class="art-cirkle-progress"></div>
         <!-- title -->
-        <h6>English</h6>
+        <h6>{{$consultant->lang2}}</h6>
       </div>
       <!-- skill end -->
 
@@ -85,7 +87,7 @@
       <div class="art-lang-skills-item">
         <div id="circleprog3" class="art-cirkle-progress"></div>
         <!-- title -->
-        <h6>Spanish</h6>
+        <h6>{{$consultant->lang3}}</h6>
       </div>
       <!-- skill end -->
 
@@ -102,7 +104,7 @@
       <div class="art-hard-skills-item">
         <div class="art-skill-heading">
           <!-- title -->
-          <h6>html</h6>
+          <h6>{{$consultant->sk1}}</h6>
         </div>
         <!-- progressbar frame -->
         <div class="art-line-progress">
@@ -117,7 +119,7 @@
       <div class="art-hard-skills-item">
         <div class="art-skill-heading">
           <!-- title -->
-          <h6>CSS</h6>
+          <h6>{{$consultant->sk2}}</h6>
         </div>
         <!-- progressbar frame -->
         <div class="art-line-progress">
@@ -132,7 +134,7 @@
       <div class="art-hard-skills-item">
         <div class="art-skill-heading">
           <!-- title -->
-          <h6>Js</h6>
+          <h6>{{$consultant->sk3}}</h6>
         </div>
         <!-- progressbar frame -->
         <div class="art-line-progress">
@@ -147,7 +149,7 @@
       <div class="art-hard-skills-item">
         <div class="art-skill-heading">
           <!-- title -->
-          <h6>PHP</h6>
+          <h6>{{$consultant->sk4}}</h6>
         </div>
         <!-- progressbar frame -->
         <div class="art-line-progress">
@@ -162,7 +164,7 @@
       <div class="art-hard-skills-item">
         <div class="art-skill-heading">
           <!-- title -->
-          <h6>Wordpress</h6>
+          <h6>{{$consultant->sk5}}</h6>
         </div>
         <!-- progressbar frame -->
         <div class="art-line-progress">
@@ -182,13 +184,13 @@
     <!-- knowledge list -->
     <ul class="art-knowledge-list p-15-0">
       <!-- list item -->
-      <li>Bootstrap, Materialize</li>
+      <li>{{$consultant->extr1}}</li>
       <!-- list item -->
-      <li>Stylus, Sass, Less</li>
+      <li>{{$consultant->extr2}}</li>
       <!-- list item -->
-      <li>Gulp, Webpack, Grunt</li>
+      <li>{{$consultant->extr3}}</li>
       <!-- list item -->
-      <li>GIT knowledge</li>
+      <li>{{$consultant->extr4}}</li>
     </ul>
     <!-- knowledge list end -->
 
@@ -199,7 +201,7 @@
     <div class="art-links-frame p-15-15">
 
       <!-- download cv button -->
-      <a href="files/cv.txt" class="art-link" download>Download cv <i class="fas fa-download"></i></a>
+      <a href="storage/{{$consultant->cv}}" class="art-link" download>Download cv <i class="fas fa-download"></i></a>
 
     </div>
     <!-- links frame end -->

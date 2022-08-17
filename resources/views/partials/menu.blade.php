@@ -26,7 +26,7 @@
       <!-- menu list -->
       <ul class="main-menu">
         <!-- menu item -->
-        <li class="menu-item current-menu-item"><a href="{{app()->getLocale()}}/">{{__('Home')}}</a></li>
+        <li class="menu-item current-menu-item"><a href="/{{app()->getLocale()}}/">{{__('Home')}}</a></li>
         
         <!-- menu item -->
         <li class="menu-item"><a href="/history.html">{{__('Account Management')}}</a></li>
@@ -37,11 +37,11 @@
           <!-- sub menu -->
           <ul class="sub-menu">
             <!-- lvl 2 nav link -->
-            <li class="menu-item"><a href="{{app()->getLocale()}}/SentenceCalculator">{{__('Sentence Calculator')}}</a></li>
+            <li class="menu-item"><a href="/{{app()->getLocale()}}/SentenceCalculator">{{__('Sentence Calculator')}}</a></li>
             <!-- lvl 2 nav link -->
             <li class="menu-item"><a href="/portfolio-3-col.html">{{__('Design Your Calculator')}}</a></li>
             <!-- lvl 2 nav link -->
-            <li class="menu-item"><a href="{{app()->getLocale()}}/GoldenCalculator">{{__('Golden Barcode Calculator')}}</a></li>
+            <li class="menu-item"><a href="/{{app()->getLocale()}}/GoldenCalculator">{{__('Golden Barcode Calculator')}}</a></li>
           </ul>
           <!-- sub menu end -->
         </li>

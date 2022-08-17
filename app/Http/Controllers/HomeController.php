@@ -4,8 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Models\Consultant;
 use App\Models\Service;
 use App\Models\Place;
+use App\Models\Calculator;
 
 class HomeController extends Controller
 {
@@ -13,10 +15,17 @@ class HomeController extends Controller
 
     public function index(){
 
+
+        // $consultant = Consultant::get()->all();
+        $calc = Calculator::get()->all();
         $services=Service::get()->all();
-        return view('home',
-        ['services' =>$services]);
+
+
+        return view('home',['services' =>$services,'calculators' => $calc]);
     }
+
+
+
 
     public function PlacesConsultancy(Request $request){
         if($request == ""){

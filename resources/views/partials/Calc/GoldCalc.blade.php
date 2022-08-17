@@ -3,12 +3,12 @@
         
     
         <div class="row" style="justify-content: center;margin-bottom: 46px;"> 
-            <textarea disabled style="font-size: large;text-align: right;width: -webkit-fill-available;padding: 18px;/* margin-bottom: 30px; */margin: 24px;/* height: inherit; */background-color: darkgray;/* border-radius: 20px; */"></textarea>
+            <textarea disabled style="color: lightgray;border-width: thick;font-size: initial;text-align: center;width: -webkit-fill-available;padding: 18px;/* margin-bottom: 30px; */margin: 24px;/* height: inherit; */background-color: transparent;/* border-radius: 20px; */border-style: solid;border-color: gray;">{{__('Write here what you want')}}</textarea>        
         </div>
 
         <!-- Sc Calc -->
         <div class="row" style="justify-content: center;margin-bottom: 68px;"> 
-            <textarea onkeyup="myfunction()" id="texbox" placeholder="{{__('enter name here')}}" style="text-align: end; border-radius: 15px;padding: 33px;width: 50%;background-color: darkgray;"></textarea>
+            <textarea onkeyup="myfunction()" id="texbox" placeholder="{{__('enter name here')}}" style="font-weight: 800;font-size: initial;text-align: end; border-radius: 15px;padding: 33px;width: 50%;background-color: darkgray;"></textarea>
             <label style="margin: 20px;font-size: large;font-weight: 700;">{{__('Sentence Names Calculator')}}</label> 
         </div>
 
@@ -17,7 +17,7 @@
         <!-- Sc Calc result -->
         <div class="row" style="background-color: gray;border-radius: 20px;margin-top: 18px;justify-content: space-evenly;margin-bottom:30px">
             <h4 style="padding: 2px;">
-                <p id="sum" style="float: left;display: contents"></p> : حاسبة الجمل
+                <p id="sum" style="float: left;display: contents"></p> : {{__('Sentence Calculator')}}
             </h4>
         </div>       
 

@@ -52,6 +52,7 @@ Route::post('PlacesCons','App\Http\Controllers\HomeController@PlacesConsultancy'
 
 });
 
+
 Route::get('/', function(){
     return redirect('/ar');
 });
