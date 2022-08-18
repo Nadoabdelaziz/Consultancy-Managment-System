@@ -59,7 +59,7 @@
                   <!-- Nav -->
                 <div class="row p-30-0">
 
-                  <div class="col-lg-12">
+                  <!-- <div class="col-lg-12">
 
                     <div class="art-section-title">
                       <div class="art-title-frame">
@@ -71,7 +71,7 @@
                       </div>
                     </div>
 
-                  </div>
+                  </div> -->
 
                     <!-- col -->
                       @include('partials.Calc.goldpost')
@@ -273,16 +273,8 @@
     <!-- app wrapper end -->
 
     <!-- preloader -->
-    <div class="art-preloader">
-      <!-- preloader content -->
-      <div class="art-preloader-content">
-        <!-- title -->
-        <h4>Artur Carter</h4>
-        <!-- progressbar -->
-        <div id="preloader" class="art-preloader-load"></div>
-      </div>
-      <!-- preloader content end -->
-    </div>
+    @include('partials.Preloader')
+
     <!-- preloader end -->
 
   </div>

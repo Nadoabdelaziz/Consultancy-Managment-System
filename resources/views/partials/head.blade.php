@@ -2,6 +2,8 @@
 <!doctype html>
 <html lang="en">
 
+
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -23,6 +25,7 @@
 
   <title>Arter</title>
 </head>
+
 
   <!-- jquery js -->
   <script src="{{url('js/plugins/jquery.min.js')}}"></script>
@@ -47,3 +50,6 @@
 
   <!-- main js -->
   <script src="{{url('js/main.js')}}"></script>
+
+
+  

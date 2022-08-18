@@ -1,28 +1,34 @@
 <div class="col-lg-9" style="height:fit-content;">
-    <div class="art-a art-card art-fluid-card" style="font-family: cursive;color:white;font-weight: 600;border-style: double;border-color: gray;border-width: thick;border-radius: 20px;height: fit-content;">
+    <div class="art-a art-card art-fluid-card" 
+    style="font-family: cursive;color:white;font-weight: 600;border-style: double;border-color: #FFC107;border-width: thick;border-radius: 20px;height: fit-content;"
+    >
         
     
-        <div class="row" style="justify-content: center;margin-bottom: 46px;"> 
-            <textarea disabled style="color: lightgray;border-width: thick;font-size: initial;text-align: center;width: -webkit-fill-available;padding: 18px;/* margin-bottom: 30px; */margin: 24px;/* height: inherit; */background-color: transparent;/* border-radius: 20px; */border-style: solid;border-color: gray;">{{__('Write here what you want')}}</textarea>        
-        </div>
+        <!-- <div class="row" style="justify-content: center;/* margin-bottom:45px; */"> 
+            <textarea disabled 
+            style="color: lightgray;border-width: thick;font-size: initial;text-align: center;width: -webkit-fill-available;/* padding: 9px; */border-radius: 20px;/* margin-bottom: 30px; */margin: 10px;background-color: transparent;/* border-radius: 20px; */border-style: solid;/* border-color: #FFC107; */">{{__('Write here what you want')}}</textarea>        
+        </div> -->
 
         <!-- Sc Calc -->
-        <div class="row" style="justify-content: center;margin-bottom: 68px;"> 
-            <textarea onkeyup="myfunction()" id="texbox" placeholder="{{__('enter name here')}}" style="font-weight: 800;font-size: initial;text-align: end; border-radius: 15px;padding: 33px;width: 50%;background-color: darkgray;"></textarea>
-            <label style="margin: 20px;font-size: large;font-weight: 700;">{{__('Sentence Names Calculator')}}</label> 
+        <div class="row art-form-field" style="
+        justify-content: end;
+        "> 
+            <textarea class="art-input" onkeyup="myfunction()" id="texbox" placeholder="{{__('enter name here')}}" 
+            style="font-weight: 800;font-size: initial;text-align: end;border-radius: 15px;width: 50%;background-color: darkgray; height:auto;border-color: #FFC107;"></textarea>
+            <label style="margin: 36px;font-size: large;font-weight: 700;">{{__('Sentence Names Calculator')}}</label> 
         </div>
 
         
 
         <!-- Sc Calc result -->
-        <div class="row" style="background-color: gray;border-radius: 20px;margin-top: 18px;justify-content: space-evenly;margin-bottom:30px">
-            <h4 style="padding: 2px;">
+        <div class="row art-title-frame" 
+        style="border-radius: 20px;/* border-color: #FFC107; */margin-top: 18px;border-style: double;justify-content: space-evenly;margin-bottom: 11px;padding: 6px;background-color: #181D27;">
                 <p id="sum" style="float: left;display: contents"></p> : {{__('Sentence Calculator')}}
             </h4>
         </div>       
 
-        <div class="row" style="justify-content: center;margin: 40px;">
-            <button onclick="result()" class="btn-lg btn-primary" style="">{{__('Continue')}}</button>
+        <div class="row art-submit-frame" style="justify-content: center;margin: 20px;">
+            <button onclick="result()" class="art-btn art-btn-md art-submit" style="font-size: large;"><span> {{__('Continue')}} </span></button>
         </div>
 
         <!-- <div class="row" style="justify-content: center;margin-bottom: 55px;"> 
@@ -30,28 +36,51 @@
             <label style="margin-left: 35px;font-size: large;font-weight: 700;">Barcode Name</label> 
         </div> -->
 
-        <div class="row" style="justify-content: center;display: inline-grid;margin-bottom: 53px;width: -webkit-fill-available;"> 
-            <input type="text" id="proper" placeholder="000" style="font-size: large;font-weight: bold;text-align: center;border-radius: 9px;height: fit-content;width: 350px;margin-bottom: 9px;padding: 2px;background-color: darkgray;">
-            <h2 class="row" style="justify-content: end;margin-right: -50px;">-</h2>
-            <input type="text" id="3aks" placeholder="000" style="font-size: large;font-weight: bold;text-align: center;border-radius: 9px;height: fit-content;width: 350px;margin-bottom: 9px;padding: 2px;background-color: darkgray;">
+        <div class="row art-form-field" 
+        style="justify-content: center;margin-right: 53px;display: inline-grid;margin-bottom: 26px;width: -webkit-fill-available;">
+            <input type="text" id="proper" placeholder="000" 
+            style="border-color: #FFC107;font-size: small;font-weight: bold;text-align: center;border-radius: 9px;border-style: double;height: auto;">
+            <h3 class="row" style="height: 21px;justify-content: end;margin-right: -45px;margin-top: -9px;">-</h3>
+            <input type="text" id="3aks" placeholder="000" 
+            style="border-color: #FFC107;font-size: small;font-weight: bold;text-align: center;border-radius: 9px;border-style: double;height: auto;">
         </div>
     
-        <div class="row" style="justify-content: center;margin-bottom: 52px;"> 
-            <input id="frst_result" type="text" placeholder="0" style="border-radius: 9px;height: fit-content;font-size: x-large;text-align: center;padding: 32px;background-color: darkgray;">
-            <label style="margin-left: 35px;font-size: -webkit-xxx-large;font-weight: 700;">=</label>  
+        <div class="row art-form-field" style="
+        
+        margin-right: 78px;
+        justify-content: end;
+        /* margin-bottom: 52px; */
+        
+        "> 
+            <input id="frst_result" type="text" placeholder="0" 
+            style="/* border-radius: 9px; */border-color: #FFC107;/* font-size: x-large; *//* text-align: center; */border-style: double;/* padding: 32px; *//* background-color: darkgray; */font-weight: 800;font-size: initial;text-align: center;border-radius: 15px;/* padding: 9px; */width: 50%;background-color: darkgray; height:auto;">
+            <label
+             style="/* margin-left: 35px; */font-size: xx-large;margin-top: -24px;font-weight: 700;padding: 22px; margin-right: 47px;"
+             >=</label>  
         </div>
 
-        <hr style="background-color: aliceblue;margin-bottom: 70px;">
+        <hr style="background-color: aliceblue;margin: 31px;">
 
-        <div class="row" style="justify-content: center;display: inline-grid;margin-bottom: 53px;width: -webkit-fill-available;"> 
-            <input type="text" id="proper2" placeholder="0" style="font-size: large;font-weight: bold;text-align: center;border-radius: 9px;height: fit-content;width: 350px;margin-bottom: 9px;padding: 2px;background-color: darkgray;">
-            <h2 class="row" id="sign" style="justify-content: end;margin-right: -50px;"></h2>
-            <input type="text" id="3aks2" placeholder="0" style="font-size: large;font-weight: bold;text-align: center;border-radius: 9px;height: fit-content;width: 350px;margin-bottom: 9px;padding: 2px;background-color: darkgray;">
+        <div class="row art-form-field" 
+        style="justify-content: center;margin-right: 53px;display: inline-grid;margin-bottom: 26px;width: -webkit-fill-available;"
+        > 
+            <input type="text" id="proper2" placeholder="0" 
+            style="border-color: #FFC107;font-size: small;font-weight: bold;text-align: center;border-radius: 9px;border-style: double;height: auto;">
+            <h3 class="row" id="sign" style="height: 21px;justify-content: end;margin-right: -29px;margin-top: -9px;"></h3>
+            <input type="text" id="3aks2" placeholder="0" 
+            style="border-color: #FFC107;font-size: small;font-weight: bold;text-align: center;border-radius: 9px;border-style: double;height: auto;">
         </div>
 
-        <div class="row" style="justify-content: center;margin-bottom: 52px;"> 
-            <input id="Last_result" type="text" placeholder="0" style="border-radius: 9px;height: 133px;width: 64%;font-size: xx-large;padding: 32px;text-align: center;background-color: darkgray;">
-            <label style="font-size: -webkit-xxx-large;font-weight: 700;padding: 33px;">=</label>  
+        <div class="row art-form-field" style="
+        margin-right: 78px;
+        justify-content: end;
+        margin-bottom:auto
+        "> 
+            <input id="Last_result" type="text" placeholder="0" 
+            style="/* border-radius: 9px; */border-color: #FFC107;/* font-size: x-large; *//* text-align: center; */border-style: double;/* padding: 32px; *//* background-color: darkgray; */font-weight: 800;font-size: initial;text-align: center;border-radius: 15px;/* padding: 9px; */width: 50%;background-color: darkgray; height:auto;">
+            <label 
+            style="/* margin-left: 35px; */font-size: xx-large;margin-top: -24px;font-weight: 700;padding: 22px; margin-right: 47px;"
+            >=</label>  
         </div>
 <!-- 
         <div class="row" style="justify-content: center;">
@@ -247,7 +276,14 @@
         the_sign.textContent=the_res.value.charAt(0) == '-' ? '-' :'+'; 
 
 
-        res3.value= the_res.value;
+        const neg = the_res.value.charAt(0);
+        const thelen1 = neg == '-' ?  the_res.value.substring(1).length : the_res.value.length;
+        const zeros1= thelen1 == 1 ? '00' : thelen1 == 2 ? '0' : '' ;
+
+        // alert(thelen1);
+        // alert(zeros1);
+
+        res3.value= neg == '-' ?   "-" + String(zeros1) + the_res.value.substring(1) : String(zeros1) + the_res.value ;
 
         const sub = res3.value.charAt(0);
 
