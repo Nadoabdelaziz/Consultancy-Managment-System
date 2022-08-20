@@ -51,6 +51,12 @@
           @include('partials.Calc.GoldCalc')
         <!-- col end -->
 
+        
+        
+        <!-- col -->
+          <!-- @include('partials.Calc.postcalc') -->
+        <!-- col end -->
+
       </div>
       <!-- row end -->
 

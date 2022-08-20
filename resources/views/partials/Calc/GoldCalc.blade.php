@@ -2,6 +2,8 @@
     <div class="art-a art-card art-fluid-card" 
     style="font-family: cursive;color:white;font-weight: 600;border-style: double;border-color: #FFC107;border-width: thick;border-radius: 20px;height: fit-content;"
     >
+
+        
         
     
         <!-- <div class="row" style="justify-content: center;/* margin-bottom:45px; */"> 
@@ -11,11 +13,11 @@
 
         <!-- Sc Calc -->
         <div class="row art-form-field" style="
-        justify-content: end;
+        justify-content: end;margin:auto;margin-bottom: -28px;
         "> 
             <textarea class="art-input" onkeyup="myfunction()" id="texbox" placeholder="{{__('enter name here')}}" 
-            style="font-weight: 800;font-size: initial;text-align: end;border-radius: 15px;width: 50%;background-color: darkgray; height:auto;border-color: #FFC107;"></textarea>
-            <label style="margin: 36px;font-size: large;font-weight: 700;">{{__('Sentence Names Calculator')}}</label> 
+            style="font-weight: 800;font-size: initial;text-align: end;border-radius: 15px;width: 50%;background-color: darkgray; height:fit-content;"></textarea>
+            <label style="margin: 36px;margin-top: 25px;font-size: large;font-weight: 700;">{{__('Sentence Names Calculator')}}</label> 
         </div>
 
         
@@ -39,10 +41,12 @@
         <div class="row art-form-field" 
         style="justify-content: center;margin-right: 53px;display: inline-grid;margin-bottom: 26px;width: -webkit-fill-available;">
             <input type="text" id="proper" placeholder="000" 
-            style="border-color: #FFC107;font-size: small;font-weight: bold;text-align: center;border-radius: 9px;border-style: double;height: auto;">
+            style="
+            /* border-color: #FFC107;border-style: double;  */
+            font-size: small;font-weight: bold;text-align: center;border-radius: 9px;height: auto;">
             <h3 class="row" style="height: 21px;justify-content: end;margin-right: -45px;margin-top: -9px;">-</h3>
             <input type="text" id="3aks" placeholder="000" 
-            style="border-color: #FFC107;font-size: small;font-weight: bold;text-align: center;border-radius: 9px;border-style: double;height: auto;">
+            style="/*border-color: #FFC107;*/font-size: small;font-weight: bold;text-align: center;border-radius: 9px;/*border-style: double;*/height: auto;">
         </div>
     
         <div class="row art-form-field" style="
@@ -53,7 +57,7 @@
         
         "> 
             <input id="frst_result" type="text" placeholder="0" 
-            style="/* border-radius: 9px; */border-color: #FFC107;/* font-size: x-large; *//* text-align: center; */border-style: double;/* padding: 32px; *//* background-color: darkgray; */font-weight: 800;font-size: initial;text-align: center;border-radius: 15px;/* padding: 9px; */width: 50%;background-color: darkgray; height:auto;">
+            style="/* border-radius: 9px; */ /*border-color: #FFC107; font-size: x-large; */ /* text-align: center; border-style: double;*//* padding: 32px; *//* background-color: darkgray; */font-weight: 800;font-size: initial;text-align: center;border-radius: 15px;/* padding: 9px; */width: 50%;background-color: darkgray; height:auto;">
             <label
              style="/* margin-left: 35px; */font-size: xx-large;margin-top: -24px;font-weight: 700;padding: 22px; margin-right: 47px;"
              >=</label>  
@@ -65,10 +69,10 @@
         style="justify-content: center;margin-right: 53px;display: inline-grid;margin-bottom: 26px;width: -webkit-fill-available;"
         > 
             <input type="text" id="proper2" placeholder="0" 
-            style="border-color: #FFC107;font-size: small;font-weight: bold;text-align: center;border-radius: 9px;border-style: double;height: auto;">
+            style="/* border-color: #FFC107 */;font-size: small;font-weight: bold;text-align: center;border-radius: 9px; /* border-style: double; */ height: auto;">
             <h3 class="row" id="sign" style="height: 21px;justify-content: end;margin-right: -29px;margin-top: -9px;"></h3>
             <input type="text" id="3aks2" placeholder="0" 
-            style="border-color: #FFC107;font-size: small;font-weight: bold;text-align: center;border-radius: 9px;border-style: double;height: auto;">
+            style="/* border-color: #FFC107; */ font-size: small;font-weight: bold;text-align: center;border-radius: 9px; /*border-style: double;*/height: auto;">
         </div>
 
         <div class="row art-form-field" style="
@@ -77,7 +81,7 @@
         margin-bottom:auto
         "> 
             <input id="Last_result" type="text" placeholder="0" 
-            style="/* border-radius: 9px; */border-color: #FFC107;/* font-size: x-large; *//* text-align: center; */border-style: double;/* padding: 32px; *//* background-color: darkgray; */font-weight: 800;font-size: initial;text-align: center;border-radius: 15px;/* padding: 9px; */width: 50%;background-color: darkgray; height:auto;">
+            style="/* border-radius: 9px; border-color: #FFC107; */ /* font-size: x-large; *//* text-align: center; border-style: double;*//* padding: 32px; *//* background-color: darkgray; */font-weight: 800;font-size: initial;text-align: center;border-radius: 15px;/* padding: 9px; */width: 50%;background-color: darkgray; height:auto;">
             <label 
             style="/* margin-left: 35px; */font-size: xx-large;margin-top: -24px;font-weight: 700;padding: 22px; margin-right: 47px;"
             >=</label>  
@@ -96,6 +100,36 @@
     </div>
 </div>
 
+    @if(isset($texts))
+        @foreach($texts as $text)    
+            @if($text->number == '1089')
+            <div id="1089n" style="display:none" class="col-lg-9 mt-5 art-a art-card art-fluid-card" style="height:fit-content;">
+                <h2 style="text-align:center" class="art-a" >
+                    {{$text->number}}
+                </h2>
+                <div class="art-a art-card art-fluid-card" >
+                    {{$text->text}}
+                </div>
+            </div>
+            @endif
+
+
+            @if($text->number == '0')
+            <div id="zeron" style="display:none" class="col-lg-9 mt-5 art-a art-card art-fluid-card" style="height:fit-content;">
+                <h2 style="text-align:center" class="art-a" >
+                    {{$text->number}}
+                </h2>
+                <div class="art-a art-card art-fluid-card" >
+                    {{$text->text}}
+                </div>
+            </div>
+            @endif
+
+        @endforeach    
+    @endif
+
+
+
 
 <script>
         var y = document.getElementById("texbox");
@@ -107,6 +141,10 @@
         var res4 = document.getElementById("3aks2");
         var the_result = document.getElementById("Last_result");
         var the_sign = document.getElementById("sign");
+        var postext = document.getElementById("1089n");
+        var postextzero = document.getElementById("zeron");
+
+
 
 
 
@@ -255,57 +293,77 @@
     }
 
     function result(){
-        // res= res1.value + x.textContent;
-        // res1.value = res.substr(res.length-2); 
-        var num = x.textContent;
-        // const dec = num.split('.')[1]
-        const thelen = num.length;
-        const zeros= thelen == 1 ? '00' : thelen == 2 ? '0' : '' ;
-        // const len = dec && dec.length > 2 ? dec.length : 2
-        // alert(zeros);
-        res1.value= String(zeros) + num;
+
+            // res= res1.value + x.textContent;
+            // res1.value = res.substr(res.length-2); 
+            var num = x.textContent;
+            // const dec = num.split('.')[1]
+            const thelen = num.length;
+            const zeros= thelen == 1 ? '00' : thelen == 2 ? '0' : '' ;
+            // const len = dec && dec.length > 2 ? dec.length : 2
+            // alert(zeros);
+            res1.value= String(zeros) + num;
 
 
-        res2.value = res1.value.split("").reverse().join("");
+            res2.value = res1.value.split("").reverse().join("");
 
 
-        the_res.value= Number(res1.value)- Number(res2.value);
+            the_res.value= Number(res1.value)- Number(res2.value);
 
-        // sign + or -
+            // sign + or -
 
-        the_sign.textContent=the_res.value.charAt(0) == '-' ? '-' :'+'; 
+            the_sign.textContent=the_res.value.charAt(0) == '-' ? '-' :'+'; 
 
 
-        const neg = the_res.value.charAt(0);
-        const thelen1 = neg == '-' ?  the_res.value.substring(1).length : the_res.value.length;
-        const zeros1= thelen1 == 1 ? '00' : thelen1 == 2 ? '0' : '' ;
+            const neg = the_res.value.charAt(0);
+            const thelen1 = neg == '-' ?  the_res.value.substring(1).length : the_res.value.length;
+            const zeros1= thelen1 == 1 ? '00' : thelen1 == 2 ? '0' : '' ;
 
-        // alert(thelen1);
-        // alert(zeros1);
+            // alert(thelen1);
+            // alert(zeros1);
 
-        res3.value= neg == '-' ?   "-" + String(zeros1) + the_res.value.substring(1) : String(zeros1) + the_res.value ;
+            res3.value= neg == '-' ?   "-" + String(zeros1) + the_res.value.substring(1) : String(zeros1) + the_res.value ;
 
-        const sub = res3.value.charAt(0);
+            const sub = res3.value.charAt(0);
 
-        // alert(sub);
+            // alert(sub);
 
-        res4.value = sub == '-' ? "-" + String(res3.value.substring(1).split("").reverse().join("")) : res3.value.split("").reverse().join("") ;
+            res4.value = sub == '-' ? "-" + String(res3.value.substring(1).split("").reverse().join("")) : res3.value.split("").reverse().join("") ;
 
+            
+
+            // res4.value = res3.value.split("").reverse().join("");
+
+
+
+
+            // const sub2 = res4.value.charAt(0);
+
+            // alert(sub2);
+            // alert(res3.value);
+            // alert(res4.value);
+            the_result.value = Number(res3.value) + Number(res4.value);
         
 
-        // res4.value = res3.value.split("").reverse().join("");
 
+        if(the_result.value == '1089'){
+            postext.style.display = '';     
+            postextzero.style.display = 'none';            
+       
+        }
+    
+        else if(the_result.value == '0' && y.value != '') {
+            postextzero.style.display = '';   
+            postext.style.display = 'none';            
 
+                     
+        }
+        else{
+            postext.style.display = 'none';            
+            postextzero.style.display = 'none';            
 
-
-        // const sub2 = res4.value.charAt(0);
-
-        // alert(sub2);
-        // alert(res3.value);
-        // alert(res4.value);
-        the_result.value = Number(res3.value) + Number(res4.value);
-
-
+        }
 
     }
+
 </script>

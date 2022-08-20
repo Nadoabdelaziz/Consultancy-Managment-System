@@ -10,7 +10,7 @@
           <!-- photo -->
           
           <!-- name -->
-          <h5 style="margin-bottom: 27px;text-align: center;font-size: x-large;background-color: gray;/* border-radius: 20px; */padding: 5px;">{{__('Sentence Calculator Definition')}}</h5>
+          <h5 style="margin-bottom: 27px;text-align: center;font-size: x-large;background-color: #252532;/* border-radius: 20px; */padding: 5px;">{{__('Sentence Calculator Definition')}}</h5>
           <div class="art-el-suptitle mb-15"></div>
           <!-- text -->
           <div class="mb-15" style="
@@ -32,9 +32,13 @@
 
 مثال آخر حساب الجمّل لعبارة (في المشمش) = 80+10+1+30+40+300+40+300 = 801.
 
-<section class="mainwrapper"><table class="Hafs" dir="rtl" style="border-style: double;width: -webkit-fill-available;text-align: center;font-weight: 600;"><tbody><tr style="
-    background-color: darkslategray;
-"><th>تسلسل</th><th>الحرف</th><th>الجمل</th></tr><tr style="
+<section class="mainwrapper"><table class="Hafs" dir="rtl" style="border-style: double;width: -webkit-fill-available;text-align: center;font-weight: 600;"><tbody><tr style="color: white;background-color: #FFC107;">
+        <th>تسلسل</th>
+        <th>الحرف</th>
+        <th>الجمل</th>
+      </tr>
+      
+      <tr style="
     background-color: #60666;
 "><td>1</td><td>ا</td><td>1</td></tr><tr><td>2</td><td>أ</td><td>1</td></tr><tr><td>3</td><td>ٱ</td><td>1</td></tr><tr><td>4</td><td>إ</td><td>1</td></tr><tr><td>5</td><td>ٔ</td><td>1</td></tr><tr><td>6</td><td>ئ</td><td>1</td></tr><tr><td>7</td><td>ؤ</td><td>1</td></tr><tr><td>8</td><td>ب</td><td>2</td></tr><tr><td>9</td><td><strong>آ</strong></td><td><strong>2</strong></td></tr><tr><td>10</td><td>ج</td><td>3</td></tr><tr><td>11</td><td>د</td><td>4</td></tr><tr><td>12</td><td>ه</td><td>5</td></tr><tr><td>13</td><td>ة</td><td>5</td></tr><tr><td>14</td><td>و</td><td>6</td></tr><tr><td>15</td><td>ز</td><td>7</td></tr><tr><td>16</td><td>ح</td><td>8</td></tr><tr><td>17</td><td>ط</td><td>9</td></tr><tr><td>18</td><td>ى</td><td>10</td></tr><tr><td>19</td><td>ي</td><td>10</td></tr><tr><td>20</td><td>ئ</td><td>10</td></tr><tr><td>21</td><td>ك</td><td>20</td></tr><tr><td>22</td><td>ل</td><td>30</td></tr><tr><td>23</td><td>م</td><td>40</td></tr><tr><td>24</td><td>ن</td><td>50</td></tr><tr><td>25</td><td>س</td><td>60</td></tr><tr><td>26</td><td>ع</td><td>70</td></tr><tr><td>27</td><td>ف</td><td>80</td></tr><tr><td>28</td><td>ص</td><td>90</td></tr><tr><td>29</td><td>ق</td><td>100</td></tr><tr><td>30</td><td>ر</td><td>200</td></tr><tr><td>31</td><td>ش</td><td>300</td></tr><tr><td>32</td><td>ت</td><td>400</td></tr><tr><td>33</td><td>ث</td><td>500</td></tr><tr><td>34</td><td>خ</td><td>600</td></tr><tr><td>35</td><td>ذ</td><td>700</td></tr><tr><td>36</td><td>ض</td><td>800</td></tr><tr><td>37</td><td>ظ</td><td>900</td></tr><tr><td>38</td><td>غ</td><td>1000</td></tr></tbody></table></section>
 </div>

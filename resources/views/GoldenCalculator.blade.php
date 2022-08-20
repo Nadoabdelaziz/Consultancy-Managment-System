@@ -73,6 +73,7 @@
 
                   </div> -->
 
+                  
                     <!-- col -->
                       @include('partials.Calc.goldpost')
                     <!-- col end -->                

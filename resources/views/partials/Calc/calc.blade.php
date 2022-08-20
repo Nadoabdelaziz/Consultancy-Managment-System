@@ -1,10 +1,10 @@
 <div class="col-lg-12" style="height:fit-content;">
-        <div class="art-a art-card art-fluid-card" style="border-style: double;border-color: gray;border-width: thick;border-radius: 20px; height: fit-content;">
+        <div class="art-a art-card art-fluid-card art-form-field" style="border-style: double;border-color: gray;border-width: thick;border-radius: 20px; height: fit-content;">
         <!-- <textarea onkeyup="myfunction()" id="texbox" style="font-size: large; text-align: right; width: -webkit-fill-available;padding: 18px;/* margin: -17px; */height: inherit;background-color: darkgray;border-radius: 20px;"></textarea> -->
     
         <textarea onkeyup="myfunction()" id="texbox" style="font-size: large; text-align: right; width: -webkit-fill-available;padding: 18px;/* margin: -17px; */height: 200px;background-color: darkgray;border-radius: 20px;"></textarea>
-            <div class="row" style="background-color: gray;border-radius: 20px;margin-top: 18px;justify-content: space-evenly;">
-              <h4 style="padding: 2px;">
+            <div class="row" style="background-color: #252532;border-radius: 20px;margin-top: 18px;justify-content: space-evenly;">
+              <h4 style="padding: 2px;font-size: x-large;">
                 <p id="sum" style="float: left;display: contents;"></p> : حاسبة الجمل
               </h4>
             </div>       
