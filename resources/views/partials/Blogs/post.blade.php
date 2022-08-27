@@ -36,8 +36,8 @@
                           <br><br>                            
                           <form action="upload" method="POST" enctype="multipart/form-data" style="background-color: transparent">
                             @csrf
-                            <div class="row" style="/* float: right; */display: inline-table;background-color: #606060;border-radius: 20px;">
-                              <h2 style="margin: 25px; background-color: crimson; padding: 10px; border-radius: 20px; font-size: x-large;"> {{__('invoice payment upload')}}
+                            <div class="row" style="/* float: right; */display: inline-table;background-color: #252532;border-radius: 20px;">
+                              <h2 style="margin: 25px; /*background-color: crimson;*/ padding: 10px; border-radius: 20px; font-size: x-large;"> {{__('invoice payment upload')}}
                              </h2>
                                 
                                 <div class="col-md-6" style="
@@ -48,7 +48,7 @@
                                     /* height: 50px; */
                                     /* width: fit-content; */
                                     /* display: inline; */
-                                    background-color: #404040;
+                                    /* background-color: #404040; */
                                     padding: 10px;
                                     display: inline-grid;
                                     /* display: contents; */
@@ -59,7 +59,7 @@
 
                               </div>
                               <div class="col-md-6" style="background-color: transparent;width: fit-content;display: contents;">
-                                  <button class="btn btn-primary" type="submit" style="/* height: 45px; */width: 220px;font-size: x-large;margin: 20px;">{{__('Execution')}}</button>
+                                  <button class="" type="submit" style="height: 45px;width: 220px;font-size: x-large;margin: 20px;background-color:#FFC107;">{{__('Execution')}}</button>
                               </div>
                             </div>
                           </form>
@@ -71,8 +71,8 @@
                     <div class="frame-content">
                               <br><br>
 
-                              <div style="/* float: right; */background-color: #606060;border-radius: 20px;margin: 20px;">
-                                <h2 style="padding: 20px;background-color: #404040;/* width: 100%; */border-radius: 20px;display: inline-flex;/* margin-bottom: 20px; */margin: 10px;">{{__('Bank Payment Info')}}</h2><br>
+                              <div style="/* float: right; */background-color: #252532;border-radius: 20px;margin: 20px;">
+                                <h2 style="padding: 20px; /*background-color: #404040; width: 100%; */border-radius: 20px;display: inline-flex;/* margin-bottom: 20px; */margin: 10px;">{{__('Bank Payment Info')}}</h2><br>
                                   <!-- <hr style="padding: 20px;background-color: #404040;/* width: 100%; */border-radius: 20px;display: inline-flex;/* margin-bottom: 20px; */margin: 10px;" class=""> -->
                                 <div class="container mt-3" style="
                                     /* margin: 10px; */
@@ -84,25 +84,25 @@
                                     /* height: 50px; */
                                     /* width: fit-content; */
                                     /* display: inline; */
-                                    background-color: #404040;
+                                    /* background-color: #404040; */
                                     /* padding: 10px; */
                                     border-radius: 20px;
                                     ">
                                   <br>
-                                   <h3 for="text" style="padding: 20px;background-color: #404040;/* width: 100%; */border-radius: 20px;display: inline-flex;/* margin-bottom: 20px; */margin: 10px;" class="row mt-5"> 12345 : {{__('Bank Account Transactional Number')}}</h3>
+                                   <h3 for="text" style="padding: 20px;/*background-color: #404040; width: 100%; */border-radius: 20px;display: inline-flex;/* margin-bottom: 20px; */margin: 10px;" class="row mt-5"> 12345 : {{__('Bank Account Transactional Number')}}</h3>
                                       <br>
-                                      <h3 for="text" style="padding: 20px;background-color: #404040;/* width: 100%; */border-radius: 20px;display: inline-flex;/* margin-bottom: 20px; */margin: 10px;" class="mt-5 row">Aed Bank : {{__('Transactional Bank Name')}}</h3>
+                                      <h3 for="text" style="padding: 20px;/*background-color: #404040;width: 100%; */border-radius: 20px;display: inline-flex;/* margin-bottom: 20px; */margin: 10px;" class="mt-5 row">Aed Bank : {{__('Transactional Bank Name')}}</h3>
                                         <br>
-                                        <h3 for="text" style="padding: 20px;background-color: #404040;/* width: 100%; */border-radius: 20px;display: inline-flex;/* margin-bottom: 20px; */margin: 10px;" class="mt-5 row">123456789 : {{__('Bank Account (IBAN) Number')}}</h3>
+                                        <h3 for="text" style="padding: 20px;/*background-color: #404040;width: 100%; */border-radius: 20px;display: inline-flex;/* margin-bottom: 20px; */margin: 10px;" class="mt-5 row">123456789 : {{__('Bank Account (IBAN) Number')}}</h3>
                                         <br>
-                                        <h3 for="text" style="padding: 20px;background-color: #404040;/* width: 100%; */border-radius: 20px;display: inline-flex;/* margin-bottom: 20px; */margin: 10px;
+                                        <h3 for="text" style="padding: 20px;/*background-color: #404040;width: 100%; */border-radius: 20px;display: inline-flex;/* margin-bottom: 20px; */margin: 10px;
                                         " class="mt-5 row"> 123456789 : {{__('Bank Account (IBAN) Number')}}</h3>
                                 </div>
                                 <!-- User ID : <input type = "text" name = "user_id" /> -->
                                 <br>
                                 <div style="background-color: transparent;width: fit-content;display: contents;">
                               
-                                <label for="frame1" class="btn btn-primary" style="height: 45px;width: 220px;font-size: x-large;margin: 20px;padding: 2px;">{{__('Go to Execution')}}</label>
+                                <label for="frame1" class="" style="background-color:#FFC107; color:black; height: 45px;width: 220px;font-size: x-large;margin: 20px;padding: 21px;">{{__('Go to Execution')}}</label>
 
                               </div>
 
@@ -113,14 +113,14 @@
                     </div>
 
                     <div class="frame frame_3">
-                    <div class="frame-content" style="{{isset($info) ? 'background-color: dimgrey;border-radius: 20px;width: max-content;display: inline-block;' : ''}}">
+                    <div class="frame-content" style="{{isset($info) ? '/*background-color: dimgrey;*/border-radius: 20px;width: max-content;display: inline-block;' : ''}}">
                           <br><br>
 
-                          <div style="/* float: right; */background-color: #606060;border-radius: 20px;display: inline-flex;">
-                                  <h3 style="padding: 20px;background-color: #404040;/* width: 100%; */border-radius: 20px;display: inline-flex;/* margin-bottom: 20px; */margin: 10px">{{__('Total Price')}}</h3>
+                          <div style="/* float: right; */background-color: #252532;border-radius: 20px;display: inline-flex;">
+                                  <h3 style="padding: 20px;/*background-color: #404040; width: 100%; */border-radius: 20px;display: inline-flex;/* margin-bottom: 20px; */margin: 10px">{{__('Total Price')}}</h3>
                                   <br>
-                                <div class="row" style="/* padding-bottom:10px; */padding: 35px;/* border-radius: 20px; */margin: 10px;/* display: flow-root; */background-color: #606060;">
-                                  <div style="/* border-radius: 6px; *//* width: -webkit-fill-available; */font-size: xxx-large;font-weight: 900;/* text-align: center; */margin: 5px;">50$</div>
+                                <div class="row" style="/* padding-bottom:10px; */padding: 35px;/* border-radius: 20px; */margin: 10px;/* display: flow-root; background-color: #606060;*/">
+                                  <div style="/* border-radius: 6px; *//* width: -webkit-fill-available; */font-size: xxx-large;font-weight: 900;/* text-align: center; */margin: 5px;">30$</div>
                                 </div>
                                 <!-- User ID : <input type = "text" name = "user_id" /> -->
                                 <br>
@@ -131,7 +131,7 @@
                                 <br>
                         <div style="margin-top: 50px;font-size: large;">
                             <br>
-                            <label for="frame2" style="height: 45px;width: 220px;margin-top: 45px;padding-top: 20px;/* margin-bottom: 20px; */font-size: x-large;background-color: dodgerblue;border-radius: 12px;">{{__('Go To Payment')}}</label>
+                            <label for="frame2" style="background-color:#FFC107; color:black ; height: 45px;width: 220px;margin-top: 45px;padding-top: 20px;/* margin-bottom: 20px; */font-size: x-large;border-radius: 12px;">{{__('Go To Payment')}}</label>
                           </div>
                         </div>
                     </div>
@@ -147,49 +147,44 @@
 
                           <form action="PlacesCons" method="post" enctype="multipart/form-data" style="background-color: transparent">
                             @csrf
-                            <div style="float: right;background-color: #606060;border-radius: 20px;">
-                              <h2 style="padding: 20px;background-color: #404040;/* width: 100%; */border-radius: 20px;display: inline-flex;/* margin-bottom: 20px; */margin: 10px;">قائمة الأسماء المطلوب دراستها</h2>
-                                  <input type="text" name="user" value="{{auth()->user()->email}}" style="display:none">
+                            <div class="art-form-field" style="margin-left: 47px; float: right;background-color: #252532;border-radius: 20px;">
+                              <h2 style="padding: 20px;background-color: #252532;/* width: 100%; *//* margin-bottom: 20px; */margin: 10px;">{{__('List Of Names')}}</h2>
+                                  <input type="text" name="user" value="{{(auth()->user()) ? auth()->user()->email : ''}}" style="display:none">
                               <div style="
                                     margin: 10px;
                                     overflow-y: 20px;
-                                    /* overflow-y: scroll; */
-                                    /* overflow: scroll; */
-                                    /* height: 50px; */
-                                    /* width: fit-content; */
-                                    /* display: inline; */
-                                    background-color: #404040;
+                                    background-color: #252532;
                                     padding: 10px;
                                     border-radius: 20px;
                                 ">                                  
                                 
-                                <div class="row" style="/* padding-bottom:10px; */padding: 5px;/* border-radius: 20px; */margin: 10px;display: flow-root;background-color: #606060;">
+                                <div class="row" style="/* padding-bottom:10px; padding: 5px;  border-radius: 20px; */margin: 10px;display: flow-root;background-color: #606060;">
                                     <input style="border-radius: 6px;width: -webkit-fill-available;font-size: 17px;font-weight: 900;text-align: center;margin: 5px;" type="text" placeholder="{{isset($info) ? $info->names : __('enter name here')}}" name="first">
                                   </div>
                                     <br>
-                                    <div class="row" style="/* padding-bottom:10px; */padding: 5px;/* border-radius: 20px; */margin: 10px;display: flow-root;background-color: #606060;">
+                                    <div class="row" style="/* padding-bottom:10px; padding: 5px; border-radius: 20px; */margin: 10px;display: flow-root;background-color: #606060;">
                                     <input style="border-radius: 6px;width: -webkit-fill-available;font-size: 17px;font-weight: 900;text-align: center;margin: 5px;" type="text" placeholder="{{__('enter name here')}}" name="Sec">
                                   </div>
                                   
-                                  <div class="row" style="/* padding-bottom:10px; */padding: 5px;/* border-radius: 20px; */margin: 10px;display: flow-root;background-color: #606060;">
+                                  <div class="row" style="/* padding-bottom:10px; padding: 5px; border-radius: 20px; */margin: 10px;display: flow-root;background-color: #606060;">
                                     <input style="border-radius: 6px;width: -webkit-fill-available;/* margin: 2px; */font-size: 17px;font-weight: 900;text-align: center;margin: 5px;" type="text"placeholder="{{__('enter name here')}}" name="th">
                                   </div>
-                                  <div class="row" style="/* padding-bottom:10px; */padding: 5px;/* border-radius: 20px; */margin: 10px;display: flow-root;background-color: #606060;">
+                                  <div class="row" style="/* padding-bottom:10px; padding: 5px;border-radius: 20px; */margin: 10px;display: flow-root;background-color: #606060;">
                                     <input style="border-radius: 6px;width: -webkit-fill-available;font-size: 17px;font-weight: 900;text-align: center;margin: 5px;" type="text"placeholder="{{__('enter name here')}}" name="foor">
                                   </div>
-                                  <div class="row" style="/* padding-bottom:10px; */padding: 5px;/* border-radius: 20px; */margin: 10px;display: flow-root;background-color: #606060;">
+                                  <div class="row" style="/* padding-bottom:10px; padding: 5px; border-radius: 20px; */margin: 10px;display: flow-root;background-color: #606060;">
                                     <input style="border-radius: 6px;width: -webkit-fill-available;/* margin: 2px; */font-size: 17px;font-weight: 900;text-align: center;margin: 5px;" type="text"placeholder="{{__('enter name here')}}" name="fif">
                                   </div>
-                                  <div class="row" style="/* padding-bottom:10px; */padding: 5px;/* border-radius: 20px; */margin: 10px;display: flow-root;background-color: #606060;">
+                                  <div class="row" style="/* padding-bottom:10px; padding: 5px; border-radius: 20px; */margin: 10px;display: flow-root;background-color: #606060;">
                                     <input style="border-radius: 6px;width: -webkit-fill-available;/* margin: 2px; */font-size: 17px;font-weight: 900;text-align: center;margin: 5px;" type="text"placeholder="{{__('enter name here')}}" name="sth">
                                   </div>
-                                  <div class="row" style="/* padding-bottom:10px; */padding: 5px;/* border-radius: 20px; */margin: 10px;display: flow-root;background-color: #606060;">
+                                  <div class="row" style="/* padding-bottom:10px; padding: 5px; border-radius: 20px; */margin: 10px;display: flow-root;background-color: #606060;">
                                     <input style="border-radius: 6px; width: -webkit-fill-available;    font-size: 17px;font-weight: 900; text-align: center; margin: 5px;" type="text"placeholder="{{__('enter name here')}}" name="sev">
                                   </div>
-                                  <div class="row" style="/* padding-bottom:10px; */padding: 5px;/* border-radius: 20px; */margin: 10px;display: flow-root;background-color: #606060;">
+                                  <div class="row" style="/* padding-bottom:10px; padding: 5px;border-radius: 20px; */margin: 10px;display: flow-root;background-color: #606060;">
                                     <input style="border-radius: 6px;width: -webkit-fill-available;/* margin: 2px; */font-size: 17px;font-weight: 900;text-align: center;margin: 5px;" type="text"placeholder="{{__('enter name here')}}" name="eit">
                                   </div>
-                                  <div class="row" style="/* padding-bottom:10px; */padding: 5px;/* border-radius: 20px; */margin: 10px;display: flow-root;background-color: #606060;">
+                                  <div class="row" style="/* padding-bottom:10px; padding: 5px; border-radius: 20px; */margin: 10px;display: flow-root;background-color: #606060;">
                                     <input style="border-radius: 6px;width: -webkit-fill-available;/* margin: 2px; */font-size: 17px;font-weight: 900;text-align: center;margin: 5px;" type="text"placeholder="{{__('enter name here')}}" name="nin">
                                   </div>
                                   </div>
@@ -203,25 +198,25 @@
                             <!-- ************************************************************ -->
 
                             <!-- **************************************************************************** -->
-                                <div style="float:left;height: fit-content;background-color: #606060; border-radius:20px">
-                                    <h3 style="padding: 20px;background-color: #404040;/* width: 100%; */border-radius: 20px;display: inline-flex;/* margin-bottom: 20px; */margin: 10px;">
+                            <div class="art-form-field" style="float:left;height: fit-content;background-color: #252532; border-radius:20px">
+                                    <h3 style="padding: 20px;  background-color: #252532;/* width: 100%; border-radius: 20px;display: inline-flex;*/ /*  margin-bottom: 20px; */margin: 7px;">
                                     {{__('Places Consultant')}}</h3>
                                     <br><br>
-                                  <div style="margin: 10px;background-color: #404040;padding: 10px;border-radius: 20px;">      
+                                  <div class="art-form-field" style="margin: 10px;background-color: #252532;;padding: 10px;border-radius: 20px;">      
                                    
-                                    <div class="row" style="/* padding-bottom:10px; */padding: 5px;/* border-radius: 20px; */margin: 10px;display: flow-root;background-color: #606060;">
+                                    <div class="row" style="/* padding-bottom:10px; *//* border-radius: 20px; */margin: 10px;display: flow-root;background-color: #606060;">
                                       <input type="text" style="border-radius: 6px;width: -webkit-fill-available;font-size: 17px;font-weight: 900;text-align: center;margin: 5px;" name="inventor" placeholder="{{isset($info) ? $info->creator_name : __('Inventor Name')}}">
                                     </div>
 
                                       <br>
 
-                                    <div class="row" style="/* padding-bottom:10px; */padding: 5px;/* border-radius: 20px; */margin: 10px;display: flow-root;background-color: #606060;">
+                                    <div class="row" style="/* padding-bottom:10px; *//* border-radius: 20px; */margin: 10px;display: flow-root;background-color: #606060;">
                                       <input type="text" style="border-radius: 6px;width: -webkit-fill-available;font-size: 17px;font-weight: 900;text-align: center;margin: 5px;" name="activity" placeholder="{{isset($info) ? $info->activity : __('Enter Activity')}}">
                                     </div>
                                     
                                     <br>
 
-                                    <div class="row" style="/* padding-bottom:10px; */padding: 5px;/* border-radius: 20px; */margin: 10px;display: flow-root;background-color: #606060;">
+                                    <div class="row" style="/* padding-bottom:10px; *//* border-radius: 20px; */margin: 10px;display: flow-root;background-color: #606060;">
                                       <input type="text" style="border-radius: 6px;width: -webkit-fill-available;font-size: 17px;font-weight: 900;text-align: center;margin: 5px;" name="country" placeholder="{{isset($info) ? $info->country :__('enter country')}}">
                                     </div>
                 
@@ -230,17 +225,17 @@
                                   <!-- User ID : <input type = "text" name = "user_id" /> -->
                                   <br>
                                   <!-- Password: <input type = "password" name = "password" /> -->
-                                </div>
+                            </div>
 
                                 <br><br>
 
-                                <div style="/* float:left; *//* height: fit-content; */background-color: #606060; border-radius:20px;display: inline-block;margin: 120px;">
-                                  <h2 style="padding: 10px;background-color: #404040;/* width: 100%; */border-radius: 20px;/* display: inline-flex; *//* margin-bottom: 20px; */margin: 10px;">{{__('Comment')}}</h2>
-                                  <textarea name="Comment" id="" cols="20" rows="20" style="padding: 10px; margin-bottom: 42px;height: 200px;width: 550px;margin: 25px;border-radius: 20px;">{{isset($info) ? $info->comment : __('enter name here') }}</textarea>
+                            <div class="art-form-field" style="/* float:left; *//* height: fit-content; */background-color: dimgrey; border-radius:20px;display: inline-block;margin: 120px;">
+                                  <h2 style="padding: 10px;background-color: #252532;/* width: 100%; border-radius: 20px;*//* display: inline-flex; *//* margin-bottom: 20px; */margin: -2px;">{{__('Comment')}}</h2>
+                                  <textarea name="Comment" id="" cols="20" rows="20" style="/* padding: 10px; margin-bottom: 42px;height: 200px;border-radius: 20px*/ width: 550px;margin: 11px;;">{{isset($info) ? $info->comment : __('enter name here') }}</textarea>
                                   <!-- User ID : <input type = "text" name = "user_id" /> -->
                                   <br>
 
-                                </div>
+                            </div>
 
 
 
@@ -258,7 +253,7 @@
 
                                 <div style="background-color: transparent;width: fit-content;display: contents;">
                                 
-                                  <button class="btn btn-primary" onclick="mfunction()" style="height: 45px;width: 220px;font-size: x-large;margin: 20px;" type="submit">{{__('Book a consultation')}}</button>                                
+                                  <button class="" onclick="mfunction()" style="background-color:#FFC107; height: 45px;width: 220px;font-size: x-large;margin: 20px;" type="submit">{{__('Book a consultation')}}</button>                                
 
                                 </div> 
 
@@ -269,21 +264,15 @@
 
                         @else
 
-                        <div class="frame-content" style="
-    background-color: dimgrey;
-    border-radius: 20px;
-">
-
-                        
-                                                                                      <div class="row" style="/* padding-bottom:10px; *//* padding: 5px; *//* border-radius: 20px; *//* margin: 10px; */display: unset;/* float: right; */background-color: #606060;"><br>
-    <h4 style="padding: 20px;background-color: #404040;/* width: 100%; */border-radius: 20px;/* display: inline-flex; *//* margin-bottom: 20px; */margin: 10px;">
-      {{__('Registration Done Successfully')}}
-                            </h4>
-                            <label for="frame3" style="width: max-content;margin-top: 16px;/* padding-top: 20px; *//* margin-bottom: 20px; *//* display: revert; */padding: 20px;font-weight: 800;font-size: x-large;background-color: dodgerblue;border-radius: 12px;">انتقل إلى عرض السعر</label>
+                        <div class="frame-content" style="background-color: #252532;border-radius: 20px;">
+                          <div class="row art-form-field" style="/* padding-bottom:10px; *//* padding: 5px; *//* border-radius: 20px; *//* margin: 10px; */display: unset;/* float: right; background-color: #606060;*/"><br>
+                            <h2 style="padding: 20px;/* width: 100%; */border-radius: 20px;/* display: inline-flex; *//* margin-bottom: 20px; */margin: 10px;">
+                              {{__('Registration Done Successfully')}}
+                            </h2>
+                            <label for="frame3" style="color:black; width: max-content;margin-top: 16px;/* padding-top: 20px; *//* margin-bottom: 20px; *//* display: revert; */padding: 20px;font-weight: 800;font-size: x-large;background-color: #FFC107;border-radius: 12px;">انتقل إلى عرض السعر</label>
                           </div>
                           
-
-                      </div>
+                        </div>
                         @endif  
 
                       </div>
@@ -475,7 +464,7 @@
   }
 
   #bullets label:hover{
-    background-color:blue;
+    background-color:#FFC107;
   }
   #bullets input:checked{
     background-color:red;

@@ -18,6 +18,6 @@ class UploadController extends Controller
         }
        
 
-        return redirect('{{app()->getLocale()}}/blog-post')->with('success', 'your message,here');   
+        return redirect('ar/blog-post');   
     }
 }
