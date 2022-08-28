@@ -90,7 +90,14 @@
     "places consutant":"استشارات الموقع.",
     "Product Names":"أسماء المنتجات",
     "NewBorn Names":"أسماء المواليد الجدد",
-    "Others":"استشارات أخرى"
+    "Others":"استشارات أخرى",
+    "Try now":"جرب الآن",
+    "Name of account owner":"اسم صاحب الحساب",
+    "IBAN number":"رقم الأيبان",
+    "Swift number":"رقم السويفت",
+    "Country":"البلد",
+    "Bank name":"اسم البنك",
+    "Data of Bank Transfer":"بيانات التحويل البنكي"
 
 
 

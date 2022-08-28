@@ -74,48 +74,72 @@
                       </div>
                     </div>
                     <div class="frame frame_2">
-                    <div class="frame-content">
+                      <div class="frame-content">
                               <br><br>
+                        <div style="/* float: right; */background-color: #252532;width: 74%;border-radius: 20px;/* margin: 20px; */display: inline-block;">
+                          <div class="row" style="justify-content: space-between;">
+                            <img src="https://res.cloudinary.com/dxdc8azyj/image/upload/v1661717757/bank_owt3ot.png" style="
+                            padding: 21px;
+                            padding-left: 45px;
+                            width: 35%;">
+                            <h2 style="/*background-color: #404040; width: 100%; */border-radius: 20px;/* margin-bottom: 20px; *//* margin: auto; */padding: 56px;">{{__('Data of Bank Transfer')}}</h2> 
+                          </div>
+                                                
+                          <hr style="
+                            background-color: white;
+                            width: 93%;">
+                          <div class="row" style="justify-content: end;">
+                                <h3 style="/*background-color: #404040; width: 100%; */border-radius: 20px;/* margin-bottom: 20px; *//* margin: auto; */font-weight: 300;padding: 39px;">معلومات الدفع البنكية</h3>
+                          </div>
 
-                              <div style="/* float: right; */background-color: #252532;border-radius: 20px;margin: 20px;">
-                                <h2 style="padding: 20px; /*background-color: #404040; width: 100%; */border-radius: 20px;display: inline-flex;/* margin-bottom: 20px; */margin: 10px;">{{__('Bank Payment Info')}}</h2><br>
+                          <div class="row" style="justify-content: end;">
+                                <h4 style="/*background-color: #404040; width: 100%; */border-radius: 20px;/* margin-bottom: 20px; */color: darkgray;/* margin: auto; */font-weight: revert;padding-bottom: 27px;padding-right: 39px;">: {{__('Name of account owner')}}</h4>
+                          </div>
+
+                          <div class="row" style="justify-content: end;">
+                                <h4 style="/*background-color: #404040; width: 100%; */border-radius: 20px;/* margin-bottom: 20px; */color: darkgray;/* margin: auto; */font-weight: revert;padding-bottom: 27px;padding-right: 39px;">: {{__('IBAN number')}}</h4>
+                          </div>
+                            
+                          <div class="row" style="justify-content: end;">
+                                <h4 style="/*background-color: #404040; width: 100%; */border-radius: 20px;/* margin-bottom: 20px; */color: darkgray;/* margin: auto; */font-weight: revert;padding-bottom: 27px;padding-right: 39px;">: {{__('Swift number')}}</h4>   
+                          </div>
+
+                            
+                          <div class="row" style="justify-content: end;">
+                                <h4 style="/*background-color: #404040; width: 100%; */border-radius: 20px;/* margin-bottom: 20px; */color: darkgray;/* margin: auto; */font-weight: revert;padding-bottom: 27px;padding-right: 39px;">: {{__('Country')}}</h4>
+                          </div>
+
+                            
+                          <div class="row" style="justify-content: end;">
+                                <h4 style="/*background-color: #404040; width: 100%; */border-radius: 20px;/* margin-bottom: 20px; */color: darkgray;/* margin: auto; */font-weight: revert;padding-bottom: 27px;padding-right: 39px;">: {{__('City')}}</h4>
+                          </div>
+
+                            
+                          <div class="row" style="justify-content: end;">
+                                <h4 style="/*background-color: #404040; width: 100%; */border-radius: 20px;/* margin-bottom: 20px; */color: darkgray;/* margin: auto; */font-weight: revert;padding-bottom: 27px;padding-right: 39px;">: {{__('Bank name')}}</h4>
+                          </div>
                                   <!-- <hr style="padding: 20px;background-color: #404040;/* width: 100%; */border-radius: 20px;display: inline-flex;/* margin-bottom: 20px; */margin: 10px;" class=""> -->
-                                <div class="container mt-3" style="
-                                    /* margin: 10px; */
-                                    width: max-content;
-                                    padding: 20px;
-                                    overflow-y: 20px;
-                                    /* overflow-y: scroll; */
-                                    /* overflow: scroll; */
-                                    /* height: 50px; */
-                                    /* width: fit-content; */
-                                    /* display: inline; */
-                                    /* background-color: #404040; */
-                                    /* padding: 10px; */
-                                    border-radius: 20px;
-                                    ">
-                                  <br>
-                                   <h3 for="text" style="padding: 20px;/*background-color: #404040; width: 100%; */border-radius: 20px;display: inline-flex;/* margin-bottom: 20px; */margin: 10px;" class="row mt-5"> 12345 : {{__('Bank Account Transactional Number')}}</h3>
-                                      <br>
-                                      <h3 for="text" style="padding: 20px;/*background-color: #404040;width: 100%; */border-radius: 20px;display: inline-flex;/* margin-bottom: 20px; */margin: 10px;" class="mt-5 row">Aed Bank : {{__('Transactional Bank Name')}}</h3>
-                                        <br>
-                                        <h3 for="text" style="padding: 20px;/*background-color: #404040;width: 100%; */border-radius: 20px;display: inline-flex;/* margin-bottom: 20px; */margin: 10px;" class="mt-5 row">123456789 : {{__('Bank Account (IBAN) Number')}}</h3>
-                                        <br>
-                                        <h3 for="text" style="padding: 20px;/*background-color: #404040;width: 100%; */border-radius: 20px;display: inline-flex;/* margin-bottom: 20px; */margin: 10px;
-                                        " class="mt-5 row"> 123456789 : {{__('Bank Account (IBAN) Number')}}</h3>
-                                </div>
+                                
                                 <!-- User ID : <input type = "text" name = "user_id" /> -->
-                                <br>
-                                <div style="background-color: transparent;width: fit-content;display: contents;">
-                              
-                                <label for="frame1" class="" style="background-color:#FFC107; color:black; height: 45px;width: 220px;font-size: x-large;margin: 20px;padding: 21px;">{{__('Go to Execution')}}</label>
+                            <br>
+                          <div style="background-color: transparent;width: fit-content;display: contents;">  
+                                <label for="frame1" class="" style="background-color:#FFC107; color:black; height: 45px;width: 220px;font-size: x-large;margin: 20px;padding: 21px;">انتقل إلى التنفيذ</label>
+                          </div>
 
-                              </div>
-
-                              </div>
+                        </div>
 
                                
                       </div>
+
+                      <!-- <h3 for="text" style="padding: 20px;/*background-color: #404040; width: 100%; */border-radius: 20px;display: inline-flex;/* margin-bottom: 20px; */margin: 10px;" class="row mt-5"> 12345 : {{__('Bank Account Transactional Number')}}</h3>
+                                      <br>
+                                    <h3 for="text" style="padding: 20px;/*background-color: #404040;width: 100%; */border-radius: 20px;display: inline-flex;/* margin-bottom: 20px; */margin: 10px;" class="mt-5 row">Aed Bank : {{__('Transactional Bank Name')}}</h3>
+                                        <br>
+                                    <h3 for="text" style="padding: 20px;/*background-color: #404040;width: 100%; */border-radius: 20px;display: inline-flex;/* margin-bottom: 20px; */margin: 10px;" class="mt-5 row">123456789 : {{__('Bank Account (IBAN) Number')}}</h3>
+                                        <br>
+                                    <h3 for="text" style="padding: 20px;/*background-color: #404040;width: 100%; */border-radius: 20px;display: inline-flex;/* margin-bottom: 20px; */margin: 10px;
+                                        " class="mt-5 row"> 123456789 : {{__('Bank Account (IBAN) Number')}}</h3>
+                                </div> -->
                     </div>
 
                     <div class="frame frame_3">

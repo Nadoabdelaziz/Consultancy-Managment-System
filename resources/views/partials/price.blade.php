@@ -4,7 +4,7 @@
                     <div class="art-a art-price">
                       <!-- price body -->
                       <div class="art-price-body">
-                      `<h5 class="mb-30" style="padding: 6px;background-color: darkolivegreen;border-radius: 20px;font-size: 20px;">{{__($calculator->name)}}</h5>                        
+                      `<h5 class="mb-30" style="padding: 6px;background-color: #FFC107;color: black;border-radius: 20px;font-size: x-large;font-weight: 600;">{{__($calculator->name)}}</h5>                        
                       
                       <!-- price cost -->
                         <!-- <div class="art-price-cost">
@@ -22,7 +22,7 @@
                         </ul>
                         <!-- price list end -->
                         <!-- button -->
-                        <a href="{{app()->getLocale()}}/{{$calculator->slug}}" class="art-link art-color-link art-w-chevron">{{__('Order now')}}</a>
+                        <a href="{{app()->getLocale()}}/{{$calculator->slug}}" class="art-link art-color-link art-w-chevron">{{__('Try now')}}</a>
                         <div class="art-asterisk"><sup>*</sup>Free only when ordering paid services</div>
                       </div>
                       <!-- price body end -->
