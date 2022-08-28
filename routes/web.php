@@ -27,9 +27,14 @@ Route::group(['prefix' => '{locale}'],function (){
         return view('blog-post');
     })->middleware('setLocale');
 
-    Route::get('/blog-product-post',function(){
-        return view('blog-product-post');
+    Route::get('/ProductConsultant',function(){
+        return view('ProductConsultant');
     })->middleware('setLocale');
+
+    Route::get('/NewBornCons',function(){
+        return view('NewBornCons');
+    })->middleware('setLocale');
+
 
 
     Route::get('/SentenceCalculator',function(){
@@ -49,6 +54,12 @@ Route::get('/logout', function(Request $request) {
 Route::post('upload','App\Http\Controllers\UploadController@index')->middleware('setLocale');  
 
 Route::post('PlacesCons','App\Http\Controllers\HomeController@PlacesConsultancy')->middleware('setLocale');  
+
+Route::post('uploadProduct','App\Http\Controllers\UploadController@Productupload')->middleware('setLocale');  
+
+Route::post('ProductCons','App\Http\Controllers\HomeController@ProductConsultancy')->middleware('setLocale');  
+
+
 
 });
 

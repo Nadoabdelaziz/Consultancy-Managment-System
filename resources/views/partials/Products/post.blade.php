@@ -40,7 +40,7 @@
                     <div class="frame frame_1">
                       <div class="frame-content" style="flex: none;">
                           <br><br>                            
-                          <form action="upload" method="POST" enctype="multipart/form-data" style="background-color: transparent">
+                          <form action="uploadProduct" method="POST" enctype="multipart/form-data" style="background-color: transparent">
                             @csrf
                             <div class="row" style="/* float: right; */display: inline-table;background-color: #252532;border-radius: 20px;">
                               <h2 style="margin: 25px; /*background-color: crimson;*/ padding: 10px; border-radius: 20px; font-size: x-large;"> {{__('invoice payment upload')}}
@@ -151,7 +151,7 @@
 
                         @if(!isset($info))
 
-                          <form action="PlacesCons" method="post" enctype="multipart/form-data" style="background-color: transparent">
+                          <form action="ProductCons" method="post" enctype="multipart/form-data" style="background-color: transparent">
                             @csrf
                             <div class="art-form-field" style="margin-left: 47px; float: right;background-color: #2E2E39;border-radius: 20px;">
                               <h2 style="padding: 20px ; /*background-color: #252532; width: 100%; *//* margin-bottom: 20px; */margin: 10px;">{{__('List Of Names')}}</h2>
@@ -221,44 +221,44 @@
                             <!-- **************************************************************************** -->
                             <div class="art-form-field" style="float:left;height: fit-content;background-color: #2E2E39; border-radius:20px">
                                     <h3 style="padding: 20px;/* width: 100%; border-radius: 20px;display: inline-flex;*/ /*  margin-bottom: 20px; */margin: 7px;">
-                                    {{__('Places Consultant')}}</h3>
+                                    {{__('Product Name Consultant')}}</h3>
                                     <br><br>
                                   <div class="art-form-field" style="margin: 10px;padding: 10px;border-radius: 20px;">      
                                    
                                     <div class="row" style="/* padding-bottom:10px; *//* border-radius: 20px; */margin: 10px;display: flow-root;">
-                                      <input type="text" style="border-radius: 6px;width: -webkit-fill-available;font-size: 17px;font-weight: 900;text-align: center;margin: 5px;" name="inventor" placeholder="{{isset($info) ? $info->creator_name : __('Inventor Name')}}">
+                                      <input type="text" style="border-radius: 6px;width: -webkit-fill-available;font-size: 17px;font-weight: 900;text-align: center;margin: 5px;" name="inventor" placeholder="{{isset($info) ? $info->creator_name : __('name of entity or trademark owned by product')}}">
                                     </div>
 
                                     <!-- added inventors -->
-                                    <div class="row" style="/* padding-bottom:10px; *//* border-radius: 20px; */margin: 10px;display: none;" id="invent-1">
-                                      <input type="text" style="border-radius: 6px;width: -webkit-fill-available;font-size: 17px;font-weight: 900;text-align: center;margin: 5px;" name="inventor2" placeholder="{{isset($info) ? $info->creator_name : __('Inventor Name')}}">
+                                    <!-- <div class="row" style="/* padding-bottom:10px; *//* border-radius: 20px; */margin: 10px;display: none;" id="invent-1">
+                                      <input type="text" style="border-radius: 6px;width: -webkit-fill-available;font-size: 17px;font-weight: 900;text-align: center;margin: 5px;" name="inventor" placeholder="أدخل هنا اسم مؤسس أو مؤسسي المنشأة">
                                     </div>
 
                                     <div class="row" style="/* padding-bottom:10px; *//* border-radius: 20px; */margin: 10px;display: none;" id="invent-2">
-                                      <input type="text" style="border-radius: 6px;width: -webkit-fill-available;font-size: 17px;font-weight: 900;text-align: center;margin: 5px;" name="inventor3" placeholder="{{isset($info) ? $info->creator_name : __('Inventor Name')}}">
+                                      <input type="text" style="border-radius: 6px;width: -webkit-fill-available;font-size: 17px;font-weight: 900;text-align: center;margin: 5px;" name="inventor" placeholder="أدخل هنا اسم مؤسس أو مؤسسي المنشأة">
                                     </div>
                                     
                                     <div class="row" style="/* padding-bottom:10px; *//* border-radius: 20px; */margin: 10px;display: none;" id="invent-3">
-                                      <input type="text" style="border-radius: 6px;width: -webkit-fill-available;font-size: 17px;font-weight: 900;text-align: center;margin: 5px;" name="inventor4" placeholder="{{isset($info) ? $info->creator_name : __('Inventor Name')}}">
-                                    </div>
+                                      <input type="text" style="border-radius: 6px;width: -webkit-fill-available;font-size: 17px;font-weight: 900;text-align: center;margin: 5px;" name="inventor" placeholder="أدخل هنا اسم مؤسس أو مؤسسي المنشأة">
+                                    </div> -->
 
-
+<!-- 
                                     <div id="invent" id="pluss" class="row" style="/* padding-bottom:10px; padding: 5px; border-radius: 20px; */margin: -8px;display: flow-root;/* background-color: whitesmoke; */">
-                                    <h5 style="background-color: #23232d;display: -webkit-inline-box;padding: 7px;margin: 16px;" class="row">
-                                      <label style=" pointer-events: none;color: #FFC107;/* height: fit-content; *//* width: 88%; */margin: 18px;" placeholder="">{{__('press here to add partner name')}}</label>
-                                      <label  onclick="addinventor()" style="color: #FFC107;/* height: fit-content; *//* width: 88%; */background-color: #2E2E39;/* margin: 18px; */padding: 5px;font-size: x-large;" placeholder="">+</label>
-                                    </h5>
-                                  </div>
+                                      <h5 style="background-color: #23232d;display: -webkit-inline-box;padding: 7px;margin: 16px;" class="row">
+                                        <label style=" pointer-events: none;color: #FFC107;/* height: fit-content; *//* width: 88%; */margin: 18px;" placeholder="">{{__('press here to add partner name')}}</label>
+                                        <label  onclick="addinventor()" style="color: #FFC107;/* height: fit-content; *//* width: 88%; */background-color: #2E2E39;/* margin: 18px; */padding: 5px;font-size: x-large;" placeholder="">+</label>
+                                      </h5>
+                                    </div> -->
                                       <br>
 
                                     <div class="row" style="/* padding-bottom:10px; *//* border-radius: 20px; */margin: 10px;display: flow-root;">
-                                      <input type="text" style="border-radius: 6px;width: -webkit-fill-available;font-size: 17px;font-weight: 900;text-align: center;margin: 5px;" name="activity" placeholder="{{isset($info) ? $info->activity : __('Enter Activity')}}">
+                                      <input type="text" style="border-radius: 6px;width: -webkit-fill-available;font-size: 17px;font-weight: 900;text-align: center;margin: 5px;" name="activity" placeholder="{{isset($info) ? $info->activity : __('enter here the kind and categorization product')}}">
                                     </div>
                                     
                                     <br>
 
                                     <div class="row" style="/* padding-bottom:10px; *//* border-radius: 20px; */margin: 10px;display: flow-root;">
-                                      <input type="text" style="border-radius: 6px;width: -webkit-fill-available;font-size: 17px;font-weight: 900;text-align: center;margin: 5px;" name="country" placeholder="{{isset($info) ? $info->country :__('enter country')}}">
+                                      <input type="text" style="border-radius: 6px;width: -webkit-fill-available;font-size: 17px;font-weight: 900;text-align: center;margin: 5px;" name="country" placeholder="{{isset($info) ? $info->country :__('enter here country and city of entity')}}">
                                     </div>
                 
                                   </div>  

@@ -30,7 +30,7 @@
         <!-- info bar -->
         @foreach($consultants as $consultant) 
           @include('partials.sidebar')
-        @endforeach
+        @endforeach          
         <!-- info bar end -->
 
         <!-- content -->

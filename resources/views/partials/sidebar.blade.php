@@ -20,8 +20,8 @@
 
     <!-- avatar -->
     <div class="art-avatar">
-      <a data-fancybox="avatar" href="{{url('img/face-1.jpg')}}" class="art-avatar-curtain">
-        <img src="storage/{{$consultant->img}}" alt="avatar">
+      <a data-fancybox="avatar" href="https://res.cloudinary.com/dxdc8azyj/image/upload/v1661689215/R_l0kzgw.jpg" class="art-avatar-curtain">
+        <img src="https://res.cloudinary.com/dxdc8azyj/image/upload/v1661689215/R_l0kzgw.jpg" alt="avatar">
         <i class="fas fa-expand"></i>
       </a>
       <!-- available -->

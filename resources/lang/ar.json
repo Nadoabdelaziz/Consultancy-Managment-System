@@ -72,7 +72,11 @@
     "GIT knowledge":"المعرفة العامة",
     "Arabic":"العربية",
     "English":"الإنكليزية",
-    "French":"الفرنسية"
+    "French":"الفرنسية",
+    "press here to add partner name":"اضغط هنا ، لإضافة اسم مؤسس شريك المنشأة ",
+    "name of entity or trademark owned by product":"اسم الكيان أو العلامة التجارية التي يملكها المنتج ",
+    "enter here the kind and categorization product":"أدخل هنا نوع وتصنيف المنتج",
+    "enter here country and city of entity":"أدخل هنا بلد ومدينة الكيان"
 
 
 }

@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use App\Models\Consultant;
 use App\Models\Service;
 use App\Models\Place;
+use App\Models\Product;
+
 use App\Models\Calculator;
 
 class HomeController extends Controller
@@ -63,4 +65,45 @@ class HomeController extends Controller
         return view('blog-post', compact('last_place_added'));
 
     }
+
+
+    
+
+    public function ProductConsultancy(Request $request){
+        if($request == ""){
+            return view('ProductConsultant');
+        }
+        
+        $user_email=$request->user;
+        $names=$request->first . "-". $request->Sec . "-" . $request->th;
+        $creator= $request->inventor;
+        $place=$request->country;
+        $activty=$request->activity;
+        $comment =$request->Comment;
+
+        // return $names;
+
+        Product::create([
+            'names'=> $names,
+            'creator_name' => $creator,
+            'activity' => $activty,
+            'country' => $place,
+            'comment' => $comment,
+            'status' => '1',
+            'user_email' =>$user_email
+        ]);
+
+        $placess=Product::get();
+        if($placess->count() > 0){
+            $last_place_added=Product::latest()->take(1)->get();
+        }
+        else{
+            $last_place_added = "";
+        }
+
+
+        return view('ProductConsultant', compact('last_place_added'));
+
+    }
+    
 }
