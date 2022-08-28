@@ -34,7 +34,7 @@ color: white;
 text-decoration: none;
 }
 a:hover{
-    color:red;
+    color:#FFC107;
 }
 </style> 
 </Head>
@@ -45,11 +45,18 @@ a:hover{
         <li>
             <br>
             <h4 class="row" style="font-family: emoji;float:right;font-size: x-large;"> 
-                <i class="fa fa-comment" aria-hidden="true" style="margin: 3px;margin-right: 23px;"></i>
-                <i class="fa fa-bell" aria-hidden="true" style="margin: 3px;margin-right: 23px;"></i>
-                <i class="fa fa-user-circle" aria-hidden="true" style="margin: 3px;margin-right: 23px;"></i>
-                   <a style="color" href="{{app()->getLocale()}}/admin/login">{{auth()->user() ? auth()->user()->name : __('Sign In')}} </a> 
-                    <i class="fa fa-minus" aria-hidden="true" style="font-size: small;margin: 10px;"></i>
+                <a href="#">
+                    <i class="fa fa-comment" aria-hidden="true" style="margin: 3px;margin-right: 23px;"></i>
+                </a>    
+                <a href="#">
+                    <i class="fa fa-bell" aria-hidden="true" style="margin: 3px;margin-right: 23px;"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa fa-user-circle" aria-hidden="true" style="margin: 3px;margin-right: 23px;"></i>
+                </a>    
+                <a style="color" href="{{app()->getLocale()}}/admin/login">{{auth()->user() ? auth()->user()->name : __('Sign In')}} </a> 
+                <i class="fa fa-minus" aria-hidden="true" style="font-size: small;margin: 10px;"></i>
             </h4> 
         </li>
     </ul>

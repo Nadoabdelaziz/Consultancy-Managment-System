@@ -5,6 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Place;
 use App\Models\Product;
+use App\Models\Newborn;
+use App\Models\Other;
+
+
 
 
 class UploadController extends Controller
@@ -35,4 +39,31 @@ class UploadController extends Controller
 
         return redirect('ar/ProductConsultant');   
     }
+
+
+    public function Bornupload(Request $request){
+        $born_id=$request->id;
+        if($born_id != ""){
+            Newborn::where('id',$born_id)->update([
+                'Invoice' => $request->file('file')->store('posts')
+            ]);
+        }
+       
+        return redirect('ar/NewBornCons');   
+    }
+
+
+    public function otherupload(Request $request){
+        $other_id=$request->id;
+        if($other_id != ""){
+            Other::where('id',$other_id)->update([
+                'Invoice' => $request->file('file')->store('posts')
+            ]);
+        }
+       
+        return redirect('ar/OtherCons');   
+    }
+
+    
+    
 }

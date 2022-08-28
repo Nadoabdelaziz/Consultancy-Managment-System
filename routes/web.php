@@ -35,6 +35,11 @@ Route::group(['prefix' => '{locale}'],function (){
         return view('NewBornCons');
     })->middleware('setLocale');
 
+    Route::get('/OtherCons',function(){
+        return view('OtherCons');
+    })->middleware('setLocale');
+
+
 
 
     Route::get('/SentenceCalculator',function(){
@@ -51,13 +56,33 @@ Route::get('/logout', function(Request $request) {
     return redirect('/');
   })->middleware('setLocale');
 
+
+
+//  places 
 Route::post('upload','App\Http\Controllers\UploadController@index')->middleware('setLocale');  
 
 Route::post('PlacesCons','App\Http\Controllers\HomeController@PlacesConsultancy')->middleware('setLocale');  
 
+
+// product 
 Route::post('uploadProduct','App\Http\Controllers\UploadController@Productupload')->middleware('setLocale');  
 
 Route::post('ProductCons','App\Http\Controllers\HomeController@ProductConsultancy')->middleware('setLocale');  
+
+
+// new born
+Route::post('NewBornCons','App\Http\Controllers\HomeController@BornConsultancy')->middleware('setLocale');  
+
+Route::post('Bornupload','App\Http\Controllers\UploadController@Bornupload')->middleware('setLocale');  
+
+
+// others
+
+Route::post('othercons','App\Http\Controllers\HomeController@othercons')->middleware('setLocale');  
+
+Route::post('otherupload','App\Http\Controllers\UploadController@otherupload')->middleware('setLocale');  
+
+
 
 
 

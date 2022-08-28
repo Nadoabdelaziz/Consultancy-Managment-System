@@ -76,7 +76,22 @@
     "press here to add partner name":"اضغط هنا ، لإضافة اسم مؤسس شريك المنشأة ",
     "name of entity or trademark owned by product":"اسم الكيان أو العلامة التجارية التي يملكها المنتج ",
     "enter here the kind and categorization product":"أدخل هنا نوع وتصنيف المنتج",
-    "enter here country and city of entity":"أدخل هنا بلد ومدينة الكيان"
+    "enter here country and city of entity":"أدخل هنا بلد ومدينة الكيان",
+    "father name":"اسم الأب",
+    "grandfather name":"اسم الجد",
+    "the nickname":"اللقب",
+    "Name pronunciation":"ثقافة نطق الاسم",
+    "newborn name with father":"اسم المولود مع الأب",
+    "newborn name with father and grandfather":"اسم مولود مع الأب والجد",
+    "newborn name with father and nickname":"اسم المولود مع الأب واللقب",
+    "newborn name with grandfather":"اسم المولود مع الجد",
+    "newborn name with nickname":"اسم المولود مع اللقب",
+    "enter details here":"أدخل التفاصيل هنا",
+    "places consutant":"استشارات الموقع.",
+    "Product Names":"أسماء المنتجات",
+    "NewBorn Names":"أسماء المواليد الجدد",
+    "Others":"استشارات أخرى"
+
 
 
 }

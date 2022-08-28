@@ -8,6 +8,10 @@ use App\Models\Consultant;
 use App\Models\Service;
 use App\Models\Place;
 use App\Models\Product;
+use App\Models\Newborn;
+use App\Models\Other;
+
+
 
 use App\Models\Calculator;
 
@@ -105,5 +109,84 @@ class HomeController extends Controller
         return view('ProductConsultant', compact('last_place_added'));
 
     }
+ 
+
+
+    public function BornConsultancy(Request $request){
+
+        if($request == ""){
+            return view('NewBornCons');
+        }
+
+        
+        
+        $user_email=$request->user;
+        $names=$request->first . "-". $request->Sec . "-" . $request->th;
+        $father= $request->father;
+        $grand=$request->grand;
+        $nickname=$request->nickname;
+        $pronunce=$request->pronunce;
+        $comment =$request->Comment;
+
+
+        Newborn::create([
+            'names'=> $names,
+            'father_name' => $father,
+            'grandfather' => $grand,
+            'nickname' => $nickname,
+            'pronounce'=> $pronunce,
+            'comment' => $comment,
+            'status' => '1',
+            'user_email' =>$user_email
+        ]);
+
+        $newborns=Newborn::get();
+        if($newborns->count() > 0){
+            $last_born_added=Newborn::latest()->take(1)->get();
+        }
+        else{
+            $last_born_added = "";
+        }
+
+
+        return view('NewBornCons', compact('last_born_added'));
+
+    }
+
+
+
+    public function othercons(Request $request){
+
+        if($request == ""){
+            return view('OtherCons');
+        }
+
+
     
+        $user_email=$request->user;
+        $names=$request->first . "-". $request->Sec . "-" . $request->th;
+        $details= $request->details;
+        $comment =$request->Comment;
+
+
+        Other::create([
+            'names'=> $names,
+            'details' => $details,
+            'comment' => $comment,
+            'status' => '1',
+            'user_email' =>$user_email
+        ]);
+
+        $other=Other::get();
+        if($other->count() > 0){
+            $last_other_added=Other::latest()->take(1)->get();
+        }
+        else{
+            $last_other_added = "";
+        }
+
+
+        return view('OtherCons', compact('last_other_added'));
+
+    }
 }

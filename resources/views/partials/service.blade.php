@@ -5,9 +5,9 @@
   <!-- service content -->
   <div class="art-service-ib-content">
     <!-- title -->
-    <h5 class="mb-15">{{__($service->header)}}</h5>
+    <h4 class="mb-15">{{__($service->header)}}</h4>
     <!-- text -->
-    <div class="mb-15">{{__($service->description)}}.</div>
+    <div class="mb-15">{{__($service->description)}}</div>
     <!-- button -->
     <!-- <h1></h1> -->
     <div class="art-buttons-frame"><a href="{{app()->getLocale()}}/{{$service->slug}}" 

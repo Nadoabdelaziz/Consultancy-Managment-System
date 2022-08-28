@@ -30,7 +30,7 @@
           @endif  
           <div class="art-buttons-frame">
             <!-- button -->
-            <a href="/portfolio-3-col-masonry.html" class="art-btn art-btn-md"><span>{{__('Explore now')}}</span></a>
+            <a href="/portfolio-3-col-masonry.html" class="art-btn art-btn-md"><span style="font-size: x-large;">{{__('Explore now')}}</span></a>
           </div>
         </div>
         <!-- main title end -->

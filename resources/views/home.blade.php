@@ -52,11 +52,10 @@
                 @include('partials.header')
 
               <!-- Numbers-slide-container -->
-                @include('partials.numbers')
               <!-- container end -->
 
               <!-- container -->
-              <div class="container-fluid">
+              <div class="container-fluid" style="padding:46px">
 
                 <!-- row -->
                 <div class="row">
@@ -69,7 +68,7 @@
                       <!-- title frame -->
                       <div class="art-title-frame">
                         <!-- title -->
-                        <h4>{{__('Services')}}</h4>
+                        <h3>{{__('Services')}}</h3>
                       </div>
                       <!-- title frame end -->
                     </div>
@@ -104,7 +103,7 @@
                       <!-- title frame -->
                       <div class="art-title-frame">
                         <!-- title -->
-                        <h4>{{__('Calculators')}}</h4>
+                        <h3>{{__('Calculators')}}</h3>
                       </div>
                       <!-- title frame end -->
                     </div>

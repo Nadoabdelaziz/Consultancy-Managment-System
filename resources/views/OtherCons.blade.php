@@ -65,7 +65,7 @@
 
                     <div class="art-section-title">
                       <div class="art-title-frame">
-                        <h4>{{__('NewBorn Names Consultant')}}</h4>
+                        <h4>{{__('Other Consultants')}}</h4>
                       </div>
 
                       <div class="art-right-frame">
@@ -80,16 +80,16 @@
                   <h1>{{$last_place_added}}</h1>
                 @endif   -->
 
-                @if(isset($last_born_added))  
-                  @foreach($last_born_added as $info)
+                @if(isset($last_other_added))  
+                  @foreach($last_other_added as $info)
                     <!-- col -->
-                    @include('partials.Borns.post')
+                    @include('partials.Others.post')
                     <!-- col end -->
                   @endforeach
                 
                 @else  
                     <!-- col -->
-                      @include('partials.Borns.post')
+                      @include('partials.Others.post')
                     <!-- col end -->
                 @endif
                 
