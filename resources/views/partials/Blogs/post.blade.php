@@ -150,7 +150,7 @@
                                   <h3 style="padding: 20px;/*background-color: #404040; width: 100%; */border-radius: 20px;display: inline-flex;/* margin-bottom: 20px; */margin: 10px">{{__('Total Price')}}</h3>
                                   <br>
                                 <div class="row" style="/* padding-bottom:10px; */padding: 35px;/* border-radius: 20px; */margin: 10px;/* display: flow-root; background-color: #606060;*/">
-                                  <div style="/* border-radius: 6px; *//* width: -webkit-fill-available; */font-size: xxx-large;font-weight: 900;/* text-align: center; */margin: 5px;">30$</div>
+                                  <div  style="/* border-radius: 6px; *//* width: -webkit-fill-available; */font-size: xxx-large;font-weight: 900;/* text-align: center; */margin: 5px;">30$</div>
                                 </div>
                                 <!-- User ID : <input type = "text" name = "user_id" /> -->
                                 <br>
@@ -229,6 +229,8 @@
                                       <label onclick="addtext()" style="color : #FFC107">+</label>
                                     </h2>
                                   </div>
+
+                                  <input type="text" id="totalprice" name="price" value="30" style="display:none">
 
 
 

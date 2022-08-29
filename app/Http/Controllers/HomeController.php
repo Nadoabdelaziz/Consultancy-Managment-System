@@ -44,6 +44,7 @@ class HomeController extends Controller
         $place=$request->country;
         $activty=$request->activity;
         $comment =$request->Comment;
+        $price=$request->price;
 
         // return $names;
 
@@ -54,7 +55,8 @@ class HomeController extends Controller
             'country' => $place,
             'comment' => $comment,
             'status' => '1',
-            'user_email' =>$user_email
+            'user_email' =>$user_email,
+            'price' => $price
         ]);
 
         $placess=Place::get();

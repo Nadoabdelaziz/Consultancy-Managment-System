@@ -8,13 +8,18 @@
     <h4 class="mb-15">{{__($service->header)}}</h4>
     <!-- text -->
     <div class="mb-15">{{__($service->description)}}</div>
-    <!-- button -->
-    <!-- <h1></h1> -->
-    <div class="art-buttons-frame"><a href="{{app()->getLocale()}}/{{$service->slug}}" 
-    class="art-link art-color-link art-w-chevron">{{__('Order now')}}</a></div>
-  </div>
+      <!-- button -->
+      <!-- <h1></h1> -->
+      <div class="art-buttons-frame">
+        @if(auth()->user())
+        <a href="{{app()->getLocale()}}/{{$service->slug}}" class="art-link art-color-link art-w-chevron">{{__('Order now')}}</a>
+        @else
+        <a href="ar/admin/login" class="art-link art-color-link art-w-chevron">{{__('Order now')}}</a>
+        @endif
+      </div>
+    </div>
   <!-- service content end -->
-</div>
+  </div>
 <!-- service end -->
 
 </div>

@@ -22,7 +22,7 @@
                         </ul>
                         <!-- price list end -->
                         <!-- button -->
-                        <a href="{{app()->getLocale()}}/{{$calculator->slug}}" class="art-link art-color-link art-w-chevron">{{__('Try now')}}</a>
+                        <a target="_blank" href="{{app()->getLocale()}}/{{$calculator->slug}}" class="art-link art-color-link art-w-chevron">{{__('Try now')}}</a>
                         <div class="art-asterisk"><sup>*</sup>Free only when ordering paid services</div>
                       </div>
                       <!-- price body end -->

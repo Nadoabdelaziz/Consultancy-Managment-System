@@ -65,17 +65,15 @@ a:hover{
 <br>
 
 
-<header style="
-">
-    <ul style="margin-top: 12px;">
-        
-<li style="">
-    <h4>{{__('Home')}}</h4>
-
-<br>
- 
-
-</li>
+<header style="">
+    <ul style="margin-top: 12px;">        
+        <li style="">
+            <h4>    
+                <a href="/ar">{{__('Home')}}</a>
+            </h4>
+            
+            <br>
+        </li>
     </ul>
 </header>
 <!-- You are at JavaTpoint Site..... -->

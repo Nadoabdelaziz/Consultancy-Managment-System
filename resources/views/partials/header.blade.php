@@ -35,7 +35,7 @@
         </div>
         <!-- main title end -->
         <!-- photo -->
-        <img src="img/face-2-tany.png" class="art-banner-photo" alt="Your Name">
+        <img src="https://res.cloudinary.com/dxdc8azyj/image/upload/v1661781895/face-2-tany_wdvcsk.png" class="art-banner-photo" alt="Your Name">
       </div>
       <!-- banner overlay end -->
     </div>
