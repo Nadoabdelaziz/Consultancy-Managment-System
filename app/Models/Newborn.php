@@ -16,7 +16,9 @@ class Newborn extends Model
         'pronounce',
         'comment',
         'status',
-        'user_email'
+        'user_email',
+        'price'
+
     ];
 
 }

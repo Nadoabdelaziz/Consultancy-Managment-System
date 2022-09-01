@@ -230,7 +230,7 @@
                                     </h2>
                                   </div>
 
-                                  <input type="text" id="totalprice" name="price" value="30" style="display:none">
+                                  <input type="text"  name="price" value="{{(auth()->user()) ? auth()->user()->email : ''}}" style="display:none">
 
 
 

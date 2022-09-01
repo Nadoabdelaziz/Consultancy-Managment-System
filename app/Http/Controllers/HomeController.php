@@ -86,6 +86,8 @@ class HomeController extends Controller
         $place=$request->country;
         $activty=$request->activity;
         $comment =$request->Comment;
+        $price=$request->price;
+
 
         // return $names;
 
@@ -96,7 +98,9 @@ class HomeController extends Controller
             'country' => $place,
             'comment' => $comment,
             'status' => '1',
-            'user_email' =>$user_email
+            'user_email' =>$user_email,
+            'price' => $price
+
         ]);
 
         $placess=Product::get();
@@ -129,6 +133,8 @@ class HomeController extends Controller
         $nickname=$request->nickname;
         $pronunce=$request->pronunce;
         $comment =$request->Comment;
+        $price=$request->price;
+
 
 
         Newborn::create([
@@ -139,7 +145,9 @@ class HomeController extends Controller
             'pronounce'=> $pronunce,
             'comment' => $comment,
             'status' => '1',
-            'user_email' =>$user_email
+            'user_email' =>$user_email,
+            'price' => $price
+
         ]);
 
         $newborns=Newborn::get();
@@ -169,6 +177,8 @@ class HomeController extends Controller
         $names=$request->first . "-". $request->Sec . "-" . $request->th;
         $details= $request->details;
         $comment =$request->Comment;
+        $price=$request->price;
+
 
 
         Other::create([
@@ -176,7 +186,9 @@ class HomeController extends Controller
             'details' => $details,
             'comment' => $comment,
             'status' => '1',
-            'user_email' =>$user_email
+            'user_email' =>$user_email,
+            'price' => $price
+
         ]);
 
         $other=Other::get();

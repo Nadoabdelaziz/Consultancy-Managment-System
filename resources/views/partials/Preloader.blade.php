@@ -2,7 +2,7 @@
       <!-- preloader content -->
       <div class="art-preloader-content">
         <!-- title -->
-        <h4>Mohammed Ali Ghilan</h4>
+        <h4>{{__('Mohammed Ali Ghilan')}}</h4>
         <!-- progressbar -->
         <div id="preloader" class="art-preloader-load"></div>
       </div>

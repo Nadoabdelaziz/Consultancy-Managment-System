@@ -15,6 +15,8 @@ class Product extends Model
         'country' ,
         'comment' ,
         'status',
-        'user_email'
+        'user_email',
+        'price'
+
     ]; 
 }

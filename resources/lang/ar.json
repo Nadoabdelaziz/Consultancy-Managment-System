@@ -97,7 +97,20 @@
     "Swift number":"رقم السويفت",
     "Country":"البلد",
     "Bank name":"اسم البنك",
-    "Data of Bank Transfer":"بيانات التحويل البنكي"
+    "Data of Bank Transfer":"بيانات التحويل البنكي",
+    "Admin":"المستشار",
+    "user":"عميل",
+    "Mohammed Ali Ghilan":"محمد علي غيلان",
+    "Ticket Information":"معلومات التذكرة",
+    "Name":"الأسم",
+    "Email":"الأيميل",
+    "Department":"القسم",
+    "Service For Ticket":"الخدمة المتعلقة بالتذكرة",
+    "Importance":"الأهمية",
+    "Message Text":"نص الرسالة",
+    "Subject Of Ticket":"موضوع التذكرة",
+    "Attachments":"المرفقات",
+    "Send":"ارسال"
 
 
 

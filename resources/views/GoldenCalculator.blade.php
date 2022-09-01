@@ -57,7 +57,7 @@
               <!-- container -->
               <div class="container-fluid">
                   <!-- Nav -->
-                <div class="row p-30-0">
+                <div class="row p-15-0">
 
                   <!-- <div class="col-lg-12">
 

@@ -13,6 +13,8 @@ class Other extends Model
         'details',
         'comment',
         'status',
-        'user_email'
+        'user_email',
+        'price'
+
     ];
 }

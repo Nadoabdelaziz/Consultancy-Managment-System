@@ -24,7 +24,7 @@ class UploadController extends Controller
         }
        
 
-        return redirect('ar/blog-post');   
+        return redirect(''.app()->getLocale().'/blog-post');   
     }
 
 
@@ -37,7 +37,7 @@ class UploadController extends Controller
         }
        
 
-        return redirect('ar/ProductConsultant');   
+        return redirect(''.app()->getLocale().'/ProductConsultant');   
     }
 
 
@@ -49,7 +49,7 @@ class UploadController extends Controller
             ]);
         }
        
-        return redirect('ar/NewBornCons');   
+        return redirect(''.app()->getLocale().'/NewBornCons');   
     }
 
 
@@ -61,7 +61,7 @@ class UploadController extends Controller
             ]);
         }
        
-        return redirect('ar/OtherCons');   
+        return redirect(''.app()->getLocale().'/OtherCons');   
     }
 
     

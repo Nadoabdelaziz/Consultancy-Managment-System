@@ -26,7 +26,7 @@
     <div class="container-fluid">
 
       <!-- row -->
-      <div class="row p-30-0" style="justify-content: center;">
+      <div class="row" style="justify-content: center;">
 
         <!-- col -->
         <div class="col-lg-12">

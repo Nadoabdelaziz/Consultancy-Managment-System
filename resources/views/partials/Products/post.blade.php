@@ -230,6 +230,7 @@
                                     </h2>
                                   </div>
 
+                                  <input type="text" id="totalprice" name="price" value="30" style="display:none">
 
 
                               </div>

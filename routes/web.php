@@ -39,6 +39,10 @@ Route::group(['prefix' => '{locale}'],function (){
         return view('OtherCons');
     })->middleware('setLocale');
 
+    Route::get('/tickets',function(){
+        return view('Ticket');
+    })->middleware('setLocale');
+
 
 
 
@@ -81,6 +85,10 @@ Route::post('Bornupload','App\Http\Controllers\UploadController@Bornupload')->mi
 Route::post('othercons','App\Http\Controllers\HomeController@othercons')->middleware('setLocale');  
 
 Route::post('otherupload','App\Http\Controllers\UploadController@otherupload')->middleware('setLocale');  
+
+
+// Tickets Registeration
+Route::post('Tickets','App\Http\Controllers\TicketController@index')->middleware('setLocale');  
 
 
 

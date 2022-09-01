@@ -4,6 +4,7 @@
 <!-- menu bar frame -->
   <div class="art-menu-bar-frame">
 
+  @if(auth()->user())
       <!-- menu bar header -->
       <div class="art-menu-bar-header">
         <!-- menu bar button -->
@@ -13,6 +14,7 @@
         </a>
         <!-- menu bar button end -->
       </div>
+  @endif    
       <!-- menu bar header end -->
 
       <!-- current page title -->

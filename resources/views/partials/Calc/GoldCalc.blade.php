@@ -29,9 +29,9 @@
             </h4>
         </div>       
 
-        <div class="row art-submit-frame" style="justify-content: center;margin: 20px;">
+        <!-- <div class="row art-submit-frame" style="justify-content: center;margin: 20px;">
             <button onclick="result()" class="art-btn art-btn-md art-submit" style="font-size: large;"><span> {{__('Continue')}} </span></button>
-        </div>
+        </div> -->
 
         <!-- <div class="row" style="justify-content: center;margin-bottom: 55px;"> 
             <input type="text" placeholder="enter here" style="border-radius: 9px;height: fit-content;padding: 3px;background-color: darkgray;">
@@ -289,12 +289,8 @@
         if(y.value == ""){
             x.textContent="";
         }
-        
-    }
 
-    function result(){
-
-            // res= res1.value + x.textContent;
+          // res= res1.value + x.textContent;
             // res1.value = res.substr(res.length-2); 
             var num = x.textContent;
             // const dec = num.split('.')[1]
@@ -364,6 +360,81 @@
 
         }
 
+        
     }
+
+    // function result(){
+
+    //         // res= res1.value + x.textContent;
+    //         // res1.value = res.substr(res.length-2); 
+    //         var num = x.textContent;
+    //         // const dec = num.split('.')[1]
+    //         const thelen = num.length;
+    //         const zeros= thelen == 1 ? '00' : thelen == 2 ? '0' : '' ;
+    //         // const len = dec && dec.length > 2 ? dec.length : 2
+    //         // alert(zeros);
+    //         res1.value= String(zeros) + num;
+
+
+    //         res2.value = res1.value.split("").reverse().join("");
+
+
+    //         the_res.value= Number(res1.value)- Number(res2.value);
+
+    //         // sign + or -
+
+    //         the_sign.textContent=the_res.value.charAt(0) == '-' ? '-' :'+'; 
+
+
+    //         const neg = the_res.value.charAt(0);
+    //         const thelen1 = neg == '-' ?  the_res.value.substring(1).length : the_res.value.length;
+    //         const zeros1= thelen1 == 1 ? '00' : thelen1 == 2 ? '0' : '' ;
+
+    //         // alert(thelen1);
+    //         // alert(zeros1);
+
+    //         res3.value= neg == '-' ?   "-" + String(zeros1) + the_res.value.substring(1) : String(zeros1) + the_res.value ;
+
+    //         const sub = res3.value.charAt(0);
+
+    //         // alert(sub);
+
+    //         res4.value = sub == '-' ? "-" + String(res3.value.substring(1).split("").reverse().join("")) : res3.value.split("").reverse().join("") ;
+
+            
+
+    //         // res4.value = res3.value.split("").reverse().join("");
+
+
+
+
+    //         // const sub2 = res4.value.charAt(0);
+
+    //         // alert(sub2);
+    //         // alert(res3.value);
+    //         // alert(res4.value);
+    //         the_result.value = Number(res3.value) + Number(res4.value);
+        
+
+
+    //     if(the_result.value == '1089'){
+    //         postext.style.display = '';     
+    //         postextzero.style.display = 'none';            
+       
+    //     }
+    
+    //     else if(the_result.value == '0' && y.value != '') {
+    //         postextzero.style.display = '';   
+    //         postext.style.display = 'none';            
+
+                     
+    //     }
+    //     else{
+    //         postext.style.display = 'none';            
+    //         postextzero.style.display = 'none';            
+
+    //     }
+
+    // }
 
 </script>
