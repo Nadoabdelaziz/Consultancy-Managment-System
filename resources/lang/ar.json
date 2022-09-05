@@ -23,7 +23,9 @@
     "Other Consultants":"استشارات أخرى",
     "special Higher Consultants":"استشارات المتقدمة متخصصة",
     "Phai Consultant":" استشارات الفاي ",
+    "phai Consultancy":"استشارات الفاي ",
     "Goals Consultant":"استشارات الأهداف",
+    "Goals Consultancy":"ستشارات الأهداف",
     "Strong Consultant":"استشارات قوية",
     "Provision of services":"توفير الخدمات",
     "Draft":"المسودة",
@@ -110,8 +112,21 @@
     "Message Text":"نص الرسالة",
     "Subject Of Ticket":"موضوع التذكرة",
     "Attachments":"المرفقات",
-    "Send":"ارسال"
-
+    "Send":"ارسال",
+    "Support":"الدعم",
+    "Sales" :"المبيعات",
+    "Without":"بدون",
+    "With":"مع",
+    "Urgent":"عاجله",
+    "Medium":"متوسطه",
+    "Normal":"عاديه",
+    "Stage":"المرحلة",
+    "Project Steps":"خطوات المشروع",
+    "first step":"الخطوة الأولى",
+    "second step":"الخطوة الثانية",
+    "third step":"الخطوة الثالثة",
+    "fourth step":"الخطوة الرابعة",
+    "Stage Choice":"اختيار المرحلة"
 
 
 }

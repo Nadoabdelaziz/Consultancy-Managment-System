@@ -10,6 +10,10 @@ use App\Models\Place;
 use App\Models\Product;
 use App\Models\Newborn;
 use App\Models\Other;
+use App\Models\Phai;
+use App\Models\Goal;
+
+
 
 
 
@@ -203,4 +207,82 @@ class HomeController extends Controller
         return view('OtherCons', compact('last_other_added'));
 
     }
+
+    public function PhaiCons(Request $request){
+
+        if($request == ""){
+            return view('PhaiConsultant');
+        }
+
+    
+        $user_email=$request->user;
+        $names=$request->first . "-". $request->Sec . "-" . $request->th;
+        $details= $request->details;
+        $comment =$request->Comment;
+        $price=$request->price;
+
+
+
+        Phai::create([
+            'names'=> $names,
+            'details' => $details,
+            'comment' => $comment,
+            'status' => '1',
+            'user_email' =>$user_email,
+            'price' => $price
+
+        ]);
+
+        $phai=Phai::get();
+        if($phai->count() > 0){
+            $last_phai_added=Phai::latest()->take(1)->get();
+        }
+        else{
+            $last_phai_added = "";
+        }
+
+
+        return view('PhaiConsultant', compact('last_phai_added'));
+
+    }
+
+    public function GoalsCons(Request $request){
+
+        if($request == ""){
+            return view('goalsConsultancy');
+        }
+
+    
+        $user_email=$request->user;
+        $names=$request->first . "-". $request->Sec . "-" . $request->th;
+        $details= $request->details;
+        $comment =$request->Comment;
+        $price=$request->price;
+
+
+
+        Goal::create([
+            'names'=> $names,
+            'details' => $details,
+            'comment' => $comment,
+            'status' => '1',
+            'user_email' =>$user_email,
+            'price' => $price
+
+        ]);
+
+        $Goal=Goal::get();
+        if($Goal->count() > 0){
+            $last_Goal_added=Goal::latest()->take(1)->get();
+        }
+        else{
+            $last_Goal_added = "";
+        }
+
+
+        return view('goalsConsultancy', compact('last_Goal_added'));
+
+    }
+
 }
+

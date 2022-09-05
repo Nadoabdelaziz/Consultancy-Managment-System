@@ -7,6 +7,10 @@ use App\Models\Place;
 use App\Models\Product;
 use App\Models\Newborn;
 use App\Models\Other;
+use App\Models\Phai;
+use App\Models\Goal;
+
+
 
 
 
@@ -15,7 +19,7 @@ class UploadController extends Controller
 {
     //
     public function index(Request $request){
-    // dd($request->file('file')->store('posts'));        
+        // dd($request->file('file')->store('posts'));        
         $place_id=$request->id;
         if($place_id != ""){
             Place::where('id',$place_id)->update([
@@ -23,7 +27,6 @@ class UploadController extends Controller
             ]);
         }
        
-
         return redirect(''.app()->getLocale().'/blog-post');   
     }
 
@@ -64,6 +67,26 @@ class UploadController extends Controller
         return redirect(''.app()->getLocale().'/OtherCons');   
     }
 
-    
+    public function Phaiupload(Request $request){
+        $phai_id=$request->id;
+        if($phai_id != ""){
+            Phai::where('id',$phai_id)->update([
+                'Invoice' => $request->file('file')->store('posts')
+            ]);
+        }
+       
+        return redirect(''.app()->getLocale().'/PhaiConsultant');   
+    }
+    public function Goalsupload(Request $request){
+
+        $Goal_id=$request->id;
+        if($Goal_id != ""){
+            Goal::where('id',$Goal_id)->update([
+                'Invoice' => $request->file('file')->store('posts')
+            ]);
+        }
+       
+        return redirect(''.app()->getLocale().'/goalsConsultancy');   
+    }
     
 }

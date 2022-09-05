@@ -39,10 +39,22 @@ Route::group(['prefix' => '{locale}'],function (){
         return view('OtherCons');
     })->middleware('setLocale');
 
+    Route::get('/PhaiConsultant',function(){
+        return view('PhaiConsultant');
+    })->middleware('setLocale');
+
+
+    Route::get('/goalsConsultancy',function(){
+        return view('goalsConsultancy');
+    })->middleware('setLocale');
+
+
+
     Route::get('/tickets',function(){
         return view('Ticket');
     })->middleware('setLocale');
 
+    
 
 
 
@@ -85,6 +97,21 @@ Route::post('Bornupload','App\Http\Controllers\UploadController@Bornupload')->mi
 Route::post('othercons','App\Http\Controllers\HomeController@othercons')->middleware('setLocale');  
 
 Route::post('otherupload','App\Http\Controllers\UploadController@otherupload')->middleware('setLocale');  
+
+
+// Phai
+
+Route::post('PhaiCons','App\Http\Controllers\HomeController@PhaiCons')->middleware('setLocale');  
+
+Route::post('Phaiupload','App\Http\Controllers\UploadController@Phaiupload')->middleware('setLocale');  
+
+
+// Goals
+
+Route::post('GoalsCons','App\Http\Controllers\HomeController@GoalsCons')->middleware('setLocale');  
+
+Route::post('Goalsupload','App\Http\Controllers\UploadController@Goalsupload')->middleware('setLocale');  
+
 
 
 // Tickets Registeration

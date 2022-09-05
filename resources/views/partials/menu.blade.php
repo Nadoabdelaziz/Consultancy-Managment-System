@@ -99,7 +99,7 @@
                   <a href="#.">{{__('Tickets & Support')}}</a>
                   <!-- sub menu -->
                   <ul class="sub-menu">
-                    <li class="menu-item"><a href="/portfolio-2-col.html">{{__('Tickets')}}</a></li>
+                    <li class="menu-item"><a href="{{app()->getLocale()}}/tickets">{{__('Tickets')}}</a></li>
                     <li class="menu-item"><a href="/portfolio-2-col.html">{{__('News & Ads')}}</a></li>
                     <li class="menu-item"><a href="/portfolio-2-col.html">{{__('Open Tickets')}}</a></li>
                   </ul>

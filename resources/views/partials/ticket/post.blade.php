@@ -1,4 +1,4 @@
-<form class="art-contact-form" action="Tickets" method="POST" enctype="multipart/form-data" style="background-color: transparent">
+<form class="art-contact-form" action="Tickets" method="POST" enctype="multipart/form-data" style="background-color: transparent;width: -webkit-fill-available;:">
     @csrf
     <div class="col-lg-12">
         <!-- section title -->
@@ -17,14 +17,14 @@
                 <!-- contact form -->
                 <!-- <form id="form" class="art-contact-form" style=""> -->
                 <!-- form field -->
-                <div class="art-form-field" style="">
+                <div class="art-form-field" style="margin-bottom: 61px;">
                     <!-- name input -->
-                    <input id="name" name="name" class="art-input" type="text" placeholder="{{__('Name')}}"  style="width: 44%;margin-right: 62px;">
+                    <input id="name" name="name" class="art-input" type="text" placeholder="{{__('Name')}}"  style="width: 44%;margin-right: 97px;">
                     <!-- label -->
                     <label for="name"><i class="fas fa-user"></i></label>
 
                     <input id="email" name="email" class="art-input" type="email" placeholder="{{__('Email')}}"  style="/* float: right; */width: 40%;">
-                    <label for="email" style="left: 460px;"><i class="fas fa-user"></i></label>
+                    <label for="email" style="left: 502px;"><i class="fas fa-user"></i></label>
 
                 </div>
                 <!-- form field end -->
@@ -33,42 +33,35 @@
                     <!-- department input -->
                     <!-- <input id="dep" name="dep" class="art-input" type="text" placeholder="Department"  style="width: 30%;margin-right: 40px;"> -->
                     <!-- label -->
-                    <select id="dep" name="dep" type="text"  style="width: 30%;margin-right: 40px;background-color: #23232d;border-radius: 6px;font-size: 17px;font-weight: 900;text-align: center">
+                    <select id="imp" name="imp" type="text"  style="width: 30%;margin-right: 40px;background-color: #23232d;border-radius: 6px;font-size: 17px;font-weight: 900;text-align: center">
                                                 <option value="none" style="color:white;" selected="">{{__('Importance')}}</option>
-                                                <option value="father" style="color:white;">اسم المولود مع الأب</option>
-                                                <option value="father&amp;grandfather" style="color:white;">اسم مولود مع الأب والجد</option>
-                                                <option value="father&amp;nickname" style="color:white;">اسم المولود مع الأب واللقب</option>
-                                                <option value="grandfather" style="color:white;">اسم المولود مع الجد</option>
-                                                <option value="nickname" style="color:white;">اسم المولود مع اللقب</option>
+                                                <option value="father" style="color:white;">{{__('Urgent')}}</option>
+                                                <option value="father&amp;grandfather" style="color:white;">{{__('Medium')}}</option>
+                                                <option value="father&amp;nickname" style="color:white;">{{__('Normal')}}</option>
                     </select>
 
-                    <label for="dep"><i class="fas fa-at"></i></label>
+                    <label for="imp"><i class="fas fa-at"></i></label>
 
 
 
                     <select id="service" name="service" class="art-input" type="text" placeholder=""  style="width: 27%;margin-right:53px;background-color: #23232d;border-radius: 6px;font-size: 17px;font-weight: 900;text-align: center">
                                                 <option value="none" style="color:white;" selected="">{{__('Service For Ticket')}}</option>
-                                                <option value="father" style="color:white;">اسم المولود مع الأب</option>
-                                                <option value="father&amp;grandfather" style="color:white;">اسم مولود مع الأب والجد</option>
-                                                <option value="father&amp;nickname" style="color:white;">اسم المولود مع الأب واللقب</option>
-                                                <option value="grandfather" style="color:white;">اسم المولود مع الجد</option>
-                                                <option value="nickname" style="color:white;">اسم المولود مع اللقب</option>
+                                                <option value="father" style="color:white;">{{__('Without')}}</option>
+                                                <option value="father&amp;grandfather" style="color:white;">{{__('With')}}</option>
                     </select>
 
                     <!-- <input id="service" name="service" class="art-input" type="text" placeholder="Service"  style="/* float: right; */width: 30%;margin-right: 42px;"> -->
                     <label for="service" style="left: 312px;"><i class="fas fa-at"></i></label>
 
 
-                    <select id="imp" name="imp" class="art-input" type="text" placeholder=""  style="width: 27%;margin-right: 40px;background-color: #23232d;border-radius: 6px;font-size: 17px;font-weight: 900;text-align: center">
+                    <select id="dep" name="dep" class="art-input" type="text" placeholder=""  style="width: 27%;margin-right: 40px;background-color: #23232d;border-radius: 6px;font-size: 17px;font-weight: 900;text-align: center">
                                                 <option value="none" style="color:white;" selected="">{{__('Department')}}</option>
-                                                <option value="father" style="color:white;">اسم المولود مع الأب</option>
-                                                <option value="father&amp;grandfather" style="color:white;">اسم مولود مع الأب والجد</option>
-                                                <option value="father&amp;nickname" style="color:white;">اسم المولود مع الأب واللقب</option>
-                                                <option value="grandfather" style="color:white;">اسم المولود مع الجد</option>
-                                                <option value="nickname" style="color:white;">اسم المولود مع اللقب</option>
+                                                <option value="father" style="color:white;">{{__('Support')}}</option>
+                                                <option value="father&amp;grandfather" style="color:white;">{{__('Invoices')}}</option>
+                                                <option value="father&amp;nickname" style="color:white;">{{__('Sales')}}</option>
                     </select>
                     <!-- <input id="imp" name="imp" class="art-input" type="text" placeholder="Email"  style="width: 30%;"> -->
-                    <label for="imp" style="left: 615px;"><i class="fas fa-at"></i></label>
+                    <label for="dep" style="left: 615px;"><i class="fas fa-at"></i></label>
                 </div>
                 <!-- form field end -->
                 
@@ -76,7 +69,8 @@
                 <!-- contact form end -->
             </div>
                         <!-- contact form frame end -->
-    </div>
+        </div>
+ 
 
 
     <div class="col-lg-12">
@@ -151,12 +145,11 @@
         <div class="art-a art-card" style="">
             <!-- contact form -->
             <!-- <form class="art-contact-form" action="upload" method="POST" enctype="multipart/form-data" style="background-color: transparent"> -->
-            <input type="hidden" name="_token" value="rCKPaE1ooACTbnT0BDE9dDQOIRN9N5h7CKdFCfyb">                            
+            <!-- <input type="hidden" name="_token" value="rCKPaE1ooACTbnT0BDE9dDQOIRN9N5h7CKdFCfyb">                             -->
                                 
             <div class="row" style="/* float: right; *//* display: inline-table; */background-color: #252532;border-radius: 20px;">
                 <div class="col-md-6" style="overflow-y: 20px;padding: 12px;display: contents;border-radius: 20px;">
                     <input type="file" name="file" class="form-control" style="/* border-radius: 6px; *//* width: -webkit-fill-available; *//* font-size: 17px; */font-weight: 900;text-align: center;margin: 8px;padding: 3px;/* color: red; */">
-                    <input style="border-radius: 6px;width: -webkit-fill-available;font-size: 17px;font-weight: 900;text-align: center;margin: 5px;" type="hidden" name="id" value="" class="form-control">
                 </div>
             </div>
             
@@ -166,17 +159,7 @@
         <!-- contact form frame end -->
     </div>
 
-
-<!--     
-    <div class="col-lg-12">
-        <div class="art-a art-card" style="">
-            <div class="art-submit-frame">
-                <button class="art-btn art-btn-md art-submit" type="submit"><span>{{__('Send')}}</span></button>
-                <div class="art-success">Success <i class="fas fa-check"></i></div>
-            </div>
-        </div>
-    </div>     -->
-
+    
     <div class="col-lg-12 mt-5">
         <div class="art-a mt-5" style="margin: 47px;padding: 8px;">
             <div class="art-submit-frame" style="background-color: tr;display: grid;">
@@ -190,7 +173,19 @@
     </div>
 
 
-</form>
+</form>   
+
+    <!--     
+        <div class="col-lg-12">
+            <div class="art-a art-card" style="">
+                <div class="art-submit-frame">
+                    <button class="art-btn art-btn-md art-submit" type="submit"><span>{{__('Send')}}</span></button>
+                    <div class="art-success">Success <i class="fas fa-check"></i></div>
+                </div>
+            </div>
+        </div>     -->
+
+
 
 
 <style>
