@@ -56,30 +56,31 @@
                   <!-- sub menu -->
                   <ul class="sub-menu">
                     <!-- lvl 2 nav link -->
-                    <li class="menu-item"><a href="/portfolio-2-col.html">{{__('Places Consultant')}}</a></li>
+                    <li class="menu-item"><a href="{{app()->getLocale()}}/blog-post">{{__('Places Consultant')}}</a></li>
                     <!-- lvl 2 nav link -->
-                    <li class="menu-item"><a href="/portfolio-2-col.html">{{__('Product Name Consultant')}}</a></li>
+                    <li class="menu-item"><a href="{{app()->getLocale()}}/ProductConsultant">{{__('Product Name Consultant')}}</a></li>
                     <!-- lvl 2 nav link -->
-                    <li class="menu-item"><a href="/portfolio-2-col.html">{{__('NewBorn Names Consultant')}}</a></li>
+                    <li class="menu-item"><a href="{{app()->getLocale()}}/NewBornCons">{{__('NewBorn Names Consultant')}}</a></li>
                     <!-- lvl 2 nav link -->
-                    <li class="menu-item"><a href="/portfolio-2-col.html">{{__('Other Consultants')}}</a></li>
+                    <li class="menu-item"><a href="{{app()->getLocale()}}/OtherCons">{{__('Other Consultants')}}</a></li>
                     <!-- lvl 2 nav link -->            
-                    <li class="menu-item menu-item-has-children">
-                      <a href="#.">{{__('special Higher Consultants')}}</a>
-                      <!-- sub menu -->
-                      <ul class="sub-menu">
-                        <!-- lvl 2 nav link -->
-                        <li class="menu-item"><a href="/portfolio-2-col.html">{{__('Phai Consultant')}}</a></li>
-                        <!-- lvl 2 nav link -->
-                        <li class="menu-item"><a href="/portfolio-2-col.html">{{__('Goals Consultant')}}</a></li>
-                        <!-- lvl 2 nav link -->
-                        <li class="menu-item"><a href="/portfolio-2-col.html">{{__('Strong Consultant')}}</a></li>
-                      </ul>
-                      <!-- sub menu end -->
-                    </li>
                   </ul>
                   <!-- sub menu end -->
                 </li>
+
+                <li class="menu-item menu-item-has-children">
+                  <a href="#.">{{__('special Higher Consultants')}}</a>
+                      <!-- sub menu -->
+                      <ul class="sub-menu">
+                        <!-- lvl 2 nav link -->
+                        <li class="menu-item"><a href="{{app()->getLocale()}}/PhaiConsultant">{{__('Phai Consultant')}}</a></li>
+                        <!-- lvl 2 nav link -->
+                        <li class="menu-item"><a href="{{app()->getLocale()}}/goalsConsultancy">{{__('Goals Consultant')}}</a></li>
+                        <!-- lvl 2 nav link -->
+                        <li class="menu-item"><a href="{{app()->getLocale()}}/StrongConsultant">{{__('Strong Consultant')}}</a></li>
+                      </ul>
+                      <!-- sub menu end -->
+                </li>    
                 
               
                 <li class="menu-item menu-item-has-children">

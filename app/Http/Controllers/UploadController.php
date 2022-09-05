@@ -9,6 +9,8 @@ use App\Models\Newborn;
 use App\Models\Other;
 use App\Models\Phai;
 use App\Models\Goal;
+use App\Models\Strong;
+
 
 
 
@@ -87,6 +89,18 @@ class UploadController extends Controller
         }
        
         return redirect(''.app()->getLocale().'/goalsConsultancy');   
+    }
+
+    public function Strongupload(Request $request){
+        
+        $Strong_id=$request->id;
+        if($Strong_id != ""){
+            Strong::where('id',$Strong_id)->update([
+                'Invoice' => $request->file('file')->store('posts')
+            ]);
+        }
+       
+        return redirect(''.app()->getLocale().'/StrongConsultant');   
     }
     
 }

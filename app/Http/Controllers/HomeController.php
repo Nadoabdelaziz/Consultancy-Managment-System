@@ -12,6 +12,8 @@ use App\Models\Newborn;
 use App\Models\Other;
 use App\Models\Phai;
 use App\Models\Goal;
+use App\Models\Strong;
+
 
 
 
@@ -283,6 +285,47 @@ class HomeController extends Controller
         return view('goalsConsultancy', compact('last_Goal_added'));
 
     }
+
+
+    public function StrongCons(Request $request){
+
+        if($request == ""){
+            return view('StrongConsultant');
+        }
+
+    
+        $user_email=$request->user;
+        $names=$request->first . "-". $request->Sec . "-" . $request->th;
+        $details= $request->details;
+        $comment =$request->Comment;
+        $price=$request->price;
+
+
+
+        Strong::create([
+            'names'=> $names,
+            'details' => $details,
+            'comment' => $comment,
+            'status' => '1',
+            'user_email' =>$user_email,
+            'price' => $price
+
+        ]);
+
+        $Strong=Strong::get();
+        if($Strong->count() > 0){
+            $last_Strong_added=Strong::latest()->take(1)->get();
+        }
+        else{
+            $last_Strong_added = "";
+        }
+
+
+        return view('StrongConsultant', compact('last_Strong_added'));
+
+    }
+
+    
 
 }
 

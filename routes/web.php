@@ -49,6 +49,12 @@ Route::group(['prefix' => '{locale}'],function (){
     })->middleware('setLocale');
 
 
+    Route::get('/StrongConsultant',function(){
+        return view('StrongConsultant');
+    })->middleware('setLocale');
+
+
+
 
     Route::get('/tickets',function(){
         return view('Ticket');
@@ -112,6 +118,12 @@ Route::post('GoalsCons','App\Http\Controllers\HomeController@GoalsCons')->middle
 
 Route::post('Goalsupload','App\Http\Controllers\UploadController@Goalsupload')->middleware('setLocale');  
 
+
+// Strong
+
+Route::post('StrongCons','App\Http\Controllers\HomeController@StrongCons')->middleware('setLocale');  
+
+Route::post('Strongupload','App\Http\Controllers\UploadController@Strongupload')->middleware('setLocale');  
 
 
 // Tickets Registeration

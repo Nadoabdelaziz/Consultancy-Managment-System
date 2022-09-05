@@ -165,19 +165,54 @@
               <!-- container end -->
 
 
-              <!-- container -->
-              <div class="container-fluid">
 
-                <!-- footer -->
-               @include('partials.footer')
-                <!-- footer end -->
+              <!-- container -->
+              <div class="container-fluid" style="padding:46px">
+                <!-- row -->
+                <div class="row">
+
+                  <!-- col -->
+                  <div class="col-lg-12">
+
+                    <!-- section title -->
+                    <div class="art-section-title">
+                      <!-- title frame -->
+                      <div class="art-title-frame">
+                        <!-- title -->
+                        <h3>{{__('Service For Ticket')}}</h3>
+                      </div>
+                      <!-- title frame end -->
+                    </div>
+                    <!-- section title end -->
+
+                  </div>
+                  <!-- col end -->
+
+                  <!-- col -->
+                    @include('partials.ticket.banner')
+                  <!-- col end -->
+
+                </div>
+                <!-- row end -->
+
+                </div>
+                <!-- container end -->
+
+                <!-- container -->
+                <div class="container-fluid">
+
+                  <!-- footer -->
+                @include('partials.footer')
+                  <!-- footer end -->
+
+                </div>
+                <!-- container end -->
+
+                
 
               </div>
               <!-- container end -->
 
-              
-
-            </div>
             <!-- scroll frame end -->
 
           </div>
