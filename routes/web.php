@@ -23,6 +23,10 @@ use App\Http\Controllers\UploadController;
 
 Route::group(['prefix' => '{locale}'],function (){
     Route::get('/', 'App\Http\Controllers\HomeController@index')->middleware('setLocale');
+
+
+
+
     Route::get('/blog-post',function(){
         return view('blog-post');
     })->middleware('setLocale');
@@ -148,9 +152,11 @@ Route::get('/', function(){
 
 
 
-Route::group(['prefix' => 'en/admin'], function () {
-    Voyager::routes();
-});
+// Route::group(['prefix' => 'en/admin'], function () {
+//     Voyager::routes();
+// });
 Route::group(['prefix' => 'ar/admin'], function () {
+        Route::get('register', 'App\Http\Controllers\RegistrationController@create');
+        Route::post('signup', 'App\Http\Controllers\RegistrationController@store');
     Voyager::routes();
 });

@@ -55,7 +55,9 @@ a:hover{
                 <a href="#">
                     <i class="fa fa-user-circle" aria-hidden="true" style="margin: 3px;margin-right: 23px;"></i>
                 </a>    
-                <a style="color" href="{{app()->getLocale()}}/admin/login">{{auth()->user() ? __(auth()->user()->name) : __('Sign In')}} </a> 
+                <a style="margin: 3px;margin-right: 23px;" href="{{app()->getLocale()}}/admin/login">{{auth()->user() ? __(auth()->user()->name) : __('Sign In')}} </a> 
+                <a href="{{app()->getLocale()}}/admin/register" style="margin: 3px;">{{auth()->user() ? __(auth()->user()->name) : __('Sign Up')}} </a> 
+
                 <i class="fa fa-minus" aria-hidden="true" style="font-size: small;margin: 10px;"></i>
             </h4> 
         </li>
