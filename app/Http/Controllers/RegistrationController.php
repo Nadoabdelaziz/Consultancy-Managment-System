@@ -25,7 +25,7 @@ class RegistrationController extends Controller
             'email' => 'required|email',
             'role_id'=>'required',
             'password' => 'required|confirmed',
-        ]);
+        ])->validate();
 
         $hashedPassword = Hash::make($request->password);
         
@@ -39,6 +39,6 @@ class RegistrationController extends Controller
         // auth()->login($user);
 
         
-        return redirect()->to('/ar');
+        return redirect()->to('ar/admin/login');
     }
 }

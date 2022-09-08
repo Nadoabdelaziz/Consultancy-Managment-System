@@ -127,7 +127,14 @@
     "third step":"الخطوة الثالثة",
     "fourth step":"الخطوة الرابعة",
     "Stage Choice":"اختيار المرحلة",
-    "Sign Up":"تسجيل حساب"
+    "Sign Up":"تسجيل حساب",
+    "Normal Account":"الحساب العادي",
+    "Silver Account":"الحساب الفضي",
+    "Gold Account":"الحساب الذهبي",
+    "Platinium Account":"الحساب الماسي",
+    "Your account will be upgraded as you will be upgraded to the silver automatically when buying the services and when buying the Silver you will be upgraded to the gold" :
+    "سيتم ترقية حسابك حيث ستتم ترقيتك إلى الفضي تلقائيا عند شرائك الخدمات. وعند شرائك الفضي سيتم ترقيتك إلى الذهبي",
+    "Unspecialized Hybrid Consultancies":"الاستشارات الهجينة غير المتخصصة"
 
 
 }

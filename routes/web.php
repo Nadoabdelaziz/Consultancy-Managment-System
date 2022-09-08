@@ -66,6 +66,12 @@ Route::group(['prefix' => '{locale}'],function (){
 
     
 
+    Route::get('/High',function(){
+        return view('High');
+    })->middleware('setLocale');
+
+    
+
 
 
     Route::get('/SentenceCalculator',function(){

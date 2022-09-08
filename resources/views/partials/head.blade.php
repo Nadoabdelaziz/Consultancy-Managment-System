@@ -15,7 +15,7 @@
   <!-- bootstrap css -->
   <link rel="stylesheet" href="{{url('css/plugins/bootstrap.min.css')}}">
   <!-- font awesome css -->
-  <link rel="stylesheet" href="{{('css/plugins/font-awesome.min.css')}}">
+  <link rel="stylesheet" href="{{url('css/plugins/font-awesome.min.css')}}">
   <!-- swiper css -->
   <link rel="stylesheet" href="{{url('css/plugins/swiper.min.css')}}">
   <!-- fancybox css -->

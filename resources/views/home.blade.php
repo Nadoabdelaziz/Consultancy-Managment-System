@@ -153,7 +153,7 @@
                   <!-- col -->
                   @foreach($services as $service)
                     @if($service->level == '1')
-                      @include('partials.service')
+                      @include('partials.serviceHigh')
                     @endif                    
                   @endforeach  
                   <!-- col end -->

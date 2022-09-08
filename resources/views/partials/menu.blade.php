@@ -112,7 +112,7 @@
                 <li class="menu-item"><a href="/contact.html">{{__('Videos')}}</a></li>
 
                 <!-- menu item -->
-                <li class="menu-item"><a href="/contact.html">{{__('Join Us')}}</a></li>
+                <!-- <li class="menu-item"><a href="/contact.html">{{__('Join Us')}}</a></li> -->
 
                 <!-- menu item -->
                 <li class="menu-item"><a href="/contact.html">{{__('Referral Points System')}}</a></li>
