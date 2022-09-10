@@ -2,7 +2,7 @@
                       <div class="art-timeline-item">
 
                         <div style="border-left-style: outset;margin: 23px;border-left-color: red;" class="art-a art-timeline-content">
-                        <div class="art-card-header" style="margin-bottom: 45px;">
+                          <div class="art-card-header" style="margin-bottom: 45px;">
                             <div class="art-left-side">
                               <h2 style="color: red;"><i class="fa fa-times-circle" aria-hidden="true"></i></h2>
                               

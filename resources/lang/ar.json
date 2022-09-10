@@ -80,6 +80,7 @@
     "enter here the kind and categorization product":"أدخل هنا نوع وتصنيف المنتج",
     "enter here country and city of entity":"أدخل هنا بلد ومدينة الكيان",
     "father name":"اسم الأب",
+    "father":"اسم الأب",
     "grandfather name":"اسم الجد",
     "the nickname":"اللقب",
     "Name pronunciation":"ثقافة نطق الاسم",
@@ -134,7 +135,10 @@
     "Platinium Account":"الحساب الماسي",
     "Your account will be upgraded as you will be upgraded to the silver automatically when buying the services and when buying the Silver you will be upgraded to the gold" :
     "سيتم ترقية حسابك حيث ستتم ترقيتك إلى الفضي تلقائيا عند شرائك الخدمات. وعند شرائك الفضي سيتم ترقيتك إلى الذهبي",
-    "Unspecialized Hybrid Consultancies":"الاستشارات الهجينة غير المتخصصة"
+    "Unspecialized Hybrid Consultancies":"الاستشارات الهجينة غير المتخصصة",
+    "Status":"الحالة",
+    "latest update":"آخر تحديث",
+    "ID":"رقم"
 
 
 }

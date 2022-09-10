@@ -65,6 +65,11 @@ Route::group(['prefix' => '{locale}'],function (){
     })->middleware('setLocale');
 
     
+    Route::get('/ticketslist',function(){
+        return view('TicketList');
+    })->middleware('setLocale');
+
+    
 
     Route::get('/High',function(){
         return view('High');

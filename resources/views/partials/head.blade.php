@@ -23,6 +23,16 @@
   <!-- main css -->
   <link rel="stylesheet" href="{{url('css/style.css')}}">
 
+  <link rel="stylesheet" href="{{url('css/plugins/jquery-ui.css')}}">
+
+
+
+
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+
+
   <title>Arter</title>
 </head>
 
@@ -47,6 +57,13 @@
   <script src="{{url('js/plugins/fancybox.min.js')}}"></script>
   <!-- swup js -->
   <script src="{{url('js/plugins/swup.min.js')}}"></script>
+
+  <script src="{{url('js/plugins/jquery-ui.js')}}"></script>
+
+<!-- 
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script> -->
 
   <!-- main js -->
   <script src="{{url('js/main.js')}}"></script>
