@@ -19,17 +19,31 @@
       <!-- banner overlay -->
       <div class="art-banner-overlay">
         <!-- main title -->
-        <div class="art-banner-title">
+        <div  class="art-banner-title">
           <!-- title -->
-          <h1 class="mb-15">{{__('Discover my Amazing Art Space!')}}</h1>
+          <h1 class="mb-15">{{__('Discover my abilities and my dimensional possibilities')}}</h1>
           <!-- suptitle -->
-          @if(app()->getLocale() == 'en')
-          <div class="art-lg-text art-code mb-25">&lt;<i>code</i>&gt; I build <span class="txt-rotate" data-period="2000"
-              data-rotate='[ "web interfaces.", "ios and android applications.", "design mocups.", "automation tools." ]'></span>&lt;/<i>code</i>&gt;
-            </div>
-          @endif  
-          <div class="art-buttons-frame">
-            <!-- button -->
+          <!-- <div style="font-size: large;" class="art-lg-text art-code mb-25">&lt;<i>{{__('code')}}</i>&gt; <span class="txt-rotate" data-period="1000"
+              data-rotate='[ 
+              "{{__("The Golden Dimensional and Orbital Engineering")}}", 
+              "{{__("Build Strategies For The Dimensional Roadmap")}}", 
+              "{{__("Design and Build Dimensional Rules With Specialized Settings")}}", 
+              "{{__("Plan and Setting and Distribution and Fixing The golden dimensional and orbital Pathways")}}", 
+              "{{__("Connect The Pathways With Dimensional Rules")}}", 
+              "{{__("Energize and Activate The Dimensional Rules")}}", 
+              "{{__("Setting The Inner and Outer Pathways")}}", 
+              "{{__("Providing consultancy to existing establishments and entities for dimensional transformation")}}"
+              ]'> - </span>&lt;/<i>{{__('code')}}</i>&gt;
+          </div> -->
+
+          <div style="font-size:large" class="art-lg-text art-code mb-25">&lt;<i>{{__('code')}}</i>&gt;
+            <span class="txt-rotate" data-period="2000" 
+              data-rotate="[ &quot;{{__('The Golden Dimensional and Orbital Engineering')}}.&quot;, &quot;{{__('Build Strategies For The Dimensional Roadmap')}}.&quot;, &quot;{{__('Design and Build Dimensional Rules With Specialized Settings')}}.&quot;, &quot;{{__('Plan and Setting and Distribution and Fixing The golden dimensional and orbital Pathways')}}.&quot;  , &quot;{{__('Connect The Pathways With Dimensional Rules')}}.&quot; , &quot;{{__('Energize and Activate The Dimensional Rules')}}.&quot;, &quot;{{__('Setting The Inner and Outer Pathways')}}.&quot; , &quot;{{__('Providing consultancy to existing establishments and entities for dimensional transformation')}}.&quot; ]">
+            </span>&lt;/<i>{{__('code')}}</i>&gt;
+          </div>
+          
+          
+            <div class="art-buttons-frame">
             <a href="/portfolio-3-col-masonry.html" class="art-btn art-btn-md"><span style="font-size: x-large;">{{__('Explore now')}}</span></a>
           </div>
         </div>

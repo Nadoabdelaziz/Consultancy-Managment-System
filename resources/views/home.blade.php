@@ -54,6 +54,39 @@
               <!-- Numbers-slide-container -->
               <!-- container end -->
 
+
+              <!-- container -->
+              <div class="container-fluid">
+
+                <!-- row -->
+                <div style="justify-content: end;" class="row p-30-0">
+
+                  <!-- col -->
+                  <div class="col-md-2 col-6">
+
+                    <!-- couner frame -->
+                    <div class="art-counter-frame" style="opacity: 1;">
+                      <!-- counter -->
+                      <div class="art-counter-box">
+                        <!-- counter number -->
+                        <span class="art-counter" style="opacity: 1;">10</span><span class="art-counter-plus">+</span>
+                      </div>
+                      <!-- counter end -->
+                      <!-- title -->
+                      <h6>{{__('Years Experience')}}</h6>
+                    </div>
+                    <!-- couner frame end -->
+
+                  </div>
+                  <!-- col end -->
+
+                </div>
+                <!-- row end -->
+
+              </div>
+              <!-- container end -->
+
+
               <!-- container -->
               <div class="container-fluid" style="padding:46px">
 

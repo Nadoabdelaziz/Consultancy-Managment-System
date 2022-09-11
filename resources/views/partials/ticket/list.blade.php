@@ -64,32 +64,28 @@
             
 
  -->
-
-
-
-
-
- <table class="tbl-accordion table" style="color: white;font-size: medium;/* border-right-style: solid; *//* border-right-color: chartreuse; */">
+                      <table class="tbl-accordion table" style="color: white;font-size: medium;/* border-right-style: solid; *//* border-right-color: chartreuse; */">
                             <thead style="text-align: center;">
                               <tr style="border-style: hidden;font-size:larger;/* border-bottom: solid #2b2b35; */border-block-width: 18px;">
-                                  <th scope="col">الحساب الماسي</th>
-                                  <th scope="col" style="/* padding-right: 88px; */">الحساب الذهبي</th>
-                                  <th scope="col" style=""> &nbsp;الحساب الفضي</th>
-                                  <th scope="col" style="/* padding-left: 112px; */">الحساب الذهبي</th>
+                                  <th scope="col" style=""> &nbsp;{{__('latest update')}}</th>
+                                  <th scope="col" style="/* padding-left: 112px; */">{{__('Status')}}</th>
+                                  <th scope="col" style="/* padding-right: 88px; */">{{__('Subject Of Ticket')}}</th>
+                                  <th scope="col">{{__('Department')}}</th>
+
                                   
                               </tr>
                               
                             </thead>
                             <tbody style="text-align: center;">
                               <tr style="border-top-width: 12px;border-top-style: solid;/* border-top-color: #2b2b35; *//* background-color: #23232D; *//* background: top; */">
-                                <td>
-                                <table style="width: 218%;margin-left: -9px;" cellpadding="0" cellspacing="0" class="tbl-accordion-nested">
+                                <td colspan=100%>
+                                <table style="width:-webkit-fill-available;margin-left: -9px;" cellpadding="0" cellspacing="0" class="tbl-accordion-nested">
                                     <thead style="">
                                         <tr style="">
-                                            <td class="tbl-accordion">2022-09-10 13:46:43</td>
-                                            <td class="tbl-accordion">0</td>
-                                            <td class="tbl-accordion">asdasd</td>
-                                            <td class="tbl-accordion">اسم الأب</td> 
+                                            <td style="width: 30%;" class="tbl-accordion">{{__("$ticket->created_at")}}</td>
+                                            <td class="tbl-accordion">{{__("$ticket->response_status")}}</td>
+                                            <td class="tbl-accordion">{{__("$ticket->msg_subject")}}</td>
+                                            <td style="width: 15%;" class="tbl-accordion">{{__("$ticket->department")}}</td> 
                                                                         
                                     
                                         </tr>
@@ -97,8 +93,62 @@
                        
                                     <tbody style="display: table-row-group;">
                                         <tr style="border-top-width: 12px;border-top-style: solid;border-top-color: #2b2b35;background-color: #23232D;/* background: top; */">
-                                            <td style="width: 198%;">
-                                                <i class="fa fa-times" style="color:red;font-size: x-large;" aria-hidden="true"></i>
+                                            <td colspan=100%>
+                                                <div class="container">
+                                                <div class="col-lg-12">
+                                                        <!-- contact form frame -->
+                                                        <div class="art-a art-card" style="">
+                                                            <!-- contact form -->
+                                                            <!-- <form id="form" class="art-contact-form" style=""> -->
+                                                            <!-- form field -->
+                                                            <div class="art-form-field" style="">
+                                                                <!-- name input -->
+                                                                <input id="name" name="name" class="art-input" type="text" placeholder="الأسم" style="width: 40%;float: left;">
+                                                                <!-- label -->
+                                                                
+
+                                                                <input id="email" name="email" class="art-input" type="email" placeholder="الأيميل" style="width: 40%;float: right;">
+
+                                                            </div>
+                                                            <!-- form field end -->
+                                                            <!-- form field -->
+                                                            <div class="art-form-field">
+                                                                <!-- department input -->
+                                                                <!-- <input id="dep" name="dep" class="art-input" type="text" placeholder="Department"  style="width: 30%;margin-right: 40px;"> -->
+                                                                <!-- label -->
+                                                                <select id="imp" name="imp" type="text" style="margin-top: 40px;margin-right: 75px;width: 28%;float: left;">
+                                                                                            <option value="none" style="color:white;" selected="">الأهمية</option>
+                                                                                            <option value="father" style="color:white;">عاجله</option>
+                                                                                            <option value="father&amp;grandfather" style="color:white;">متوسطه</option>
+                                                                                            <option value="father&amp;nickname" style="color:white;">عاديه</option>
+                                                                </select>
+
+                                                                <select id="service" name="service" class="art-input" type="text" placeholder="" style="margin-top: 40px;width: 28%;float: left;margin-right: 58px;">
+                                                                    <option value="none" style="color:white;" selected="">الخدمة المتعلقة بالتذكرة</option>
+                                                                    <option value="father" style="color:white;">بدون</option>
+                                                                    <option value="father&amp;grandfather" style="color:white;">مع</option>
+                                                                </select>
+
+                                                                <!-- <input id="service" name="service" class="art-input" type="text" placeholder="Service"  style="/* float: right; */width: 30%;margin-right: 42px;"> -->
+                                                                
+
+                                                                <select id="dep" name="dep" class="art-input" type="text" placeholder="" style="margin-top: 40px;width: 28%;">
+                                                                    <option value="none" style="color:white;" selected="">القسم</option>
+                                                                    <option value="Support" style="color:white;">الدعم</option>
+                                                                    <option value="Invoices" style="color:white;">الفواتير</option>
+                                                                    <option value="Sales" style="color:white;">المبيعات</option>
+                                                                </select>
+                                                                <!-- <input id="imp" name="imp" class="art-input" type="text" placeholder="Email"  style="width: 30%;"> -->
+                                                                
+                                                            </div>
+                                                            <!-- form field end -->
+                                                            
+                                                            <!-- </form> -->
+                                                            <!-- contact form end -->
+                                                      </div>
+                                                      <!-- contact form frame end -->
+                                                  </div>
+                                                </div>
                                             </td>
                                         </tr>				
                                     </tbody>
@@ -107,7 +157,7 @@
                               </tr>
                               
                             </tbody>
-                          </table>
+                      </table>
 
 
             </div>

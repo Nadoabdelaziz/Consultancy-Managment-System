@@ -201,6 +201,7 @@
     <!-- knowledge list -->
     <ul class="art-knowledge-list p-15-0">
       <!-- list item -->
+      
       <li>{{__($consultant->extr1)}}</li>
       <!-- list item -->
       <li>{{__($consultant->extr2)}}</li>
@@ -208,6 +209,15 @@
       <li>{{__($consultant->extr3)}}</li>
       <!-- list item -->
       <li>{{__($consultant->extr4)}}</li>
+      <!-- list item -->
+      <li>{{__($consultant->extr5)}}</li>
+      <!-- list item -->
+      <li>{{__($consultant->extr6)}}</li>
+       <!-- list item -->
+      <li>{{__($consultant->extr7)}}</li>
+      <!-- list item -->
+      <li>{{__($consultant->extr8)}}</li>
+
     </ul>
     <!-- knowledge list end -->
 
@@ -218,7 +228,8 @@
     <div class="art-links-frame p-15-15">
 
       <!-- download cv button -->
-      <a href="storage/{{$consultant->cv}}" class="art-link" download>Download cv <i class="fas fa-download"></i></a>
+      <p>{{__('Recieve Now Top Level Strength With Us')}}</p>
+      <!-- <a href="storage/{{$consultant->cv}}" class="art-link" download>Download cv <i class="fas fa-download"></i></a> -->
 
     </div>
     <!-- links frame end -->

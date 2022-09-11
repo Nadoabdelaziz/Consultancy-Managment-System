@@ -56,9 +56,9 @@
 
                     <select id="dep" name="dep" class="art-input" type="text" placeholder=""  style="width: 27%;margin-right: 40px;background-color: #23232d;border-radius: 6px;font-size: 17px;font-weight: 900;text-align: center">
                                                 <option value="none" style="color:white;" selected="">{{__('Department')}}</option>
-                                                <option value="father" style="color:white;">{{__('Support')}}</option>
-                                                <option value="father&amp;grandfather" style="color:white;">{{__('Invoices')}}</option>
-                                                <option value="father&amp;nickname" style="color:white;">{{__('Sales')}}</option>
+                                                <option value="Support" style="color:white;">{{__('Support')}}</option>
+                                                <option value="Invoices" style="color:white;">{{__('Invoices')}}</option>
+                                                <option value="Sales" style="color:white;">{{__('Sales')}}</option>
                     </select>
                     <!-- <input id="imp" name="imp" class="art-input" type="text" placeholder="Email"  style="width: 30%;"> -->
                     <label for="dep" style="left: 615px;"><i class="fas fa-at"></i></label>
