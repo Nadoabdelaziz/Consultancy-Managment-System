@@ -20,10 +20,10 @@
 
     <!-- avatar -->
     <div class="art-avatar">
-      <a data-fancybox="avatar" href="https://res.cloudinary.com/dxdc8azyj/image/upload/v1661689215/R_l0kzgw.jpg" class="art-avatar-curtain">
-        <img src="https://res.cloudinary.com/dxdc8azyj/image/upload/v1661689215/R_l0kzgw.jpg" alt="avatar">
+      <div class="art-avatar-curtain">
+        <img src="{{url('storage/'.$consultant->img)}}" alt="avatar">
         <i class="fas fa-expand"></i>
-      </a>
+      </div>
       <!-- available -->
       <div class="art-lamp-light">
         <!-- add class 'art-not-available' if not available-->

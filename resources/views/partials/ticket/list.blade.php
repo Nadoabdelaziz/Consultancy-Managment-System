@@ -83,7 +83,7 @@
                                     <thead style="">
                                         <tr style="">
                                             <td style="width: 30%;" class="tbl-accordion">{{__("$ticket->created_at")}}</td>
-                                            <td class="tbl-accordion">{{__("$ticket->response_status")}}</td>
+                                            <td style="width: 16%;" class="tbl-accordion">{{$ticket->response_status == '0' ? __('Not Responded') : __('Responed')}}</td>
                                             <td class="tbl-accordion">{{__("$ticket->msg_subject")}}</td>
                                             <td style="width: 15%;" class="tbl-accordion">{{__("$ticket->department")}}</td> 
                                                                         
@@ -92,61 +92,29 @@
                                     </thead>
                        
                                     <tbody style="display: table-row-group;">
-                                        <tr style="border-top-width: 12px;border-top-style: solid;border-top-color: #2b2b35;background-color: #23232D;/* background: top; */">
+                                        <tr style="background-color: #23232D;">
                                             <td colspan=100%>
                                                 <div class="container">
                                                 <div class="col-lg-12">
-                                                        <!-- contact form frame -->
                                                         <div class="art-a art-card" style="">
-                                                            <!-- contact form -->
-                                                            <!-- <form id="form" class="art-contact-form" style=""> -->
-                                                            <!-- form field -->
-                                                            <div class="art-form-field" style="">
-                                                                <!-- name input -->
-                                                                <input id="name" name="name" class="art-input" type="text" placeholder="الأسم" style="width: 40%;float: left;">
-                                                                <!-- label -->
-                                                                
-
-                                                                <input id="email" name="email" class="art-input" type="email" placeholder="الأيميل" style="width: 40%;float: right;">
-
-                                                            </div>
-                                                            <!-- form field end -->
-                                                            <!-- form field -->
-                                                            <div class="art-form-field">
-                                                                <!-- department input -->
-                                                                <!-- <input id="dep" name="dep" class="art-input" type="text" placeholder="Department"  style="width: 30%;margin-right: 40px;"> -->
-                                                                <!-- label -->
-                                                                <select id="imp" name="imp" type="text" style="margin-top: 40px;margin-right: 75px;width: 28%;float: left;">
-                                                                                            <option value="none" style="color:white;" selected="">الأهمية</option>
-                                                                                            <option value="father" style="color:white;">عاجله</option>
-                                                                                            <option value="father&amp;grandfather" style="color:white;">متوسطه</option>
-                                                                                            <option value="father&amp;nickname" style="color:white;">عاديه</option>
-                                                                </select>
-
-                                                                <select id="service" name="service" class="art-input" type="text" placeholder="" style="margin-top: 40px;width: 28%;float: left;margin-right: 58px;">
-                                                                    <option value="none" style="color:white;" selected="">الخدمة المتعلقة بالتذكرة</option>
-                                                                    <option value="father" style="color:white;">بدون</option>
-                                                                    <option value="father&amp;grandfather" style="color:white;">مع</option>
-                                                                </select>
-
-                                                                <!-- <input id="service" name="service" class="art-input" type="text" placeholder="Service"  style="/* float: right; */width: 30%;margin-right: 42px;"> -->
-                                                                
-
-                                                                <select id="dep" name="dep" class="art-input" type="text" placeholder="" style="margin-top: 40px;width: 28%;">
-                                                                    <option value="none" style="color:white;" selected="">القسم</option>
-                                                                    <option value="Support" style="color:white;">الدعم</option>
-                                                                    <option value="Invoices" style="color:white;">الفواتير</option>
-                                                                    <option value="Sales" style="color:white;">المبيعات</option>
-                                                                </select>
-                                                                <!-- <input id="imp" name="imp" class="art-input" type="text" placeholder="Email"  style="width: 30%;"> -->
-                                                                
-                                                            </div>
-                                                            <!-- form field end -->
+                                                            <h3 style="margin-bottom: 65px;margin-top: 7px;">{{__('Ticket Information')}}</h3>
                                                             
-                                                            <!-- </form> -->
-                                                            <!-- contact form end -->
+                                                            <h4 style="text-align-last: end;margin: 20px;align-items:;">{{__('Service For Ticket')}}</h4>
+                                                            <div class="art-form-field" style="color:white;text-align:end">
+                                                                <input style="text-align: end;color: wh;font-weight: bold;font-size: larger;" id="name" name="name" class="art-input" type="text" placeholder="{{__($ticket->msg_subject)}}">
+                                                            </div>
+
+                                                            <h4 style="text-align-last: end;margin: 20px;align-items:;">{{__('Message Text')}}</h4>
+                                                            <div class="art-form-field">
+                                                                <textarea style="text-align: end;" name="msg" id="" cols="30" rows="10">{{__($ticket->msg)}}</textarea>                                                                
+                                                            </div>
+
+                                                            <h4 style="text-align-last: end;margin: 20px;align-items:;">{{__('Attachments')}}</h4>
+                                                            <div class="art-form-field" style="background: linear-gradient(159deg, #252532 0%, #23232d 100%);">
+                                                              <img style="margin: 25px;" src="http://127.0.0.1:8000/storage/tickets/lYSiyEfjDAMbx2jbcM0IJetNlwpjhSKJHUfkfrcQ.jpg" alt="" style="" width="200" height="300" class="art-input">
+                                                            </div>
+
                                                       </div>
-                                                      <!-- contact form frame end -->
                                                   </div>
                                                 </div>
                                             </td>
