@@ -83,7 +83,7 @@
                                     <thead style="">
                                         <tr style="">
                                             <td style="width: 30%;" class="tbl-accordion">{{__("$ticket->created_at")}}</td>
-                                            <td style="width: 16%;" class="tbl-accordion">{{$ticket->response_status == '0' ? __('Not Responded') : __('Responed')}}</td>
+                                            <td style="width: 16%;" class="tbl-accordion">{{$ticket->response_status == '0' ? __('Not Responded') : __('Responded')}}</td>
                                             <td class="tbl-accordion">{{__("$ticket->msg_subject")}}</td>
                                             <td style="width: 15%;" class="tbl-accordion">{{__("$ticket->department")}}</td> 
                                                                         
@@ -111,8 +111,38 @@
 
                                                             <h4 style="text-align-last: end;margin: 20px;align-items:;">{{__('Attachments')}}</h4>
                                                             <div class="art-form-field" style="background: linear-gradient(159deg, #252532 0%, #23232d 100%);">
-                                                              <img style="margin: 25px;" src="http://127.0.0.1:8000/storage/tickets/lYSiyEfjDAMbx2jbcM0IJetNlwpjhSKJHUfkfrcQ.jpg" alt="" style="" width="200" height="300" class="art-input">
+                                                              <img style="margin: 25px;" src="{{url('storage/'.$ticket->file)}}" alt="" style="" width="200" height="300" class="art-input">
                                                             </div>
+                                                            
+
+                                                      </div>
+
+
+                                                      <!-- Response -->
+                                                      <div class="art-a art-card" style="">
+                                                            <h3 style="margin-bottom: 65px;margin-top: 7px;">{{__('Response')}}</h3>
+                                                            
+                                                            <h4 style="text-align-last: end;margin: 20px;align-items:;">{{__('Employee Name')}}</h4>
+                                                            <div class="art-form-field" style="color:white;text-align:end">
+                                                                <input style="text-align: end;color: wh;font-weight: bold;font-size: larger;" id="name" name="name" class="art-input" type="text" placeholder="{{__($ticket->response_name)}}">
+                                                            </div>
+
+                                                            <h4 style="text-align-last: end;margin: 20px;align-items:;">{{__('Employee Email')}}</h4>
+                                                            <div class="art-form-field">
+                                                                <input style="text-align: end;color: wh;font-weight: bold;font-size: larger;" id="email" name="email" class="art-input" type="text" placeholder="{{__($ticket->response_email)}}">
+                                                            </div>
+
+                                                            <h4 style="text-align-last: end;margin: 20px;align-items:;">{{__('Response Message')}}</h4>
+                                                            <div class="art-form-field">
+                                                                <textarea style="text-align: end;" name="msg" id="" cols="30" rows="10">{{__($ticket->response_msg)}}</textarea>                                                                
+                                                            </div>
+
+                                                            <h4 style="text-align-last: end;margin: 20px;align-items:;">{{__('Response Attachments')}}</h4>
+                                                            <div class="art-form-field" style="background: linear-gradient(159deg, #252532 0%, #23232d 100%);">
+                                                              <img style="margin: 25px;" src="{{url('storage/'.$ticket->response_file)}}" alt="" style="" width="200" height="300" class="art-input">
+                                                            </div>
+
+                                                          
 
                                                       </div>
                                                   </div>

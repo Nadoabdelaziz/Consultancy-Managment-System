@@ -5,6 +5,7 @@ namespace App\Providers;
 use App\Models\Consultant;
 use App\Models\Text;
 use App\Models\Ticket;
+use Voyager;
 
 
 use Illuminate\Support\ServiceProvider;
@@ -28,6 +29,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        Voyager::addAction(\App\Actions\MyAction::class);
+
         $consultant = Consultant::get()->all();
         $numbers_text=Text::get()->all();
         $tickets=Ticket::get()->all();

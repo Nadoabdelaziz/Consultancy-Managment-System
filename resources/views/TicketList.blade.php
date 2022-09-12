@@ -79,7 +79,7 @@
         <!-- content end -->
 
         <!-- menu bar -->
-        @include('partials.menu')
+        <!-- @include('partials.menu') -->
 
         <!-- menu bar end -->
 

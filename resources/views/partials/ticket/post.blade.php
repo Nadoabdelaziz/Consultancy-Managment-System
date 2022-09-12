@@ -35,9 +35,9 @@
                     <!-- label -->
                     <select id="imp" name="imp" type="text"  style="width: 30%;margin-right: 40px;background-color: #23232d;border-radius: 6px;font-size: 17px;font-weight: 900;text-align: center">
                                                 <option value="none" style="color:white;" selected="">{{__('Importance')}}</option>
-                                                <option value="father" style="color:white;">{{__('Urgent')}}</option>
-                                                <option value="father&amp;grandfather" style="color:white;">{{__('Medium')}}</option>
-                                                <option value="father&amp;nickname" style="color:white;">{{__('Normal')}}</option>
+                                                <option value="Urgent" style="color:white;">{{__('Urgent')}}</option>
+                                                <option value="Medium" style="color:white;">{{__('Medium')}}</option>
+                                                <option value="Normal" style="color:white;">{{__('Normal')}}</option>
                     </select>
 
                     <label for="imp"><i class="fas fa-at"></i></label>
@@ -46,8 +46,8 @@
 
                     <select id="service" name="service" class="art-input" type="text" placeholder=""  style="width: 27%;margin-right:53px;background-color: #23232d;border-radius: 6px;font-size: 17px;font-weight: 900;text-align: center">
                                                 <option value="none" style="color:white;" selected="">{{__('Service For Ticket')}}</option>
-                                                <option value="father" style="color:white;">{{__('Without')}}</option>
-                                                <option value="father&amp;grandfather" style="color:white;">{{__('With')}}</option>
+                                                <option value="Without" style="color:white;">{{__('Without')}}</option>
+                                                <option value="With" style="color:white;">{{__('With')}}</option>
                     </select>
 
                     <!-- <input id="service" name="service" class="art-input" type="text" placeholder="Service"  style="/* float: right; */width: 30%;margin-right: 42px;"> -->

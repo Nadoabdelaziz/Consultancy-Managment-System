@@ -161,6 +161,11 @@
     "Abo El Mehdar":"أبو المحضار",
     "Dimensional Engineering Expert":"خبير الهندسة البعدية",
     "Not Responded":"لم يتم الرد",
-    "Responded":"تم الرد"
+    "Responded":"تم الرد",
+    "Response":"تفاصيل الرد",
+    "Response Message":"رسالة الرد",
+    "Employee Name":"اسم الموظف",
+    "Employee Email":"البريد الإلكتروني للموظف",
+    "Response Attachments":"مرفقات الرد"
 
 }
