@@ -14,7 +14,7 @@
           <div class="art-el-suptitle mb-15"></div>
           <!-- text -->
           <div class="mb-15" style="
-    font-size: large;
+    font-size: larger;
     font-weight: bold;
     text-align: end;
     white-space: break-spaces;

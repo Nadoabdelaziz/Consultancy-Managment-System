@@ -51,11 +51,18 @@
 
 
                   <!-- col -->
-                @foreach($tickets as $ticket)
-                  @if(auth()->user()->email == $ticket->email)
-                    @include('partials.ticket.list')
+                  <?php $count=0; ?>
+                  @foreach($tickets as $ticket)
+                    @if(auth()->user()->email == $ticket->email)
+                      <?php $count++; ?>
+                      @include('partials.ticket.list')
+                    @endif
+                  @endforeach    
+
+                  @if($count == 0)
+                    @include('partials.ticket.empty')
                   @endif
-                @endforeach    
+                
                   <!-- col end -->
 
                 </div>
@@ -79,7 +86,7 @@
         <!-- content end -->
 
         <!-- menu bar -->
-        <!-- @include('partials.menu') -->
+        @include('partials.menu')
 
         <!-- menu bar end -->
 

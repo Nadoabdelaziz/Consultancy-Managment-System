@@ -21,7 +21,7 @@
     <!-- avatar -->
     <div class="art-avatar">
       <div class="art-avatar-curtain">
-        <img src="{{url('storage/'.$consultant->img)}}" alt="avatar">
+        <img  style="width: 94%;height: 110%;"  src="{{url('storage/'.$consultant->img)}}" alt="avatar">
         <i class="fas fa-expand"></i>
       </div>
       <!-- available -->
@@ -114,6 +114,11 @@
     <!-- divider -->
     <div class="art-ls-divider"></div>
 
+    
+    <br>
+    <p style="text-align: end;color:white">{{__('Ability to adjust golden and sub-paths')}}</p>
+
+
     <!-- hard skills -->
     <div class="art-hard-skills p-30-15">
 
@@ -178,7 +183,7 @@
       <!-- skill end -->
 
       <!-- skill -->
-      <div class="art-hard-skills-item">
+      <div style="display: none;" class="art-hard-skills-item">
         <div class="art-skill-heading">
           <!-- title -->
           <h6>{{__($consultant->sk5)}}</h6>
@@ -197,6 +202,9 @@
 
     <!-- divider -->
     <div class="art-ls-divider"></div>
+
+    <br>
+    <p style="text-align: end;color:white">{{__('Dimensional capabilities and capabilities')}}</p>
 
     <!-- knowledge list -->
     <ul class="art-knowledge-list p-15-0">

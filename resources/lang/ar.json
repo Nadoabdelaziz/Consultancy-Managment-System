@@ -63,7 +63,7 @@
     "Write here what you want":"اكتب هنا ما تريد",
     "Nada":"ندي",
     "Web Developer":"مبرمج",
-    "Residence":"مكان السكن",
+    "Residence":"الدولة",
     "City":"المدينة",
     "Age":"العمر",
     "Egypt":"مصر",
@@ -140,14 +140,17 @@
     "latest update":"آخر تحديث",
     "ID":"رقم",
     "Discover my abilities and my dimensional possibilities":"اكتشف قدراتي و امكانياتي البعدية",
-    "code":"المهارة",
+    
+    "skills":"المهارات",
+    "code":"البرمجية البعدية",
+    
     "I build":"اقوم",
-    "The Golden Dimensional and Orbital Engineering":"الهندسة الذهبية البعدية والمدارية",
-    "Build Strategies For The Dimensional Roadmap":"بناء استراتيجيات لخارطة طريق البعدية",
-    "Design and Build Dimensional Rules With Specialized Settings":"تصميم وبناء قواعد الأبعاد مع إعدادات متخصصة",
-    "Plan and Setting and Distribution and Fixing The golden dimensional and orbital Pathways":"تخطيط ووضع وتوزيع وتحديد المسارات الذهبية البعدية والمدارية",
-    "Connect The Pathways With Dimensional Rules":"ربط المسارات بقواعد البعدية",
-    "Energize and Activate The Dimensional Rules":"تنشيط وتفعيل قواعد الأبعاد",
+    "The Golden Dimensional and Orbital Engineering":"الهندسة البعدية الذهبية والمدارية",
+    "Build Strategies For The Dimensional Roadmap":"بناء استراتيجيات لخرائط الطرق البعدية",
+    "Design and Build Dimensional Rules With Specialized Settings":"تصميم وبناء قواعد بعدية بإعدادات متخصصة",
+    "Plan and Setting and Distribution and Fixing The golden dimensional and orbital Pathways":"تخطيط وأعداد وتوزيع و ضبط المسارات البعدية و الذهبية والمدارية",
+    "Connect The Pathways With Dimensional Rules":"ربط المسارات بتوافق مع القواعد البعدية",
+    "Energize and Activate The Dimensional Rules":"تنشيط وتفعيل القواعد البعدية",
     "Setting The Inner and Outer Pathways":"ضبط المسارات الداخلية والخارجية",
     "Providing consultancy to existing establishments and entities for dimensional transformation":"تقديم استشارات للمنشأت و الكيانات القائمة للتحول البعدي",
     "Years Experience":"سنوات الخبرة",
@@ -157,7 +160,7 @@
     "Centralization":"المركزية",
     "External":"الخارجية",
     "Sub-Branch":"الفرعية",
-    "Recieve Now Top Level Strength With Us":"احصل الآن على أعلى مستوى من القوة معنا",
+    "Recieve Now Top Level Strength With Us":"احصل الآن على أعلى مستوى من القوة",
     "Abo El Mehdar":"أبو المحضار",
     "Dimensional Engineering Expert":"خبير الهندسة البعدية",
     "Not Responded":"لم يتم الرد",
@@ -166,6 +169,20 @@
     "Response Message":"رسالة الرد",
     "Employee Name":"اسم الموظف",
     "Employee Email":"البريد الإلكتروني للموظف",
-    "Response Attachments":"مرفقات الرد"
+    "Response Attachments":"مرفقات الرد",
+    "Ability to adjust golden and sub-paths":"القدرة ضبط المسارات الذهبية و الفرعية",
+    "Dimensional capabilities and capabilities":"القدرات و الامكانيات البعدية",
+    "No Tickets Found":"لا توجد تذاكر",
+    "Mobile Number":"رقم الهاتف",
+    "Account Type":"نوع الحساب",
+    "Approve Account":"تأكيد الحساب",
+    "Registeration Date":"تاريخ الأنضمام",
+    "Latest Sign In":"أخر تسجيل دخول",
+    "Authenticate the email to activate the location services and correct communication":"وثق الأيميل لتفعيل خدمات الموقع والتواصل الصحيح",
+    "Edit":"تعديل",
+    "Change Password":"تغيير كلمة المرور"
+
+    
+
 
 }

@@ -8,62 +8,7 @@
                 </div>
                 <!-- title frame end -->
             </div>
-                <!-- section title end -->
 
-            <!-- contact form frame -->
-            <!-- <div class="art-a art-card" style="font-size: medium;">
-            <table cellpadding="0" cellspacing="0" class="tbl-accordion">
-                <thead>
-                    <tr>
-                    <th>{{__('latest update')}}</th>
-                    <th>{{__('Status')}}</th>
-                    <th>{{__('Subject Of Ticket')}}</th>
-                    <th>{{__('Department')}}</th>
-                    <th>{{__('ID')}}</th>
-
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                    <td colspan="4">
-                        <table cellpadding="0" cellspacing="0" class="tbl-accordion-nested">
-                        <thead>
-                            <tr>
-                                <td class="tbl-accordion">{{__("$ticket->created_at")}}</td>
-                                <td class="tbl-accordion">{{__("$ticket->response_status")}}</td>
-                                <td class="tbl-accordion">{{__("$ticket->msg_subject")}}</td>
-                                <td class="tbl-accordion">{{__("$ticket->department")}}</td> 
-                                <td class="tbl-accordion">{{__("$ticket->id")}}</td>                            
-                           
-                            </tr>
-                        <thead>
-                        <tbody>
-                        <tr style="border-top-width: 12px;border-top-style: solid;border-top-color: #2b2b35;background-color: #23232D;/* background: top; */">
-                                  <td>
-                                    <i class="fa fa-check" aria-hidden="true" style="color: greenyellow;"></i>
-                                  </td>
-                                  <td>
-                                    <i class="fa fa-check" aria-hidden="true" style="color: greenyellow;"></i>
-                                  </td>
-                                  <td>
-                                    <i class="fa fa-check" aria-hidden="true" style="color: greenyellow;"></i>
-                                  </td>
-                                  <td>
-                                    <i class="fa fa-times" style="color:red;font-size: x-large;" aria-hidden="true"></i>
-                                  </td>
-                                  <th scope="row">{{__('Phai Consultant')}}</th>
-
-                              </tr>				
-                        </tbody>
-                        </table>
-                    </td>
-                    </tr>                    
-                </tbody>
-            </table>		
-            
-
- -->
                       <table class="tbl-accordion table" style="color: white;font-size: medium;/* border-right-style: solid; *//* border-right-color: chartreuse; */">
                             <thead style="text-align: center;">
                               <tr style="border-style: hidden;font-size:larger;/* border-bottom: solid #2b2b35; */border-block-width: 18px;">
@@ -83,7 +28,7 @@
                                     <thead style="">
                                         <tr style="">
                                             <td style="width: 30%;" class="tbl-accordion">{{__("$ticket->created_at")}}</td>
-                                            <td style="width: 16%;" class="tbl-accordion">{{$ticket->response_status == '0' ? __('Not Responded') : __('Responded')}}</td>
+                                            <td style="{{ ($ticket->response_status == '0') ? 'width: 16%;color:red;font-weight: bold;font-family: system-ui;' : 'width: 16%;color:greenyellow;font-weight: bold;font-family: system-ui;' }} " class="tbl-accordion">{{$ticket->response_status == '0' ? __('Not Responded') : __('Responded')}}</td>
                                             <td class="tbl-accordion">{{__("$ticket->msg_subject")}}</td>
                                             <td style="width: 15%;" class="tbl-accordion">{{__("$ticket->department")}}</td> 
                                                                         
@@ -118,6 +63,7 @@
                                                       </div>
 
 
+                                                      @if($ticket->response_status == '1')
                                                       <!-- Response -->
                                                       <div class="art-a art-card" style="">
                                                             <h3 style="margin-bottom: 65px;margin-top: 7px;">{{__('Response')}}</h3>
@@ -145,6 +91,7 @@
                                                           
 
                                                       </div>
+                                                      @endif
                                                   </div>
                                                 </div>
                                             </td>

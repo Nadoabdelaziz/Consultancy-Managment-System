@@ -55,7 +55,7 @@
                       <!-- title frame -->
                       <div class="art-title-frame">
                         <!-- title -->
-                        <h4>Education</h4>
+                        <h4>{{__('special Higher Consultants')}}</h4>
                       </div>
                       <!-- title frame end -->
                     </div>

@@ -960,7 +960,7 @@ info bar
 .art-info-bar .art-header .art-avatar .art-avatar-curtain img {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 110%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;

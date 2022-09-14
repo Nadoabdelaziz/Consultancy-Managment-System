@@ -26,6 +26,10 @@ Route::group(['prefix' => '{locale}'],function (){
 
 
 
+    Route::get('/account',function(){
+        return view('MyAccount');
+    })->middleware('setLocale');
+
 
     Route::get('/blog-post',function(){
         return view('blog-post');
@@ -154,6 +158,7 @@ Route::post('Tickets','App\Http\Controllers\TicketController@index')->middleware
 Route::get('/', function(){
     return redirect('/ar');
 });
+
 
 
 // Route::get('ar/onepage', function(){

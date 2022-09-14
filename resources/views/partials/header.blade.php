@@ -17,8 +17,10 @@
       <!-- banner dec -->
       <div class="art-banner-dec"></div>
       <!-- banner overlay -->
-      <div class="art-banner-overlay">
-        <!-- main title -->
+      <div class="art-banner-overlay" style="
+    background-size: cover;
+    background-image: url('https://res.cloudinary.com/dxdc8azyj/image/upload/v1663163858/new3_gkdvsf.jpg');
+">        <!-- main title -->
         <div  class="art-banner-title">
           <!-- title -->
           <h1 class="mb-15">{{__('Discover my abilities and my dimensional possibilities')}}</h1>
@@ -36,10 +38,10 @@
               ]'> - </span>&lt;/<i>{{__('code')}}</i>&gt;
           </div> -->
 
-          <div style="font-size:large" class="art-lg-text art-code mb-25">&lt;<i>{{__('code')}}</i>&gt;
+          <div style="font-size:large" class="art-lg-text art-code mb-25">&lt;<i style="font-weight: bold;color: gold;" >{{__('skills')}}</i>&gt;
             <span class="txt-rotate" data-period="2000" 
               data-rotate="[ &quot;{{__('The Golden Dimensional and Orbital Engineering')}}.&quot;, &quot;{{__('Build Strategies For The Dimensional Roadmap')}}.&quot;, &quot;{{__('Design and Build Dimensional Rules With Specialized Settings')}}.&quot;, &quot;{{__('Plan and Setting and Distribution and Fixing The golden dimensional and orbital Pathways')}}.&quot;  , &quot;{{__('Connect The Pathways With Dimensional Rules')}}.&quot; , &quot;{{__('Energize and Activate The Dimensional Rules')}}.&quot;, &quot;{{__('Setting The Inner and Outer Pathways')}}.&quot; , &quot;{{__('Providing consultancy to existing establishments and entities for dimensional transformation')}}.&quot; ]">
-            </span>&lt;/<i>{{__('code')}}</i>&gt;
+            </span>&lt;/<i style="font-weight: bold;color: gold;">{{__('code')}}</i>&gt;
           </div>
           
           
@@ -49,8 +51,12 @@
         </div>
         <!-- main title end -->
         <!-- photo -->
-        <img src="https://res.cloudinary.com/dxdc8azyj/image/upload/v1661781895/face-2-tany_wdvcsk.png" class="art-banner-photo" alt="Your Name">
-      </div>
+        <img src="https://res.cloudinary.com/dxdc8azyj/image/upload/v1663155273/WhatsApp_Image_2022-09-12_at_7.07.39_PM__2___1_-removebg-preview_fwki6l.png" class="art-banner-photo" alt="Your Name" style="
+    height: 119%;
+    width: 34%;
+    right: 37px;
+">   
+</div>
       <!-- banner overlay end -->
     </div>
     <!-- banner end -->

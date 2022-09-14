@@ -13,7 +13,7 @@
       <div class="art-buttons-frame">
         @if(auth()->user())
 
-            @if(auth()->user()->role_id == '3' || auth()->user()->role_id == '5' || auth()->user()->role_id == '5')
+            @if(auth()->user()->role_id == '2' || auth()->user()->role_id == '3' || auth()->user()->role_id == '4' || auth()->user()->role_id == '5')
               <a href="{{app()->getLocale()}}/{{$service->slug}}" class="art-link art-color-link art-w-chevron">{{__('Order now')}}</a>
             @else
               <a href="{{app()->getLocale()}}/High" class="art-link art-color-link art-w-chevron">{{__('Order now')}}</a>
