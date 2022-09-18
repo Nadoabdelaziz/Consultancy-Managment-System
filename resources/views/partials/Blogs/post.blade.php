@@ -5,7 +5,7 @@
 ?>
 
 
-<div class="col-lg-11">
+<div class="col-lg-12">
 <div id="frame" style="">
 
 <div id="bullets" style="display: contents;">

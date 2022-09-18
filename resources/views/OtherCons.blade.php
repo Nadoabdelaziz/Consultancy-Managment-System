@@ -6,6 +6,13 @@
 // $serice_head2=$_GET['var2'];
 // $serice_head3=$_GET['var3'];
 
+$my_service=null;
+
+foreach ($services as $service) {
+  if($service->slug == 'OtherCons' ){
+      $my_service = $service; 
+  }
+}
 
 ?>
 
@@ -55,9 +62,53 @@
             <div id="scrollbar" class="art-scroll-frame">
 
               <!-- container -->
-              <div class="container-fluid">
               @include('partials.Nav')
-<br><br><br><br><br>
+                <br><br><br>
+              @if(isset($my_service->video) && isset($my_service->vid_cover))
+                <div class="container-fluid">
+                  
+                  <!-- row -->
+                  <div class="row p-30-0">
+                    <!-- col -->
+                    <div class="col-lg-12" >
+                  
+                      <div class="col-lg-4" style="float: right;">
+                  
+                        <!-- blog post card -->
+                        <div class="art-a art-blog-card">
+                          <!-- post cover -->
+                          <a target="__blank" href="{{url($my_service->video)}}" class="art-port-cover">
+                            <!-- img -->
+                            <img src="{{asset('storage/'. $my_service->vid_cover)}}" alt="blog post">
+                          </a>
+                          <!-- post cover end -->
+                          <!-- post description -->
+                          <div class="art-post-description">
+                            <!-- title -->
+                            <a target="__blank" href="{{url($my_service->video)}}">
+                              <h4 style="text-align:end" class="mb-15">{{__('Explaination Video To fill table')}}</h5>
+                            </a>
+                            <!-- text -->
+                            <!-- link -->
+                          </div>
+                          <!-- post description end -->
+                        </div>
+                          <!-- blog post card end -->
+                  
+                      </div>
+                  
+                    </div>  
+                    <!-- col end -->
+                  
+                  </div>
+                  <!-- row end -->
+                  
+                </div>
+              @endif  
+                <!-- container end -->
+
+              <!-- container -->
+              <div class="container-fluid">
 
                 <div class="row p-30-0">
 

@@ -152,7 +152,7 @@ h6 {
 /* ----- container ----- */
 .container-fluid {
   overflow: hidden;
-  padding: 0 30px;
+  /* padding: 0 30px; */
   position: relative;
 }
 
@@ -607,9 +607,9 @@ app marcup
           align-items: center;
 }
 .art-app .art-app-wrapper {
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
+  /* max-width: 1440px; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
   background: #1e1e28;
   background-size: cover;
   width: 100%;
@@ -633,7 +633,7 @@ app marcup
 .art-app .art-app-wrapper .art-app-container .art-info-bar {
   background: #20202a;
   width: 290px;
-  min-width: 290px;
+  min-width: 270px;
   height: calc(100vh - 30px);
   position: relative;
   z-index: 999;
@@ -678,9 +678,13 @@ app marcup
   overflow: hidden;
   width: 100vw;
   height: 2300px;
-  padding-right: 80px;
+  /* padding-right: 80px; */
   -webkit-transition: 0.55s ease-in-out;
   transition: 0.55s ease-in-out;
+}
+p.menu-item {
+  padding-bottom: 12px;
+  /* margin-bottom: 9px; */
 }
 .art-app .art-app-wrapper .art-app-container .art-content .art-curtain {
   background: rgba(30, 30, 40, 0.88);

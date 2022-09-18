@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UploadController;
+use App\Http\Controllers\AccountController;
+
+
 
 
 /*
@@ -28,6 +31,11 @@ Route::group(['prefix' => '{locale}'],function (){
 
     Route::get('/account',function(){
         return view('MyAccount');
+    })->middleware('setLocale');
+
+    
+    Route::get('/Accountedit',function(){
+        return view('Accountedit');
     })->middleware('setLocale');
 
 
@@ -148,6 +156,11 @@ Route::post('Strongupload','App\Http\Controllers\UploadController@Strongupload')
 // Tickets Registeration
 Route::post('Tickets','App\Http\Controllers\TicketController@index')->middleware('setLocale');  
 
+
+
+//  account edits
+Route::post('edit-email/{index}','App\Http\Controllers\AccountController@index','index')->middleware('setLocale');  
+Route::post('edit-email/{email}','App\Http\Controllers\AccountController@EmailEdit','edit-email')->middleware('setLocale');  
 
 
 

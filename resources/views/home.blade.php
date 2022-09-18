@@ -10,7 +10,7 @@
 
 
     <!-- app wrapper -->
-      <div class="art-app-wrapper">
+      <div class="art-app-wrapper" style="height:calc(100vh - 30px)">
 
         <!-- app container end -->
         <div class="art-app-container">

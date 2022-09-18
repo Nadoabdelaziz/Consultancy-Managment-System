@@ -122,57 +122,14 @@
                                   </li>
 
                                   <hr>
-                                  <!-- city -->
-                                  <li style="margin-bottom: 25px;">
-                                  <form action="{{ url(app()->getLocale().'/edit-email/','email') }}" method="post" enctype="multipart/form-data" style="background-color: transparent">
-                                    @csrf
-                                    <h5 style="color: white;">
-                                    <a href="#">{{__('Edit')}}</a>
-                                    </h5>
-                                  </form>                                    <h5 style="font-weight: bolder;">{{isset($C_User->name) ? __($C_User->email) : '' }}</h5>
-                                    <h4 style="">: {{__('Email')}}</h4>
-                                  </li>
 
-                                  <hr>
-                                  <!-- age -->
                                   <li style="margin-bottom: 25px;">
-                                  <h5 style="color: white;">
-                                    <a href="#">{{__('Edit')}}</a>
-                                  </h5>
-                                    <h5 style="font-weight: bolder;">{{isset($C_User->mobile_number) ? __($C_User->mobile_number) : '' }}</h5>
-                                    <h4 style="">: {{__('Mobile Number')}}</h4>
+                                    <h5 style="color: transparent;">asd</h5>
+                                    <h5 style="font-weight: bolder;">{{isset($C_User->name) ? __($C_User->name) : '' }}</h5>
+                                    <h4 style="width:15%">: {{__('Name')}}</h4>
                                   </li>
-
-                                  <hr>
                                   <!-- age -->
-                                  <li style="margin-bottom: 25px;">
-                                  <h5 style="color: white;"><a href="#">{{__('Edit')}}</a></h5>
-                                    <h5 style="font-weight: bolder;">{{isset($C_User->residence) ? __($C_User->residence) : '' }}</h5>
-                                    <h4 style="width: 18%;">: {{__('Residence')}}</h4>
-                                  </li>
-
-                                  <hr>
-                                  <!-- age -->
-                                  <li style="margin-bottom: 25px;">
-                                  <h5 style="color: white;"><a href="#">{{__('Edit')}}</a></h5>
-                                    <h5 style="font-weight: bolder;">{{isset($C_User->city) ? __($C_User->city) : '' }}</h5>
-                                    <h4 style="width: 18%;">: {{__('City')}}</h4>
-                                  </li>
-
-                                  <hr>
-                                  <!-- age -->
-                                  <li style="margin-bottom: 25px;">
-                                  <h5 style="color: white;"><a href="#">{{__('Edit')}}</a></h5>
-                                    <h5 style="font-weight: bolder;">{{__($membership)}}</h5>
-                                    <h4 style="width: 18%;">: {{__('Account Type')}}</h4>
-                                  </li>
-
-                                  <hr>
-                                  <!-- age -->
-                                  <li style="margin-bottom: 25px;">
-                                    <h6 style="width: 5%;color:yellow"><i class="fa fa-pen" aria-hidden="true" style="color: gold;"></i></h6>                                    <h5><i class="fa fa-check" aria-hidden="true" style="color: greenyellow;"></i></h5>  
-                                    <h4 style="">: {{__('Approve Account')}}</h4>
-                                  </li>
+                                 
                                 </ul>
                             </div>
                             
@@ -325,7 +282,49 @@
         <!-- content end -->
 
         <!-- menu bar -->
-        @include('partials.menu')
+        <div class="art-menu-bar">
+
+          <!-- menu bar frame -->
+          <div class="art-menu-bar-frame">
+
+            <!-- menu bar header -->
+            <div class="art-menu-bar-header">
+              <!-- menu bar button -->
+              <a class="art-menu-bar-btn" href="#.">
+                <!-- icon -->
+                <h5></h5>
+              </a>
+              <!-- menu bar button end -->
+            </div>
+            <!-- menu bar header end -->
+
+            <!-- current page title -->
+            <div class="art-current-page"></div>
+            <!-- current page title end -->
+
+            <!-- scroll frame -->
+            <div class="art-scroll-frame">
+
+              <!-- menu -->
+              @include('partials.menu')
+              <!-- menu end -->
+
+              <!-- language change -->
+              <ul class="art-language-change">
+                <!-- language item -->
+                <li><a href="#.">FR</a></li>
+                <!-- language item -->
+                <li class="art-active-lang"><a href="#.">EN</a></li>
+              </ul>
+              <!-- language change end -->
+
+            </div>
+            <!-- scroll frame end -->
+
+          </div>
+          <!-- menu bar frame -->
+
+        </div>
         <!-- menu bar end -->
 
       </div>
