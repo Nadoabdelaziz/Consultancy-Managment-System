@@ -683,7 +683,7 @@ app marcup
   transition: 0.55s ease-in-out;
 }
 p.menu-item {
-  padding-bottom: 12px;
+  padding-bottom: 8px;
   /* margin-bottom: 9px; */
 }
 .art-app .art-app-wrapper .art-app-container .art-content .art-curtain {
@@ -1319,11 +1319,11 @@ menu bar
           transition-delay: 0.5s;
 }
 .art-menu-bar nav .main-menu .menu-item a {
-  padding: 10px 30px;
+  padding: 10px 1px;
   display: inline-block;
   width: 100%;
   text-transform: uppercase;
-  font-size: large;
+  font-size: medium;
   letter-spacing: 1px;
   font-weight: 500;
   color: #8c8c8e;
@@ -1339,6 +1339,7 @@ menu bar
   padding-right: 0;
 }
 .art-menu-bar nav .main-menu .menu-item.menu-item-has-children:after {
+  color: transparent;
   position: absolute;
   font-family: "Font Awesome 5 free";
   content: '\f054';
@@ -1379,9 +1380,9 @@ menu bar
   transition: 0.55s ease-in-out;
 }
 .art-menu-bar nav .main-menu .menu-item .sub-menu .menu-item a {
-  padding: 7px 30px;
+  /* padding: 7px 15px; */
   font-weight: 400;
-  font-size: larger;
+  font-size: 15px;
 }
 .art-menu-bar nav .main-menu .menu-item .sub-menu .menu-item .sub-menu {
   margin: 0;

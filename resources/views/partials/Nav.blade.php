@@ -12,7 +12,7 @@ background-size: full;
 font-family: sans-serif;
 }
 header {
-background-color: #181D33;
+background-color: rgba(35, 35, 45, 0.98) ;
 /* position: fixed;
 left: 0;
 right: 0;

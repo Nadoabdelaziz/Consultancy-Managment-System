@@ -53,7 +53,7 @@
                   <!-- col -->
                   <?php $count=0; ?>
                   @foreach($tickets as $ticket)
-                    @if(auth()->user()->email == $ticket->email)
+                    @if(auth()->user() && auth()->user()->email == $ticket->email)
                       <?php $count++; ?>
                       @include('partials.ticket.list')
                     @endif

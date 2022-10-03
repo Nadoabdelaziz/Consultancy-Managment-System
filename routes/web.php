@@ -25,144 +25,154 @@ use App\Http\Controllers\AccountController;
 // });
 
 Route::group(['prefix' => '{locale}'],function (){
-    Route::get('/', 'App\Http\Controllers\HomeController@index')->middleware('setLocale');
+
+    Route::middleware('setLocale')->group(function(){
+
+        Route::get('/', 'App\Http\Controllers\HomeController@index')->name('home');
 
 
 
-    Route::get('/account',function(){
-        return view('MyAccount');
-    })->middleware('setLocale');
-
+        Route::get('/account',function(){
+            return view('MyAccount');
+        })->name('account');
     
-    Route::get('/Accountedit',function(){
-        return view('Accountedit');
-    })->middleware('setLocale');
-
-
-    Route::get('/blog-post',function(){
-        return view('blog-post');
-    })->middleware('setLocale');
-
-    Route::get('/ProductConsultant',function(){
-        return view('ProductConsultant');
-    })->middleware('setLocale');
-
-    Route::get('/NewBornCons',function(){
-        return view('NewBornCons');
-    })->middleware('setLocale');
-
-    Route::get('/OtherCons',function(){
-        return view('OtherCons');
-    })->middleware('setLocale');
-
-    Route::get('/PhaiConsultant',function(){
-        return view('PhaiConsultant');
-    })->middleware('setLocale');
-
-
-    Route::get('/goalsConsultancy',function(){
-        return view('goalsConsultancy');
-    })->middleware('setLocale');
-
-
-    Route::get('/StrongConsultant',function(){
-        return view('StrongConsultant');
-    })->middleware('setLocale');
-
-
-
-
-    Route::get('/tickets',function(){
-        return view('Ticket');
-    })->middleware('setLocale');
-
+        
+        Route::get('/Accountedit',function(){
+            return view('Accountedit');
+        });
     
-    Route::get('/ticketslist',function(){
-        return view('TicketList');
-    })->middleware('setLocale');
-
     
-
-    Route::get('/High',function(){
-        return view('High');
-    })->middleware('setLocale');
-
+        Route::get('/blog-post',function(){
+            return view('blog-post');
+        })->name('Places');
     
-
-
-
-    Route::get('/SentenceCalculator',function(){
-        return view('SentenceCalculator');
-    })->middleware('setLocale');
-
-    Route::get('/GoldenCalculator',function(){
-        return view('GoldenCalculator');
-    })->middleware('setLocale');
-
+        Route::get('/ProductConsultant',function(){
+            return view('ProductConsultant');
+        })->name('Products');
     
-Route::get('/logout', function(Request $request) {
-    Auth::logout();
-    return redirect('/');
-  })->middleware('setLocale');
+        Route::get('/NewBornCons',function(){
+            return view('NewBornCons');
+        })->name('NewBorns');
+    
+        Route::get('/OtherCons',function(){
+            return view('OtherCons');
+        })->name('Others');
+    
+        Route::get('/PhaiConsultant',function(){
+            return view('PhaiConsultant');
+        })->name('Phai');
+    
+    
+        Route::get('/goalsConsultancy',function(){
+            return view('goalsConsultancy');
+        })->name('Goals');
+    
+    
+        Route::get('/StrongConsultant',function(){
+            return view('StrongConsultant');
+        })->name('Strongs');
+    
+    
+    
+    
+        Route::get('/tickets',function(){
+            return view('Ticket');
+        })->name('Tickets');
+    
+        
+        Route::get('/ticketslist',function(){
+            return view('TicketList');
+        })->name('TicketList');
+    
+        
+    
+        Route::get('/High',function(){
+            return view('High');
+        })->name('Highs');
+    
+        
+    
+    
+    
+        Route::get('/SentenceCalculator',function(){
+            return view('SentenceCalculator');
+        })->name('SentenceCalculator');
+    
+        Route::get('/GoldenCalculator',function(){
+            return view('GoldenCalculator');
+        });
 
-
-
-//  places 
-Route::post('upload','App\Http\Controllers\UploadController@index')->middleware('setLocale');  
-
-Route::post('PlacesCons','App\Http\Controllers\HomeController@PlacesConsultancy')->middleware('setLocale');  
-
-
-// product 
-Route::post('uploadProduct','App\Http\Controllers\UploadController@Productupload')->middleware('setLocale');  
-
-Route::post('ProductCons','App\Http\Controllers\HomeController@ProductConsultancy')->middleware('setLocale');  
-
-
-// new born
-Route::post('NewBornCons','App\Http\Controllers\HomeController@BornConsultancy')->middleware('setLocale');  
-
-Route::post('Bornupload','App\Http\Controllers\UploadController@Bornupload')->middleware('setLocale');  
-
-
-// others
-
-Route::post('othercons','App\Http\Controllers\HomeController@othercons')->middleware('setLocale');  
-
-Route::post('otherupload','App\Http\Controllers\UploadController@otherupload')->middleware('setLocale');  
-
-
-// Phai
-
-Route::post('PhaiCons','App\Http\Controllers\HomeController@PhaiCons')->middleware('setLocale');  
-
-Route::post('Phaiupload','App\Http\Controllers\UploadController@Phaiupload')->middleware('setLocale');  
-
-
-// Goals
-
-Route::post('GoalsCons','App\Http\Controllers\HomeController@GoalsCons')->middleware('setLocale');  
-
-Route::post('Goalsupload','App\Http\Controllers\UploadController@Goalsupload')->middleware('setLocale');  
-
-
-// Strong
-
-Route::post('StrongCons','App\Http\Controllers\HomeController@StrongCons')->middleware('setLocale');  
-
-Route::post('Strongupload','App\Http\Controllers\UploadController@Strongupload')->middleware('setLocale');  
-
-
-// Tickets Registeration
-Route::post('Tickets','App\Http\Controllers\TicketController@index')->middleware('setLocale');  
-
-
-
-//  account edits
-Route::post('edit-email/{index}','App\Http\Controllers\AccountController@index','index')->middleware('setLocale');  
-Route::post('edit-email/{email}','App\Http\Controllers\AccountController@EmailEdit','edit-email')->middleware('setLocale');  
-
-
+        Route::get('/CustomCalculator',function(){
+            return view('CustomCalculator');
+        });
+    
+    
+        
+    Route::get('/logout', function(Request $request) {
+        Auth::logout();
+        return redirect('/');
+      })->name('logout');
+    
+    
+    
+    //  places 
+    Route::post('upload','App\Http\Controllers\UploadController@index');  
+    
+    Route::post('PlacesCons','App\Http\Controllers\HomeController@PlacesConsultancy');  
+    
+    
+    // product 
+    Route::post('uploadProduct','App\Http\Controllers\UploadController@Productupload');  
+    
+    Route::post('ProductCons','App\Http\Controllers\HomeController@ProductConsultancy');  
+    
+    
+    // new born
+    Route::post('NewBornCons','App\Http\Controllers\HomeController@BornConsultancy');  
+    
+    Route::post('Bornupload','App\Http\Controllers\UploadController@Bornupload');  
+    
+    
+    // others
+    
+    Route::post('othercons','App\Http\Controllers\HomeController@othercons');  
+    
+    Route::post('otherupload','App\Http\Controllers\UploadController@otherupload');  
+    
+    
+    // Phai
+    
+    Route::post('PhaiCons','App\Http\Controllers\HomeController@PhaiCons');  
+    
+    Route::post('Phaiupload','App\Http\Controllers\UploadController@Phaiupload');  
+    
+    
+    // Goals
+    
+    Route::post('GoalsCons','App\Http\Controllers\HomeController@GoalsCons');  
+    
+    Route::post('Goalsupload','App\Http\Controllers\UploadController@Goalsupload');  
+    
+    
+    // Strong
+    
+    Route::post('StrongCons','App\Http\Controllers\HomeController@StrongCons');  
+    
+    Route::post('Strongupload','App\Http\Controllers\UploadController@Strongupload');  
+    
+    
+    // Tickets Registeration
+    Route::post('Tickets','App\Http\Controllers\TicketController@index');  
+    
+    
+    
+    //  account edits
+    Route::post('edit-email/{index}','App\Http\Controllers\AccountController@index','index');  
+    Route::post('edit-email/{email}','App\Http\Controllers\AccountController@EmailEdit','edit-email');  
+    
+    
+    });
+    
 
 
 });
@@ -170,7 +180,7 @@ Route::post('edit-email/{email}','App\Http\Controllers\AccountController@EmailEd
 
 Route::get('/', function(){
     return redirect('/ar');
-});
+})->name('home');
 
 
 

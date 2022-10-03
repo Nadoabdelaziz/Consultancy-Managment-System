@@ -25,6 +25,7 @@
 
   <link rel="stylesheet" href="{{url('css/plugins/jquery-ui.css')}}">
 
+  
 
 
 
@@ -61,6 +62,8 @@
   <script src="{{url('js/plugins/swup.min.js')}}"></script>
 
   <script src="{{url('js/plugins/jquery-ui.js')}}"></script>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 <!-- 
 
