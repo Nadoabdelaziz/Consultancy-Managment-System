@@ -5,6 +5,8 @@ namespace App\Providers;
 use App\Models\Consultant;
 use App\Models\Text;
 use App\Models\Ticket;
+use App\Models\Video;
+
 use App\Models\Service;
 
 use Voyager;
@@ -36,6 +38,8 @@ class AppServiceProvider extends ServiceProvider
 
 
         $consultant = Consultant::get()->all();
+        $videos = Video::get()->all();
+
         $numbers_text=Text::get()->all();
         $tickets=Ticket::get()->all();
         $services=Service::get()->all();
@@ -43,6 +47,8 @@ class AppServiceProvider extends ServiceProvider
         view()->share('consultants', $consultant);
         view()->share('tickets', $tickets);
         view()->share('services', $services);
+        view()->share('videos', $videos);
+
 
 
 

@@ -224,8 +224,8 @@
                             </li>
                             <!-- lvl 2 nav link -->
                             <li class="menu-item">
-                                <a href="/portfolio-2-col.html">
-                                    <i class="fas fa-info-circle oldicons" aria-hidden="true"></i>
+                                <a href="{{app()->getLocale()}}/ads">
+                                    <i class=" fas fa-info-circle oldicons" aria-hidden="true"></i>
                                     {{__('News & Ads')}}
                                     <i class="fab fa-rocketchat" aria-hidden="true"></i>
                                 </a>
@@ -260,7 +260,7 @@
 
 
                     <li class="menu-item">
-                        <a href="/contact.html">{{__('Videos')}}</a>
+                        <a href="{{route('videos',app()->getLocale())}}">{{__('Videos')}}</a>
                     </li>
                     <li class="menu-item">
                         <a href="/contact.html">{{__('Referral Points System')}}</a>

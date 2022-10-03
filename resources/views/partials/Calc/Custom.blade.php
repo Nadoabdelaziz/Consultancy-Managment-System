@@ -13,318 +13,323 @@
         </div>
     </div>
 
-    <div class="art-form-field mt-5"
-        style="height:auto ;/* margin-left: 47px; *//* float: right; */background-color: #2E2E39;border-radius: 20px;">
+    <div class="row" style="justify-content:center">
+        <div class="art-form-field mt-5"
+            style="height:auto;/* margin-left: 47px; *//* float: right; */background-color: #2E2E39;border-radius: 20px;padding: 17px;/* width: fit-content; */width: 71%;">
+            <input type="text" name="user" value="" style="display:none">
 
-        <input type="text" name="user" value="" style="display:none">
+            <div class="row" style="justify-content:center">
+                <h3>
+                    {{__('Design Your Calculator')}}
+                </h3>
+            </div>
+
+            <div class="mt-5"
+                style="text-align-last: center;border-style: outset;margin: 10px;overflow-y: 20px;padding: 42px;border-radius: 20px;display:flex;width: fit-content;">
+
+                <div class="row"
+                    style="float:left; /* padding-bottom:10px; padding: 8px;  border-radius: 20px; */margin: 10px;width: 30%;">
 
 
-        <div
-            style="text-align-last: center;margin: 10px; overflow-y: 20px;padding: 10px;border-radius: 20px;display:flex">
+                    <div class="row"><label class="lbl"
+                            style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">أ</label>
+                        <input class="letters" onchange="funco(0)"
+                            style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
+                            type="text" name="first">
+                    </div>
+
+                    <div class="row mt-3">
+                        <label class="lbl"
+                            style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ا</label>
+                        <input class="letters" onchange="funco(1)"
+                            style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
+                            type="text" name="first">
+                    </div>
 
 
-            <div class="row"
-                style="float:left; /* padding-bottom:10px; padding: 8px;  border-radius: 20px; */margin: 10px;width: 30%;">
+                    <div class="row mt-3"><label class="lbl"
+                            style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">إ</label>
+                        <input class="letters" onchange="funco(2)"
+                            style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
+                            type="text" name="first">
+                    </div>
+
+                    <div class="row mt-3"><label class="lbl"
+                            style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ٱ</label>
+                        <input class="letters" onchange="funco(3)"
+                            style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
+                            type="text" name="first">
+                    </div>
+
+                    <div class="row mt-3"><label class="lbl"
+                            style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ء</label>
+                        <input class="letters" onchange="funco(4)"
+                            style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
+                            type="text" name="first">
+                    </div>
+
+                    <div class="row mt-3"><label class="lbl"
+                            style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ئ</label>
+                        <input class="letters" onchange="funco(5)"
+                            style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
+                            type="text" name="first">
+                    </div>
 
 
-                <div class="row"><label class="lbl"
-                        style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">أ</label>
-                    <input class="letters" onchange="funco(0)"
-                        style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
-                        type="text" placeholder="5" name="first">
+                    <div class="row mt-3"><label class="lbl"
+                            style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ؤ</label>
+                        <input class="letters" onchange="funco(6)"
+                            style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
+                            type="text" name="first">
+                    </div>
+
+
+                    <div class="row mt-3"><label class="lbl"
+                            style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ب</label>
+                        <input class="letters" onchange="funco(7)"
+                            style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
+                            type="text" name="first">
+                    </div>
+
+                    <div class="row mt-3"><label class="lbl"
+                            style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">آ</label>
+                        <input class="letters" onchange="funco(8)"
+                            style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
+                            type="text" name="first">
+                    </div>
+
+
+                    <div class="row mt-3"><label class="lbl" style="padding: 8px;color: white;background-color: goldenrod;
+                            font-size: x-large;padding-top: 17px;height: 82%;">ج</label>
+                        <input class="letters" onchange="funco(9)"
+                            style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
+                            type="text" name="first">
+                    </div>
+
+
+                    <div class="row mt-3"><label class="lbl"
+                            style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ه</label>
+                        <input class="letters" onchange="funco(10)"
+                            style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
+                            type="text" name="first">
+                    </div>
+
+                    <div class="row mt-3"><label class="lbl"
+                            style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">د</label>
+                        <input class="letters" onchange="funco(11)"
+                            style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
+                            type="text" name="first">
+                    </div>
+
+                    <div class="row mt-3"><label class="lbl"
+                            style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ة</label>
+                        <input class="letters" onchange="funco(12)"
+                            style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
+                            type="text" name="first">
+                    </div>
+
+                    <div class="row mt-3"><label class="lbl"
+                            style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">و</label>
+                        <input class="letters" onchange="funco(13)"
+                            style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
+                            type="text" name="first">
+                    </div>
+
+                    <div class="row mt-3"><label class="lbl"
+                            style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ز</label>
+                        <input class="letters" onchange="funco(14)"
+                            style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
+                            type="text" name="first">
+                    </div>
+
                 </div>
 
-                <div class="row mt-3">
-                    <label class="lbl"
-                        style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ا</label>
-                    <input class="letters" onchange="funco(1)"
-                        style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
-                        type="text" placeholder="5" name="first">
+                <div class="row"
+                    style="/* padding-bottom:10px; padding: 8px;  border-radius: 20px; */margin: 10px;width: 30%;">
+                    <div class="row"><label class="lbl"
+                            style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ح</label>
+                        <input class="letters" onchange="funco(15)"
+                            style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
+                            type="text" name="first">
+                    </div>
+
+                    <div class="row mt-3"><label class="lbl"
+                            style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ط</label>
+                        <input class="letters" onchange="funco(16)"
+                            style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
+                            type="text" name="first">
+                    </div>
+
+                    <div class="row mt-3"><label class="lbl"
+                            style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ى</label>
+                        <input class="letters" onchange="funco(17)"
+                            style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
+                            type="text" name="first">
+                    </div>
+
+                    <div class="row mt-3"><label class="lbl"
+                            style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ي</label>
+                        <input class="letters" onchange="funco(18)"
+                            style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
+                            type="text" name="first">
+                    </div>
+
+                    <div class="row mt-3"><label class="lbl"
+                            style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ئ</label>
+                        <input class="letters" onchange="funco(19)"
+                            style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
+                            type="text" name="first">
+                    </div>
+
+                    <div class="row mt-3"><label class="lbl"
+                            style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ك</label>
+                        <input class="letters" onchange="funco(20)"
+                            style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
+                            type="text" name="first">
+                    </div>
+
+                    <div class="row mt-3"><label class="lbl"
+                            style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ل</label>
+                        <input class="letters" onchange="funco(21)"
+                            style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
+                            type="text" name="first">
+                    </div>
+
+                    <div class="row mt-3"><label class="lbl"
+                            style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">م</label>
+                        <input class="letters" onchange="funco(22)"
+                            style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
+                            type="text" name="first">
+                    </div>
+
+
+                    <div class="row mt-3"><label class="lbl"
+                            style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ن</label>
+                        <input class="letters" onchange="funco(23)"
+                            style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
+                            type="text" name="first">
+                    </div>
+
+                    <div class="row mt-3"><label class="lbl"
+                            style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">غ</label>
+                        <input class="letters" onchange="funco(24)"
+                            style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
+                            type="text" name="first">
+                    </div>
+
+                    <div class="row mt-3"><label class="lbl"
+                            style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">س</label>
+                        <input class="letters" onchange="funco(25)"
+                            style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
+                            type="text" name="first">
+                    </div>
+
+                    <div class="row mt-3"><label class="lbl"
+                            style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ع</label>
+                        <input class="letters" onchange="funco(26)"
+                            style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
+                            type="text" name="first">
+                    </div>
+
+                </div>
+
+                <div class="row"
+                    style="/* padding-bottom:10px; padding: 8px;  border-radius: 20px; */margin: 10px;width: 30%;">
+                    <div class="row"><label class="lbl"
+                            style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ف</label>
+                        <input class="letters" onchange="funco(27)"
+                            style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
+                            type="text" name="first">
+                    </div>
+
+
+                    <div class="row mt-3"><label class="lbl"
+                            style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ص</label>
+                        <input class="letters" onchange="funco(28)"
+                            style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
+                            type="text" name="first">
+                    </div>
+
+                    <div class="row mt-3"><label class="lbl"
+                            style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ق</label>
+                        <input class="letters" onchange="funco(29)"
+                            style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
+                            type="text" name="first">
+                    </div>
+
+                    <div class="row mt-3"><label class="lbl"
+                            style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ر</label>
+                        <input class="letters" onchange="funco(30)"
+                            style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
+                            type="text" name="first">
+                    </div>
+
+                    <div class="row mt-3"><label class="lbl"
+                            style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ش</label>
+                        <input class="letters" onchange="funco(31)"
+                            style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
+                            type="text" name="first">
+                    </div>
+
+                    <div class="row mt-3"><label class="lbl"
+                            style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ت</label>
+                        <input class="letters" onchange="funco(32)"
+                            style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
+                            type="text" name="first">
+                    </div>
+
+                    <div class="row mt-3"><label class="lbl"
+                            style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ث</label>
+                        <input class="letters" onchange="funco(33)"
+                            style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
+                            type="text" name="first">
+                    </div>
+
+                    <div class="row mt-3"><label class="lbl"
+                            style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">خ</label>
+                        <input class="letters" onchange="funco(34)"
+                            style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
+                            type="text" name="first">
+                    </div>
+
+
+                    <div class="row mt-3"><label class="lbl"
+                            style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ذ</label>
+                        <input class="letters" onchange="funco(35)"
+                            style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
+                            type="text" name="first">
+                    </div>
+
+                    <div class="row mt-3"><label class="lbl"
+                            style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ض</label>
+                        <input class="letters" onchange="funco(36)"
+                            style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
+                            type="text" name="first">
+                    </div>
+
+                    <div class="row mt-3"><label class="lbl"
+                            style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ظ</label>
+                        <input class="letters" onchange="funco(37)"
+                            style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
+                            type="text" name="first">
+                    </div>
+
+
+
+
+
                 </div>
 
 
-                <div class="row mt-3"><label class="lbl"
-                        style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">إ</label>
-                    <input class="letters" onchange="funco(2)"
-                        style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
-                        type="text" placeholder="5" name="first">
-                </div>
-
-                <div class="row mt-3"><label class="lbl"
-                        style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ٱ</label>
-                    <input class="letters" onchange="funco(3)"
-                        style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
-                        type="text" placeholder="5" name="first">
-                </div>
-
-                <div class="row mt-3"><label class="lbl"
-                        style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ء</label>
-                    <input class="letters" onchange="funco(4)"
-                        style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
-                        type="text" placeholder="5" name="first">
-                </div>
-
-                <div class="row mt-3"><label class="lbl"
-                        style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ئ</label>
-                    <input class="letters" onchange="funco(5)"
-                        style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
-                        type="text" placeholder="5" name="first">
-                </div>
-
-
-                <div class="row mt-3"><label class="lbl"
-                        style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ؤ</label>
-                    <input class="letters" onchange="funco(6)"
-                        style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
-                        type="text" placeholder="5" name="first">
-                </div>
-
-
-                <div class="row mt-3"><label class="lbl"
-                        style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ب</label>
-                    <input class="letters" onchange="funco(7)"
-                        style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
-                        type="text" placeholder="5" name="first">
-                </div>
-
-                <div class="row mt-3"><label class="lbl"
-                        style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">آ</label>
-                    <input class="letters" onchange="funco(8)"
-                        style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
-                        type="text" placeholder="5" name="first">
-                </div>
-
-
-                <div class="row mt-3"><label class="lbl"
-                        style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ج</label>
-                    <input class="letters" onchange="funco(9)"
-                        style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
-                        type="text" placeholder="5" name="first">
-                </div>
-
-
-                <div class="row mt-3"><label class="lbl"
-                        style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ه</label>
-                    <input class="letters" onchange="funco(10)"
-                        style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
-                        type="text" placeholder="5" name="first">
-                </div>
-
-                <div class="row mt-3"><label class="lbl"
-                        style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">د</label>
-                    <input class="letters" onchange="funco(11)"
-                        style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
-                        type="text" placeholder="5" name="first">
-                </div>
-
-                <div class="row mt-3"><label class="lbl"
-                        style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ة</label>
-                    <input class="letters" onchange="funco(12)"
-                        style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
-                        type="text" placeholder="5" name="first">
-                </div>
-
-                <div class="row mt-3"><label class="lbl"
-                        style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">و</label>
-                    <input class="letters" onchange="funco(13)"
-                        style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
-                        type="text" placeholder="5" name="first">
-                </div>
-
-                <div class="row mt-3"><label class="lbl"
-                        style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ز</label>
-                    <input class="letters" onchange="funco(14)"
-                        style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
-                        type="text" placeholder="5" name="first">
-                </div>
+                <br>
 
             </div>
 
-            <div class="row"
-                style="/* padding-bottom:10px; padding: 8px;  border-radius: 20px; */margin: 10px;width: 30%;">
-                <div class="row"><label class="lbl"
-                        style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ح</label>
-                    <input class="letters" onchange="funco(15)"
-                        style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
-                        type="text" placeholder="5" name="first">
-                </div>
-
-                <div class="row mt-3"><label class="lbl"
-                        style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ط</label>
-                    <input class="letters" onchange="funco(16)"
-                        style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
-                        type="text" placeholder="5" name="first">
-                </div>
-
-                <div class="row mt-3"><label class="lbl"
-                        style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ى</label>
-                    <input class="letters" onchange="funco(17)"
-                        style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
-                        type="text" placeholder="5" name="first">
-                </div>
-
-                <div class="row mt-3"><label class="lbl"
-                        style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ي</label>
-                    <input class="letters" onchange="funco(18)"
-                        style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
-                        type="text" placeholder="5" name="first">
-                </div>
-
-                <div class="row mt-3"><label class="lbl"
-                        style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ئ</label>
-                    <input class="letters" onchange="funco(19)"
-                        style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
-                        type="text" placeholder="5" name="first">
-                </div>
-
-                <div class="row mt-3"><label class="lbl"
-                        style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ك</label>
-                    <input class="letters" onchange="funco(20)"
-                        style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
-                        type="text" placeholder="5" name="first">
-                </div>
-
-                <div class="row mt-3"><label class="lbl"
-                        style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ل</label>
-                    <input class="letters" onchange="funco(21)"
-                        style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
-                        type="text" placeholder="5" name="first">
-                </div>
-
-                <div class="row mt-3"><label class="lbl"
-                        style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">م</label>
-                    <input class="letters" onchange="funco(22)"
-                        style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
-                        type="text" placeholder="5" name="first">
-                </div>
-
-
-                <div class="row mt-3"><label class="lbl"
-                        style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ن</label>
-                    <input class="letters" onchange="funco(23)"
-                        style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
-                        type="text" placeholder="5" name="first">
-                </div>
-
-                <div class="row mt-3"><label class="lbl"
-                        style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">غ</label>
-                    <input class="letters" onchange="funco(24)"
-                        style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
-                        type="text" placeholder="5" name="first">
-                </div>
-
-                <div class="row mt-3"><label class="lbl"
-                        style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">س</label>
-                    <input class="letters" onchange="funco(25)"
-                        style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
-                        type="text" placeholder="5" name="first">
-                </div>
-
-                <div class="row mt-3"><label class="lbl"
-                        style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ع</label>
-                    <input class="letters" onchange="funco(26)"
-                        style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
-                        type="text" placeholder="5" name="first">
-                </div>
-
-            </div>
-
-            <div class="row"
-                style="/* padding-bottom:10px; padding: 8px;  border-radius: 20px; */margin: 10px;width: 30%;">
-                <div class="row"><label class="lbl"
-                        style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ف</label>
-                    <input class="letters" onchange="funco(27)"
-                        style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
-                        type="text" placeholder="5" name="first">
-                </div>
-
-
-                <div class="row mt-3"><label class="lbl"
-                        style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ص</label>
-                    <input class="letters" onchange="funco(28)"
-                        style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
-                        type="text" placeholder="5" name="first">
-                </div>
-
-                <div class="row mt-3"><label class="lbl"
-                        style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ق</label>
-                    <input class="letters" onchange="funco(29)"
-                        style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
-                        type="text" placeholder="5" name="first">
-                </div>
-
-                <div class="row mt-3"><label class="lbl"
-                        style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ر</label>
-                    <input class="letters" onchange="funco(30)"
-                        style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
-                        type="text" placeholder="5" name="first">
-                </div>
-
-                <div class="row mt-3"><label class="lbl"
-                        style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ش</label>
-                    <input class="letters" onchange="funco(31)"
-                        style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
-                        type="text" placeholder="5" name="first">
-                </div>
-
-                <div class="row mt-3"><label class="lbl"
-                        style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ت</label>
-                    <input class="letters" onchange="funco(32)"
-                        style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
-                        type="text" placeholder="5" name="first">
-                </div>
-
-                <div class="row mt-3"><label class="lbl"
-                        style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ث</label>
-                    <input class="letters" onchange="funco(33)"
-                        style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
-                        type="text" placeholder="5" name="first">
-                </div>
-
-                <div class="row mt-3"><label class="lbl"
-                        style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">خ</label>
-                    <input class="letters" onchange="funco(34)"
-                        style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
-                        type="text" placeholder="5" name="first">
-                </div>
-
-
-                <div class="row mt-3"><label class="lbl"
-                        style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ذ</label>
-                    <input class="letters" onchange="funco(35)"
-                        style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
-                        type="text" placeholder="5" name="first">
-                </div>
-
-                <div class="row mt-3"><label class="lbl"
-                        style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ض</label>
-                    <input class="letters" onchange="funco(36)"
-                        style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
-                        type="text" placeholder="5" name="first">
-                </div>
-
-                <div class="row mt-3"><label class="lbl"
-                        style="padding: 8px;color: white;background-color: goldenrod;font-size: x-large;padding-top: 17px;height: 82%;">ظ</label>
-                    <input class="letters" onchange="funco(37)"
-                        style="padding: unset;border-radius: 6px;width: 60%;font-size: large;font-weight: 900;margin: 5px;"
-                        type="text" placeholder="5" name="first">
-                </div>
-
-
-
-
-
-            </div>
-
-
+            <!-- User ID : <input type = "text" name = "user_id" /> -->
             <br>
+            <!-- Password: <input type = "password" name = "password" /> -->
 
         </div>
-
-        <!-- User ID : <input type = "text" name = "user_id" /> -->
-        <br>
-        <!-- Password: <input type = "password" name = "password" /> -->
-
     </div>
 </div>
 

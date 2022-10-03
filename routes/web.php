@@ -105,6 +105,14 @@ Route::group(['prefix' => '{locale}'],function (){
         Route::get('/CustomCalculator',function(){
             return view('CustomCalculator');
         });
+
+        Route::get('/videos',function(){
+            return view('Videos');
+        })->name('videos');
+    
+        Route::get('/ads',function(){
+            return view('Ads');
+        });
     
     
         
