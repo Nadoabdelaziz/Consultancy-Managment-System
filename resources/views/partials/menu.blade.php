@@ -112,19 +112,21 @@
                         <ul class="sub-menu art-active">
                             <!-- lvl 2 nav link -->
                             <li class="menu-item">
-                                <a href="{{route('Places',app()->getLocale())}}">{{__('Places Consultant')}}
+                                <a target="_blank" href="{{app()->getLocale()}}/blog-post">{{__('Places Consultant')}}
                                     <i class="fas fa-chart-bar" aria-hidden="true"></i>
                                 </a>
                             </li>
                             <!-- lvl 2 nav link -->
                             <li class="menu-item">
-                                <a href="{{route('Products',app()->getLocale())}}">{{__('Product Name Consultant')}}
+                                <a target="_blank"
+                                    href="{{app()->getLocale()}}/ProductConsultant">{{__('Product Name Consultant')}}
                                     <i class="fas fa-chart-pie" aria-hidden="true"></i>
                                 </a>
                             </li>
                             <!-- lvl 2 nav link -->
                             <li class="menu-item">
-                                <a href="{{route('NewBorns',app()->getLocale())}}">{{__('NewBorn Names Consultant')}}
+                                <a target="_blank"
+                                    href="{{app()->getLocale()}}/NewBornCons">{{__('NewBorn Names Consultant')}}
                                     <i class="fa fa-gamepad" aria-hidden="true"></i>
                                 </a>
                             </li>
@@ -141,7 +143,7 @@
                         <ul class="sub-menu art-active">
                             <!-- lvl 2 nav link -->
                             <li class="menu-item">
-                                <a href="{{route('Phai',app()->getLocale())}}">
+                                <a target="_blank" href="{{app()->getLocale()}}/PhaiConsultant">
                                     <i class="fas fa-info-circle newicons" aria-hidden="true"></i>
                                     {{__('Phai Consultant')}}
                                     <i>
@@ -151,7 +153,7 @@
                             </li>
                             <!-- lvl 2 nav link -->
                             <li class="menu-item">
-                                <a href="{{route('Goals',app()->getLocale())}}">
+                                <a target="_blank" href="{{app()->getLocale()}}/goalsConsultancy">
                                     <i class="fas fa-info-circle newicons" aria-hidden="true"></i>
                                     {{__('Goals Consultant')}}
                                     <i class="far fa-circle" aria-hidden="true"></i>
@@ -159,7 +161,7 @@
                             </li>
                             <!-- lvl 2 nav link -->
                             <li class="menu-item">
-                                <a href="{{route('Strongs',app()->getLocale())}}">
+                                <a target="_blank" href="{{app()->getLocale()}}/StrongConsultant">
                                     <i class="fas fa-info-circle newicons" aria-hidden="true"></i>
                                     {{__('Strong Consultant')}}
                                     <i class="fa fa-bolt" aria-hidden="true"></i>
@@ -187,7 +189,7 @@
                             </li>
                             <!-- lvl 2 nav link -->
                             <li class="menu-item">
-                                <a href="/portfolio-2-col.html">
+                                <a href="{{route('offers',app()->getLocale())}}">
                                     <i class="fas fa-info-circle oldicons" aria-hidden="true"></i>
                                     {{__('Show Price')}}
                                     <i class="fab fa-rocketchat" aria-hidden="true"></i>

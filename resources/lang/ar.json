@@ -186,8 +186,14 @@
     "Deposit Operation":"عملية الإيداع",
     "Enter Here":"أدخل هنا",
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet!":"شاهد الفيديو",
-    "There Are No Current Ads":"لا توجد أعلانات حالية"
-
+    "There Are No Current Ads":"لا توجد أعلانات حالية",
+    "Offer Date": "تاريخ العرض",
+    "Total":"الأجمالي",
+    "Expiry":"صلاحية العرض لتاريخ",
+    "One Week Left":"صالح لمدة أسبو ع من تاريخ العرض",
+    "Usd":"دولار أمريكي"
+    
+ 
     
 
 

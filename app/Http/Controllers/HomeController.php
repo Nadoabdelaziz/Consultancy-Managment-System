@@ -12,6 +12,7 @@ use App\Models\Newborn;
 use App\Models\Other;
 use App\Models\Phai;
 use App\Models\Goal;
+use App\Models\Offer;
 use App\Models\Strong;
 
 
@@ -40,6 +41,10 @@ class HomeController extends Controller
 
 
     public function PlacesConsultancy(Request $request){
+
+
+        // dd($request->all());
+        
         if($request == ""){
             return view('blog-post');
         }
@@ -67,7 +72,17 @@ class HomeController extends Controller
 
         $placess=Place::get();
         if($placess->count() > 0){
-            $last_place_added=Place::latest()->take(1)->get();
+            
+            $last_place_added=Place::all()->sortByDesc('created_at')->take(1)->first();
+            Offer::create([
+                'record_id'=> $last_place_added->id,
+                'date'=> $last_place_added->created_at,
+                'total'=>$last_place_added->price,
+                'expiry'=> "One Week Left",
+                'email' => $last_place_added->user_email
+            ]);
+
+            // dd($last_place_added);
         }
         else{
             $last_place_added = "";
@@ -111,7 +126,16 @@ class HomeController extends Controller
 
         $placess=Product::get();
         if($placess->count() > 0){
-            $last_place_added=Product::latest()->take(1)->get();
+            $last_place_added=Product::all()->sortByDesc('created_at')->take(1)->first();
+
+            Offer::create([
+                'record_id'=> $last_place_added->id,
+                'date'=> $last_place_added->created_at,
+                'total'=>$last_place_added->price,
+                'expiry'=> "One Week Left",
+                'email' => $last_place_added->user_email
+            ]);
+
         }
         else{
             $last_place_added = "";
@@ -158,7 +182,15 @@ class HomeController extends Controller
 
         $newborns=Newborn::get();
         if($newborns->count() > 0){
-            $last_born_added=Newborn::latest()->take(1)->get();
+
+            $last_born_added=Newborn::all()->sortByDesc('created_at')->take(1)->first();
+            Offer::create([
+                'record_id'=> $last_born_added->id,
+                'date'=> $last_born_added->created_at,
+                'total'=>$last_born_added->price,
+                'expiry'=> "One Week Left",
+                'email' => $last_born_added->user_email
+            ]);
         }
         else{
             $last_born_added = "";
@@ -199,7 +231,15 @@ class HomeController extends Controller
 
         $other=Other::get();
         if($other->count() > 0){
-            $last_other_added=Other::latest()->take(1)->get();
+
+            $last_other_added=Other::all()->sortByDesc('created_at')->take(1)->first();
+            Offer::create([
+                'record_id'=> $last_other_added->id,
+                'date'=> $last_other_added->created_at,
+                'total'=>$last_other_added->price,
+                'expiry'=> "One Week Left",
+                'email' => $last_other_added->user_email
+            ]);
         }
         else{
             $last_other_added = "";
@@ -237,7 +277,16 @@ class HomeController extends Controller
 
         $phai=Phai::get();
         if($phai->count() > 0){
-            $last_phai_added=Phai::latest()->take(1)->get();
+
+            $last_phai_added=Phai::all()->sortByDesc('created_at')->take(1)->first();
+            Offer::create([
+                'record_id'=> $last_phai_added->id,
+                'date'=> $last_phai_added->created_at,
+                'total'=>$last_phai_added->price,
+                'expiry'=> "One Week Left",
+                'email' => $last_phai_added->user_email
+            ]);
+
         }
         else{
             $last_phai_added = "";
@@ -275,7 +324,15 @@ class HomeController extends Controller
 
         $Goal=Goal::get();
         if($Goal->count() > 0){
-            $last_Goal_added=Goal::latest()->take(1)->get();
+
+            $last_Goal_added=Goal::all()->sortByDesc('created_at')->take(1)->first();
+            Offer::create([
+                'record_id'=> $last_Goal_added->id,
+                'date'=> $last_Goal_added->created_at,
+                'total'=>$last_Goal_added->price,
+                'expiry'=> "One Week Left",
+                'email' => $last_Goal_added->user_email
+            ]);
         }
         else{
             $last_Goal_added = "";
@@ -314,7 +371,15 @@ class HomeController extends Controller
 
         $Strong=Strong::get();
         if($Strong->count() > 0){
-            $last_Strong_added=Strong::latest()->take(1)->get();
+
+            $last_Strong_added=Strong::all()->sortByDesc('created_at')->take(1)->first();
+            Offer::create([
+                'record_id'=> $last_Strong_added->id,
+                'date'=> $last_Strong_added->created_at,
+                'total'=>$last_Strong_added->price,
+                'expiry'=> "One Week Left",
+                'email' => $last_Strong_added->user_email
+            ]);
         }
         else{
             $last_Strong_added = "";
@@ -328,4 +393,3 @@ class HomeController extends Controller
     
 
 }
-

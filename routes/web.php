@@ -114,6 +114,10 @@ Route::group(['prefix' => '{locale}'],function (){
             return view('Ads');
         });
     
+
+        Route::get('/offers',function(){
+            return view('Offers');
+        })->name('offers');
     
         
     Route::get('/logout', function(Request $request) {
